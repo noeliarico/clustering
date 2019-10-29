@@ -1,0 +1,841 @@
+
+
+\begin{table}[ht]
+\centering
+\caption{cpu\_discretized} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8279 & 0.8221 & 0.8905 & 0.8714 & 0.8905 & 0.8619 \\ 
+  euclidean & distance & 0.8519 & 0.8421 & 0.8664 & 0.8571 & 0.8571 & 0.8571 \\ 
+  chebyshev & distance & 0.8183 & 0.8419 & 0.8617 & 0.8238 & 0.8238 & 0.8429 \\ 
+  plurality & rr & 0.8424 & 0.6486 & 0.6390 & 0.5674 & 0.5388 & 0.5243 \\ 
+  t2approval & rr & 0.8469 & 0.8421 & 0.8612 & 0.7405 & 0.6064 & 0.5533 \\ 
+  t3approval & rr & 0.8279 & 0.8467 & 0.8664 & 0.8617 & 0.7562 & 0.6498 \\ 
+  t5approval & rr & 0.7995 & 0.8371 & 0.8567 & 0.8571 & 0.8810 & 0.8810 \\ 
+  t7approval & rr & 0.8233 & 0.8324 & 0.8569 & 0.8667 & 0.8667 & 0.8619 \\ 
+  borda\_count & rr & 0.8424 & 0.8421 & 0.8569 & 0.8426 & 0.8571 & 0.8524 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7815 & 0.7752 & 0.7632 & 0.7653 & 0.7754 & 0.7768 \\ 
+  euclidean & distance & 0.7685 & 0.7701 & 0.7574 & 0.7650 & 0.7923 & 0.7923 \\ 
+  chebyshev & distance & 0.7501 & 0.7805 & 0.7527 & 0.7880 & 0.7807 & 0.7808 \\ 
+  plurality & rr & 0.7769 & 0.5934 & 0.5748 & 0.5115 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.7670 & 0.7701 & 0.7565 & 0.6001 & 0.5278 & 0.5000 \\ 
+  t3approval & rr & 0.7589 & 0.7577 & 0.7574 & 0.7558 & 0.6320 & 0.5366 \\ 
+  t5approval & rr & 0.7577 & 0.7519 & 0.7525 & 0.7650 & 0.7820 & 0.7622 \\ 
+  t7approval & rr & 0.6793 & 0.6793 & 0.7157 & 0.7751 & 0.7923 & 0.7923 \\ 
+  borda\_count & rr & 0.7769 & 0.7698 & 0.7473 & 0.7650 & 0.8025 & 0.7923 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli\_0\_1\_4\_6\_vs\_5} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9250 & 0.8750 & 0.9000 & 0.8981 & 0.8731 & 0.8731 \\ 
+  euclidean & distance & 0.9250 & 0.8750 & 0.9250 & 0.8981 & 0.8731 & 0.8731 \\ 
+  chebyshev & distance & 0.9250 & 0.8750 & 0.8981 & 0.8731 & 0.8731 & 0.8731 \\ 
+  plurality & rr & 0.9250 & 0.6500 & 0.6500 & 0.5000 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9250 & 0.8500 & 0.8731 & 0.7750 & 0.5250 & 0.5000 \\ 
+  t3approval & rr & 0.9250 & 0.8500 & 0.9000 & 0.8981 & 0.8231 & 0.6750 \\ 
+  t5approval & rr & 0.9000 & 0.8750 & 0.8750 & 0.8981 & 0.8731 & 0.8750 \\ 
+  t7approval & rr & 0.8500 & 0.8500 & 0.8500 & 0.8481 & 0.8731 & 0.8731 \\ 
+  borda\_count & rr & 0.9250 & 0.8750 & 0.9250 & 0.8731 & 0.8731 & 0.8731 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli\_0\_1\_4\_7\_vs\_2\_3\_5\_6} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8487 & 0.8051 & 0.8218 & 0.8735 & 0.8585 & 0.8101 \\ 
+  euclidean & distance & 0.8320 & 0.8051 & 0.8385 & 0.8902 & 0.8718 & 0.8617 \\ 
+  chebyshev & distance & 0.8154 & 0.7885 & 0.8369 & 0.8702 & 0.8918 & 0.8434 \\ 
+  plurality & rr & 0.8320 & 0.5984 & 0.6151 & 0.5151 & 0.5167 & 0.5167 \\ 
+  t2approval & rr & 0.8186 & 0.8051 & 0.8202 & 0.7068 & 0.5317 & 0.5333 \\ 
+  t3approval & rr & 0.8035 & 0.8051 & 0.8385 & 0.8234 & 0.7417 & 0.5817 \\ 
+  t5approval & rr & 0.7068 & 0.7068 & 0.8601 & 0.8902 & 0.8702 & 0.7417 \\ 
+  t7approval & rr & 0.6184 & 0.6184 & 0.8101 & 0.8551 & 0.8718 & 0.8784 \\ 
+  borda\_count & rr & 0.8320 & 0.8051 & 0.8585 & 0.8702 & 0.8718 & 0.8617 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli\_0\_1\_4\_7\_vs\_5\_6} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8919 & 0.8351 & 0.8551 & 0.8551 & 0.8768 & 0.8568 \\ 
+  euclidean & distance & 0.8519 & 0.8151 & 0.8751 & 0.9151 & 0.8768 & 0.8368 \\ 
+  chebyshev & distance & 0.8735 & 0.8351 & 0.8951 & 0.8951 & 0.8351 & 0.7735 \\ 
+  plurality & rr & 0.8519 & 0.6384 & 0.6584 & 0.5400 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8535 & 0.8151 & 0.8551 & 0.6768 & 0.5400 & 0.5000 \\ 
+  t3approval & rr & 0.8335 & 0.8151 & 0.8751 & 0.8551 & 0.7168 & 0.5800 \\ 
+  t5approval & rr & 0.7368 & 0.7368 & 0.8151 & 0.8751 & 0.8351 & 0.7968 \\ 
+  t7approval & rr & 0.6800 & 0.6800 & 0.7768 & 0.8751 & 0.8768 & 0.8368 \\ 
+  borda\_count & rr & 0.8519 & 0.8151 & 0.8751 & 0.9151 & 0.8768 & 0.8568 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli\_0\_6\_7\_vs\_5} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8700 & 0.7750 & 0.8000 & 0.8475 & 0.8475 & 0.8475 \\ 
+  euclidean & distance & 0.8200 & 0.7475 & 0.8225 & 0.7975 & 0.8250 & 0.8225 \\ 
+  chebyshev & distance & 0.8150 & 0.7475 & 0.7950 & 0.8000 & 0.8250 & 0.8250 \\ 
+  plurality & rr & 0.8200 & 0.6000 & 0.6000 & 0.5250 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8200 & 0.7475 & 0.7725 & 0.6750 & 0.5250 & 0.5250 \\ 
+  t3approval & rr & 0.8225 & 0.7750 & 0.7725 & 0.7750 & 0.6500 & 0.5750 \\ 
+  t5approval & rr & 0.8000 & 0.7750 & 0.8225 & 0.7975 & 0.8000 & 0.8000 \\ 
+  t7approval & rr & 0.6000 & 0.6000 & 0.8000 & 0.8250 & 0.8250 & 0.7725 \\ 
+  borda\_count & rr & 0.8200 & 0.7475 & 0.8225 & 0.8000 & 0.8250 & 0.7975 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli\_0\_vs\_1} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9641 & 0.9617 & 0.9683 & 0.9546 & 0.9413 & 0.9413 \\ 
+  euclidean & distance & 0.9414 & 0.9425 & 0.9683 & 0.9479 & 0.9613 & 0.9413 \\ 
+  chebyshev & distance & 0.9442 & 0.9257 & 0.9645 & 0.9511 & 0.9316 & 0.9182 \\ 
+  plurality & rr & 0.9414 & 0.7608 & 0.7671 & 0.5196 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9449 & 0.9425 & 0.9683 & 0.8438 & 0.6050 & 0.5000 \\ 
+  t3approval & rr & 0.9485 & 0.9358 & 0.9683 & 0.9613 & 0.9096 & 0.7137 \\ 
+  t5approval & rr & 0.9487 & 0.9421 & 0.9617 & 0.9479 & 0.9479 & 0.9287 \\ 
+  t7approval & rr & 0.9287 & 0.9287 & 0.9550 & 0.9479 & 0.9483 & 0.9413 \\ 
+  borda\_count & rr & 0.9414 & 0.9487 & 0.9746 & 0.9546 & 0.9443 & 0.9413 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ecoli4} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8718 & 0.8234 & 0.9234 & 0.9000 & 0.8750 & 0.8750 \\ 
+  euclidean & distance & 0.8984 & 0.8750 & 0.8984 & 0.8968 & 0.9234 & 0.9000 \\ 
+  chebyshev & distance & 0.9234 & 0.8750 & 0.9000 & 0.9000 & 0.8750 & 0.8750 \\ 
+  plurality & rr & 0.8984 & 0.6250 & 0.6250 & 0.5250 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9218 & 0.8750 & 0.8984 & 0.7000 & 0.5500 & 0.5000 \\ 
+  t3approval & rr & 0.9218 & 0.8750 & 0.8984 & 0.8750 & 0.8250 & 0.6000 \\ 
+  t5approval & rr & 0.9171 & 0.8968 & 0.8968 & 0.8984 & 0.9000 & 0.8750 \\ 
+  t7approval & rr & 0.9155 & 0.9218 & 0.9218 & 0.8984 & 0.9250 & 0.8750 \\ 
+  borda\_count & rr & 0.8984 & 0.8750 & 0.8984 & 0.8984 & 0.8984 & 0.9000 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{filtered\_ecoli} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9182 & 0.9217 & 0.9349 & 0.9322 & 0.9431 & 0.9469 \\ 
+  euclidean & distance & 0.9144 & 0.9248 & 0.9449 & 0.9393 & 0.9487 & 0.9450 \\ 
+  chebyshev & distance & 0.9186 & 0.9259 & 0.9187 & 0.9282 & 0.9271 & 0.9251 \\ 
+  plurality & rr & 0.9141 & 0.6954 & 0.6809 & 0.5318 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9251 & 0.9224 & 0.9184 & 0.7872 & 0.5674 & 0.5130 \\ 
+  t3approval & rr & 0.9245 & 0.9216 & 0.9446 & 0.9348 & 0.8322 & 0.6587 \\ 
+  t5approval & rr & 0.9122 & 0.9132 & 0.9368 & 0.9324 & 0.9351 & 0.9105 \\ 
+  t7approval & rr & 0.8827 & 0.8837 & 0.9344 & 0.9343 & 0.9487 & 0.9426 \\ 
+  borda\_count & rr & 0.9226 & 0.9200 & 0.9412 & 0.9324 & 0.9453 & 0.9450 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7879 & 0.7217 & 0.7698 & 0.7451 & 0.7159 & 0.7156 \\ 
+  euclidean & distance & 0.7613 & 0.7319 & 0.7468 & 0.7105 & 0.6833 & 0.6659 \\ 
+  chebyshev & distance & 0.7223 & 0.6977 & 0.7264 & 0.6577 & 0.6541 & 0.6539 \\ 
+  plurality & rr & 0.7484 & 0.5931 & 0.5810 & 0.5100 & 0.5067 & 0.5067 \\ 
+  t2approval & rr & 0.7665 & 0.7267 & 0.7259 & 0.6073 & 0.5327 & 0.5106 \\ 
+  t3approval & rr & 0.7717 & 0.7380 & 0.7467 & 0.6973 & 0.6023 & 0.5392 \\ 
+  t5approval & rr & 0.7286 & 0.7231 & 0.7062 & 0.7035 & 0.6912 & 0.6744 \\ 
+  t7approval & rr & 0.6842 & 0.6855 & 0.7206 & 0.7034 & 0.6717 & 0.6871 \\ 
+  borda\_count & rr & 0.7631 & 0.7521 & 0.7413 & 0.6930 & 0.6735 & 0.6738 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass0} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8417 & 0.8260 & 0.8314 & 0.8032 & 0.8172 & 0.8208 \\ 
+  euclidean & distance & 0.8239 & 0.8115 & 0.8065 & 0.7890 & 0.8069 & 0.8211 \\ 
+  chebyshev & distance & 0.8055 & 0.7837 & 0.7858 & 0.7611 & 0.7931 & 0.7683 \\ 
+  plurality & rr & 0.8383 & 0.6527 & 0.6417 & 0.5277 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8389 & 0.8044 & 0.8042 & 0.6732 & 0.5453 & 0.5175 \\ 
+  t3approval & rr & 0.8041 & 0.7978 & 0.8176 & 0.8041 & 0.7183 & 0.5975 \\ 
+  t5approval & rr & 0.7909 & 0.7667 & 0.8216 & 0.7755 & 0.8106 & 0.8112 \\ 
+  t7approval & rr & 0.7809 & 0.7635 & 0.8187 & 0.8004 & 0.8001 & 0.7964 \\ 
+  borda\_count & rr & 0.8347 & 0.8117 & 0.8139 & 0.7784 & 0.8034 & 0.7963 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass1} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7781 & 0.7477 & 0.7584 & 0.7713 & 0.7467 & 0.7369 \\ 
+  euclidean & distance & 0.8143 & 0.7238 & 0.7475 & 0.7441 & 0.7403 & 0.7218 \\ 
+  chebyshev & distance & 0.7432 & 0.7184 & 0.7366 & 0.6768 & 0.6804 & 0.6663 \\ 
+  plurality & rr & 0.7911 & 0.5999 & 0.6028 & 0.5096 & 0.4963 & 0.4963 \\ 
+  t2approval & rr & 0.7840 & 0.7249 & 0.7414 & 0.6510 & 0.5163 & 0.4963 \\ 
+  t3approval & rr & 0.7574 & 0.7310 & 0.7274 & 0.7453 & 0.6287 & 0.5157 \\ 
+  t5approval & rr & 0.6989 & 0.7077 & 0.7306 & 0.7449 & 0.7410 & 0.7001 \\ 
+  t7approval & rr & 0.6622 & 0.6753 & 0.7036 & 0.7569 & 0.7375 & 0.7276 \\ 
+  borda\_count & rr & 0.7813 & 0.7146 & 0.7314 & 0.7206 & 0.7208 & 0.7161 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass2} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7188 & 0.5199 & 0.5731 & 0.4974 & 0.5000 & 0.5000 \\ 
+  euclidean & distance & 0.6702 & 0.5532 & 0.5507 & 0.4974 & 0.5000 & 0.5000 \\ 
+  chebyshev & distance & 0.6196 & 0.5199 & 0.5506 & 0.4974 & 0.5000 & 0.5000 \\ 
+  plurality & rr & 0.6779 & 0.5250 & 0.5250 & 0.5000 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.6529 & 0.5532 & 0.5532 & 0.5000 & 0.5000 & 0.5000 \\ 
+  t3approval & rr & 0.6297 & 0.5532 & 0.5507 & 0.5000 & 0.5000 & 0.5000 \\ 
+  t5approval & rr & 0.5072 & 0.4949 & 0.5174 & 0.4974 & 0.5000 & 0.5000 \\ 
+  t7approval & rr & 0.5199 & 0.5000 & 0.5199 & 0.5000 & 0.5000 & 0.5000 \\ 
+  borda\_count & rr & 0.6753 & 0.5532 & 0.5507 & 0.4974 & 0.5000 & 0.5000 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass4} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9184 & 0.7975 & 0.8875 & 0.8617 & 0.7975 & 0.7617 \\ 
+  euclidean & distance & 0.8851 & 0.8308 & 0.8567 & 0.7950 & 0.8258 & 0.7925 \\ 
+  chebyshev & distance & 0.8117 & 0.6975 & 0.8142 & 0.7450 & 0.7234 & 0.6925 \\ 
+  plurality & rr & 0.8851 & 0.4975 & 0.5475 & 0.5500 & 0.5500 & 0.5500 \\ 
+  t2approval & rr & 0.8517 & 0.7975 & 0.8617 & 0.5975 & 0.5500 & 0.5500 \\ 
+  t3approval & rr & 0.8592 & 0.8308 & 0.8592 & 0.7258 & 0.5975 & 0.5500 \\ 
+  t5approval & rr & 0.6950 & 0.6975 & 0.8592 & 0.7950 & 0.7617 & 0.6308 \\ 
+  t7approval & rr & 0.6283 & 0.6333 & 0.8308 & 0.8400 & 0.8258 & 0.7425 \\ 
+  borda\_count & rr & 0.8517 & 0.8617 & 0.8900 & 0.8617 & 0.7758 & 0.7425 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass5} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8476 & 0.7500 & 0.8476 & 0.8000 & 0.6500 & 0.6500 \\ 
+  euclidean & distance & 0.8451 & 0.7500 & 0.8000 & 0.7000 & 0.6000 & 0.5976 \\ 
+  chebyshev & distance & 0.7976 & 0.6500 & 0.6500 & 0.6000 & 0.6000 & 0.5976 \\ 
+  plurality & rr & 0.8476 & 0.5000 & 0.5000 & 0.5000 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.7976 & 0.7500 & 0.7500 & 0.6000 & 0.5000 & 0.5000 \\ 
+  t3approval & rr & 0.7976 & 0.7500 & 0.8000 & 0.7000 & 0.6000 & 0.5000 \\ 
+  t5approval & rr & 0.6976 & 0.6500 & 0.7000 & 0.7000 & 0.6000 & 0.6000 \\ 
+  t7approval & rr & 0.6976 & 0.6500 & 0.7000 & 0.7000 & 0.6000 & 0.6000 \\ 
+  borda\_count & rr & 0.8476 & 0.7500 & 0.7500 & 0.6500 & 0.5976 & 0.5976 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{glass6} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9140 & 0.8973 & 0.8973 & 0.8973 & 0.8973 & 0.8973 \\ 
+  euclidean & distance & 0.8973 & 0.8473 & 0.8586 & 0.8640 & 0.8613 & 0.8613 \\ 
+  chebyshev & distance & 0.9225 & 0.8559 & 0.8505 & 0.8671 & 0.8725 & 0.8586 \\ 
+  plurality & rr & 0.8973 & 0.6200 & 0.6367 & 0.5367 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8973 & 0.8473 & 0.9140 & 0.7413 & 0.5667 & 0.5167 \\ 
+  t3approval & rr & 0.8973 & 0.8640 & 0.8586 & 0.8973 & 0.6619 & 0.5667 \\ 
+  t5approval & rr & 0.8973 & 0.8640 & 0.8640 & 0.8640 & 0.8613 & 0.8640 \\ 
+  t7approval & rr & 0.8973 & 0.8640 & 0.8640 & 0.8640 & 0.8613 & 0.8473 \\ 
+  borda\_count & rr & 0.8946 & 0.8613 & 0.8613 & 0.8752 & 0.8752 & 0.8752 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{haberman} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.5282 & 0.5133 & 0.5821 & 0.5326 & 0.5496 & 0.5420 \\ 
+  euclidean & distance & 0.5421 & 0.5401 & 0.5714 & 0.5429 & 0.5684 & 0.5751 \\ 
+  chebyshev & distance & 0.5238 & 0.5391 & 0.5857 & 0.5896 & 0.5570 & 0.5636 \\ 
+  plurality & rr & 0.5359 & 0.4863 & 0.5090 & 0.5125 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.5435 & 0.5423 & 0.5716 & 0.5109 & 0.4978 & 0.5000 \\ 
+  t3approval & rr & 0.5557 & 0.5387 & 0.5736 & 0.5339 & 0.4956 & 0.5000 \\ 
+  t5approval & rr & 0.5292 & 0.5074 & 0.5791 & 0.5536 & 0.5291 & 0.5201 \\ 
+  t7approval & rr & 0.5663 & 0.5328 & 0.5866 & 0.5345 & 0.5729 & 0.5295 \\ 
+  borda\_count & rr & 0.5322 & 0.5342 & 0.5692 & 0.5447 & 0.5563 & 0.5648 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{haberman} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.5282 & 0.5133 & 0.5821 & 0.5326 & 0.5496 & 0.5420 \\ 
+  euclidean & distance & 0.5421 & 0.5401 & 0.5714 & 0.5429 & 0.5684 & 0.5751 \\ 
+  chebyshev & distance & 0.5238 & 0.5391 & 0.5857 & 0.5896 & 0.5570 & 0.5636 \\ 
+  plurality & rr & 0.5359 & 0.4863 & 0.5090 & 0.5125 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.5435 & 0.5423 & 0.5716 & 0.5109 & 0.4978 & 0.5000 \\ 
+  t3approval & rr & 0.5557 & 0.5387 & 0.5736 & 0.5339 & 0.4956 & 0.5000 \\ 
+  t5approval & rr & 0.5292 & 0.5074 & 0.5791 & 0.5536 & 0.5291 & 0.5201 \\ 
+  t7approval & rr & 0.5663 & 0.5328 & 0.5866 & 0.5345 & 0.5729 & 0.5295 \\ 
+  borda\_count & rr & 0.5322 & 0.5342 & 0.5692 & 0.5447 & 0.5563 & 0.5648 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{ionospheren} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8479 & 0.8390 & 0.8523 & 0.8541 & 0.8503 & 0.8441 \\ 
+  euclidean & distance & 0.8164 & 0.7736 & 0.7854 & 0.7830 & 0.7750 & 0.7670 \\ 
+  chebyshev & distance & 0.8084 & 0.7596 & 0.7993 & 0.8075 & 0.8115 & 0.8075 \\ 
+  plurality & rr & 0.8276 & 0.7395 & 0.8070 & 0.8088 & 0.7906 & 0.7335 \\ 
+  t2approval & rr & 0.8641 & 0.8033 & 0.8410 & 0.8208 & 0.8130 & 0.8168 \\ 
+  t3approval & rr & 0.8482 & 0.7996 & 0.8387 & 0.8390 & 0.8072 & 0.7993 \\ 
+  t5approval & rr & 0.8284 & 0.7996 & 0.8490 & 0.8386 & 0.8368 & 0.8190 \\ 
+  t7approval & rr & 0.8349 & 0.7678 & 0.8211 & 0.8347 & 0.8426 & 0.8304 \\ 
+  borda\_count & rr & 0.7965 & 0.7558 & 0.7931 & 0.7872 & 0.7750 & 0.7750 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{iris} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9450 & 0.9450 & 0.9550 & 0.9600 & 0.9600 & 0.9600 \\ 
+  euclidean & distance & 0.9550 & 0.9650 & 0.9550 & 0.9550 & 0.9650 & 0.9700 \\ 
+  chebyshev & distance & 0.9600 & 0.9550 & 0.9550 & 0.9450 & 0.9550 & 0.9650 \\ 
+  plurality & rr & 0.9550 & 0.7000 & 0.6850 & 0.5650 & 0.5100 & 0.5000 \\ 
+  t2approval & rr & 0.9550 & 0.9600 & 0.9450 & 0.7800 & 0.6050 & 0.5200 \\ 
+  t3approval & rr & 0.9550 & 0.9500 & 0.9550 & 0.9400 & 0.8000 & 0.6300 \\ 
+  t5approval & rr & 0.9400 & 0.9400 & 0.9500 & 0.9500 & 0.9650 & 0.9600 \\ 
+  t7approval & rr & 0.9100 & 0.9100 & 0.9650 & 0.9650 & 0.9600 & 0.9550 \\ 
+  borda\_count & rr & 0.9550 & 0.9550 & 0.9500 & 0.9550 & 0.9650 & 0.9650 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{iris0} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\ 
+  euclidean & distance & 1.0000 & 1.0000 & 0.9900 & 1.0000 & 1.0000 & 1.0000 \\ 
+  chebyshev & distance & 0.9900 & 0.9900 & 0.9900 & 0.9900 & 0.9900 & 0.9900 \\ 
+  plurality & rr & 1.0000 & 0.7600 & 0.7600 & 0.5750 & 0.5150 & 0.5000 \\ 
+  t2approval & rr & 1.0000 & 1.0000 & 1.0000 & 0.8000 & 0.6100 & 0.5350 \\ 
+  t3approval & rr & 1.0000 & 1.0000 & 0.9900 & 1.0000 & 0.9000 & 0.6950 \\ 
+  t5approval & rr & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\ 
+  t7approval & rr & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\ 
+  borda\_count & rr & 1.0000 & 1.0000 & 0.9900 & 1.0000 & 1.0000 & 1.0000 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{life\_expectancy} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.6404 & 0.6433 & 0.6473 & 0.6811 & 0.6933 & 0.6820 \\ 
+  euclidean & distance & 0.6241 & 0.6316 & 0.6347 & 0.6879 & 0.6893 & 0.6925 \\ 
+  chebyshev & distance & 0.6103 & 0.6272 & 0.6518 & 0.6822 & 0.6838 & 0.6886 \\ 
+  plurality & rr & 0.6241 & 0.5419 & 0.5358 & 0.5198 & 0.5174 & 0.5105 \\ 
+  t2approval & rr & 0.6378 & 0.6294 & 0.6020 & 0.5638 & 0.5483 & 0.5424 \\ 
+  t3approval & rr & 0.6240 & 0.6452 & 0.6390 & 0.6404 & 0.5869 & 0.5729 \\ 
+  t5approval & rr & 0.6181 & 0.6487 & 0.6606 & 0.6879 & 0.6683 & 0.6345 \\ 
+  t7approval & rr & 0.6199 & 0.6320 & 0.6597 & 0.6870 & 0.6915 & 0.6704 \\ 
+  borda\_count & rr & 0.6222 & 0.6294 & 0.6398 & 0.6828 & 0.6893 & 0.6883 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_abalone\_sex} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.6410 & 0.6361 & 0.6900 & 0.7030 & 0.6739 & 0.6787 \\ 
+  euclidean & distance & 0.6473 & 0.6320 & 0.6895 & 0.7087 & 0.6765 & 0.6934 \\ 
+  chebyshev & distance & 0.6464 & 0.6498 & 0.6567 & 0.6818 & 0.6880 & 0.6677 \\ 
+  plurality & rr & 0.6470 & 0.5935 & 0.5879 & 0.5401 & 0.5123 & 0.5166 \\ 
+  t2approval & rr & 0.6370 & 0.6313 & 0.6814 & 0.5979 & 0.5448 & 0.5066 \\ 
+  t3approval & rr & 0.6396 & 0.6353 & 0.6755 & 0.6561 & 0.6308 & 0.5639 \\ 
+  t5approval & rr & 0.6489 & 0.6429 & 0.6665 & 0.6913 & 0.7014 & 0.6777 \\ 
+  t7approval & rr & 0.6411 & 0.6344 & 0.6378 & 0.6654 & 0.6843 & 0.6826 \\ 
+  borda\_count & rr & 0.6444 & 0.6396 & 0.6826 & 0.7021 & 0.6832 & 0.6832 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_audit\_risk} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9499 & 0.9369 & 0.9459 & 0.9404 & 0.9351 & 0.9135 \\ 
+  euclidean & distance & 0.9446 & 0.9421 & 0.9459 & 0.9298 & 0.9243 & 0.9187 \\ 
+  chebyshev & distance & 0.9570 & 0.9497 & 0.9409 & 0.9426 & 0.9426 & 0.9479 \\ 
+  plurality & rr & 0.9410 & 0.6583 & 0.9054 & 0.6310 & 0.5381 & 0.6463 \\ 
+  t2approval & rr & 0.9407 & 0.9386 & 0.9392 & 0.9002 & 0.6820 & 0.8078 \\ 
+  t3approval & rr & 0.9477 & 0.9458 & 0.9423 & 0.9302 & 0.9033 & 0.9163 \\ 
+  t5approval & rr & 0.9387 & 0.9424 & 0.9371 & 0.9263 & 0.9263 & 0.9426 \\ 
+  t7approval & rr & 0.9301 & 0.9350 & 0.9281 & 0.9246 & 0.9298 & 0.9298 \\ 
+  borda\_count & rr & 0.9391 & 0.9421 & 0.9459 & 0.9295 & 0.9298 & 0.9135 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_balancen} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7180 & 0.7175 & 0.7388 & 0.7555 & 0.7726 & 0.7791 \\ 
+  euclidean & distance & 0.7218 & 0.7179 & 0.7487 & 0.7644 & 0.7736 & 0.7872 \\ 
+  chebyshev & distance & 0.7217 & 0.7276 & 0.7460 & 0.7528 & 0.7627 & 0.7671 \\ 
+  plurality & rr & 0.7201 & 0.6170 & 0.6184 & 0.5302 & 0.5129 & 0.5043 \\ 
+  t2approval & rr & 0.7201 & 0.7179 & 0.7322 & 0.6671 & 0.6006 & 0.5514 \\ 
+  t3approval & rr & 0.7239 & 0.7319 & 0.7500 & 0.7499 & 0.7293 & 0.6673 \\ 
+  t5approval & rr & 0.7212 & 0.7277 & 0.7533 & 0.7643 & 0.7687 & 0.7599 \\ 
+  t7approval & rr & 0.7381 & 0.7345 & 0.7498 & 0.7748 & 0.7753 & 0.7736 \\ 
+  borda\_count & rr & 0.7201 & 0.7277 & 0.7601 & 0.7770 & 0.7735 & 0.7757 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_banknote} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9588 & 0.9488 & 0.9575 & 0.9544 & 0.9467 & 0.9227 \\ 
+  euclidean & distance & 0.9804 & 0.9767 & 0.9700 & 0.9544 & 0.9398 & 0.9461 \\ 
+  chebyshev & distance & 0.9867 & 0.9767 & 0.9700 & 0.9561 & 0.9565 & 0.9648 \\ 
+  plurality & rr & 0.9713 & 0.6254 & 0.6408 & 0.5083 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9783 & 0.9690 & 0.9767 & 0.7295 & 0.5314 & 0.5000 \\ 
+  t3approval & rr & 0.9683 & 0.9683 & 0.9700 & 0.9673 & 0.7929 & 0.5897 \\ 
+  t5approval & rr & 0.9417 & 0.9417 & 0.9767 & 0.9606 & 0.9544 & 0.9440 \\ 
+  t7approval & rr & 0.9340 & 0.9340 & 0.9600 & 0.9544 & 0.9398 & 0.9377 \\ 
+  borda\_count & rr & 0.9804 & 0.9700 & 0.9700 & 0.9481 & 0.9398 & 0.9398 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_contraceptiven} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.5267 & 0.5497 & 0.5492 & 0.5671 & 0.5747 & 0.5698 \\ 
+  euclidean & distance & 0.5505 & 0.5410 & 0.5567 & 0.5645 & 0.5699 & 0.5470 \\ 
+  chebyshev & distance & 0.5372 & 0.5425 & 0.5558 & 0.5532 & 0.5441 & 0.5603 \\ 
+  plurality & rr & 0.5450 & 0.5220 & 0.5294 & 0.5024 & 0.4977 & 0.5014 \\ 
+  t2approval & rr & 0.5438 & 0.5468 & 0.5434 & 0.5181 & 0.5078 & 0.4863 \\ 
+  t3approval & rr & 0.5420 & 0.5465 & 0.5522 & 0.5750 & 0.5243 & 0.4994 \\ 
+  t5approval & rr & 0.5133 & 0.5253 & 0.5675 & 0.5696 & 0.5852 & 0.5342 \\ 
+  t7approval & rr & 0.5179 & 0.5270 & 0.5882 & 0.5739 & 0.5763 & 0.5543 \\ 
+  borda\_count & rr & 0.5628 & 0.5372 & 0.5592 & 0.5779 & 0.5795 & 0.5753 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_egg\_eye\_state} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.6535 & 0.6834 & 0.6385 & 0.5912 & 0.6173 & 0.5788 \\ 
+  euclidean & distance & 0.6606 & 0.6250 & 0.6339 & 0.6355 & 0.6039 & 0.5776 \\ 
+  chebyshev & distance & 0.6781 & 0.6164 & 0.6015 & 0.5850 & 0.5788 & 0.5737 \\ 
+  plurality & rr & 0.6681 & 0.5724 & 0.5532 & 0.6276 & 0.5701 & 0.5727 \\ 
+  t2approval & rr & 0.6588 & 0.6457 & 0.6508 & 0.6459 & 0.5948 & 0.6050 \\ 
+  t3approval & rr & 0.6035 & 0.5830 & 0.6451 & 0.6629 & 0.5798 & 0.6427 \\ 
+  t5approval & rr & 0.5474 & 0.5827 & 0.6201 & 0.6274 & 0.6349 & 0.5576 \\ 
+  t7approval & rr & 0.5639 & 0.6043 & 0.6232 & 0.5665 & 0.5678 & 0.5795 \\ 
+  borda\_count & rr & 0.6628 & 0.6057 & 0.6535 & 0.6503 & 0.6075 & 0.5879 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_penbased} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9392 & 0.9096 & 0.8967 & 0.9002 & 0.8652 & 0.8647 \\ 
+  euclidean & distance & 0.9430 & 0.9131 & 0.8929 & 0.8781 & 0.8777 & 0.8591 \\ 
+  chebyshev & distance & 0.9097 & 0.9042 & 0.8689 & 0.8541 & 0.8389 & 0.8337 \\ 
+  plurality & rr & 0.9393 & 0.6997 & 0.6850 & 0.7291 & 0.6536 & 0.6143 \\ 
+  t2approval & rr & 0.9337 & 0.9076 & 0.8874 & 0.8926 & 0.8281 & 0.7927 \\ 
+  t3approval & rr & 0.9228 & 0.9118 & 0.8929 & 0.8912 & 0.8929 & 0.8983 \\ 
+  t5approval & rr & 0.8727 & 0.8949 & 0.8726 & 0.8781 & 0.8745 & 0.8596 \\ 
+  t7approval & rr & 0.8652 & 0.8705 & 0.8596 & 0.8742 & 0.8779 & 0.8520 \\ 
+  borda\_count & rr & 0.9375 & 0.9153 & 0.8874 & 0.8912 & 0.8798 & 0.8667 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_skin} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9721 & 0.9669 & 0.9595 & 0.9718 & 0.9718 & 0.9718 \\ 
+  euclidean & distance & 0.9746 & 0.9669 & 0.9569 & 0.9718 & 0.9718 & 0.9718 \\ 
+  chebyshev & distance & 0.9646 & 0.9644 & 0.9595 & 0.9667 & 0.9718 & 0.9718 \\ 
+  plurality & rr & 0.9721 & 0.6849 & 0.6849 & 0.5513 & 0.5077 & 0.5026 \\ 
+  t2approval & rr & 0.9695 & 0.9669 & 0.9669 & 0.7667 & 0.6000 & 0.5410 \\ 
+  t3approval & rr & 0.9695 & 0.9669 & 0.9569 & 0.9718 & 0.7821 & 0.6308 \\ 
+  t5approval & rr & 0.9667 & 0.9641 & 0.9718 & 0.9692 & 0.9641 & 0.9641 \\ 
+  t7approval & rr & 0.9667 & 0.9641 & 0.9641 & 0.9641 & 0.9692 & 0.9641 \\ 
+  borda\_count & rr & 0.9746 & 0.9669 & 0.9569 & 0.9718 & 0.9718 & 0.9718 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_weight\_height} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9050 & 0.8850 & 0.9200 & 0.9200 & 0.9200 & 0.9200 \\ 
+  euclidean & distance & 0.9050 & 0.8900 & 0.9050 & 0.9250 & 0.9200 & 0.9100 \\ 
+  chebyshev & distance & 0.8950 & 0.8850 & 0.9000 & 0.9250 & 0.9150 & 0.9100 \\ 
+  plurality & rr & 0.9050 & 0.5600 & 0.5600 & 0.5050 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8950 & 0.8900 & 0.8950 & 0.6500 & 0.5200 & 0.5050 \\ 
+  t3approval & rr & 0.8700 & 0.8550 & 0.9100 & 0.8650 & 0.6600 & 0.5100 \\ 
+  t5approval & rr & 0.8200 & 0.8200 & 0.8750 & 0.9250 & 0.8750 & 0.8350 \\ 
+  t7approval & rr & 0.7850 & 0.7850 & 0.8650 & 0.9200 & 0.9150 & 0.9100 \\ 
+  borda\_count & rr & 0.9050 & 0.8900 & 0.9050 & 0.9250 & 0.9150 & 0.9100 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{mini\_wifi\_localization} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9767 & 0.9833 & 0.9867 & 0.9767 & 0.9800 & 0.9800 \\ 
+  euclidean & distance & 0.9767 & 0.9700 & 0.9800 & 0.9833 & 0.9833 & 0.9833 \\ 
+  chebyshev & distance & 0.9767 & 0.9500 & 0.9633 & 0.9600 & 0.9600 & 0.9633 \\ 
+  plurality & rr & 0.9800 & 0.7867 & 0.7800 & 0.5600 & 0.5033 & 0.5000 \\ 
+  t2approval & rr & 0.9700 & 0.9567 & 0.9800 & 0.9233 & 0.6967 & 0.5400 \\ 
+  t3approval & rr & 0.9667 & 0.9600 & 0.9833 & 0.9900 & 0.9433 & 0.7600 \\ 
+  t5approval & rr & 0.9633 & 0.9567 & 0.9833 & 0.9833 & 0.9800 & 0.9800 \\ 
+  t7approval & rr & 0.9500 & 0.9467 & 0.9800 & 0.9800 & 0.9833 & 0.9767 \\ 
+  borda\_count & rr & 0.9733 & 0.9667 & 0.9767 & 0.9767 & 0.9767 & 0.9733 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{new\_thyroid} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9696 & 0.9073 & 0.9207 & 0.9065 & 0.8972 & 0.8919 \\ 
+  euclidean & distance & 0.9602 & 0.8838 & 0.9187 & 0.9000 & 0.8618 & 0.8545 \\ 
+  chebyshev & distance & 0.9468 & 0.8671 & 0.9053 & 0.8772 & 0.8545 & 0.8463 \\ 
+  plurality & rr & 0.9602 & 0.6228 & 0.6228 & 0.5073 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9367 & 0.8838 & 0.9045 & 0.6610 & 0.5463 & 0.5000 \\ 
+  t3approval & rr & 0.8924 & 0.8691 & 0.9208 & 0.8825 & 0.7309 & 0.5788 \\ 
+  t5approval & rr & 0.8382 & 0.8309 & 0.9008 & 0.9000 & 0.8691 & 0.8317 \\ 
+  t7approval & rr & 0.8162 & 0.8162 & 0.8772 & 0.8846 & 0.8618 & 0.8390 \\ 
+  borda\_count & rr & 0.9529 & 0.8764 & 0.9154 & 0.8919 & 0.8699 & 0.8626 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{seeds} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9464 & 0.9464 & 0.9464 & 0.9464 & 0.9357 & 0.9429 \\ 
+  euclidean & distance & 0.9393 & 0.9393 & 0.9393 & 0.9464 & 0.9429 & 0.9393 \\ 
+  chebyshev & distance & 0.9286 & 0.9357 & 0.9357 & 0.9286 & 0.9464 & 0.9464 \\ 
+  plurality & rr & 0.9393 & 0.6500 & 0.6571 & 0.5071 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9429 & 0.9393 & 0.9464 & 0.8250 & 0.5893 & 0.5107 \\ 
+  t3approval & rr & 0.9393 & 0.9393 & 0.9464 & 0.9357 & 0.8821 & 0.6857 \\ 
+  t5approval & rr & 0.9286 & 0.9250 & 0.9429 & 0.9536 & 0.9464 & 0.9321 \\ 
+  t7approval & rr & 0.9214 & 0.9143 & 0.9500 & 0.9393 & 0.9393 & 0.9536 \\ 
+  borda\_count & rr & 0.9393 & 0.9357 & 0.9357 & 0.9429 & 0.9357 & 0.9393 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{sonar} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8721 & 0.8775 & 0.8322 & 0.8278 & 0.7982 & 0.7877 \\ 
+  euclidean & distance & 0.8578 & 0.8784 & 0.8374 & 0.8073 & 0.8124 & 0.7870 \\ 
+  chebyshev & distance & 0.7385 & 0.7527 & 0.7746 & 0.7464 & 0.7462 & 0.7427 \\ 
+  plurality & rr & 0.8708 & 0.6554 & 0.6426 & 0.5407 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8506 & 0.8564 & 0.8658 & 0.7520 & 0.6294 & 0.5223 \\ 
+  t3approval & rr & 0.8424 & 0.8662 & 0.8455 & 0.8591 & 0.7450 & 0.6692 \\ 
+  t5approval & rr & 0.8356 & 0.8075 & 0.8515 & 0.8414 & 0.8120 & 0.7855 \\ 
+  t7approval & rr & 0.7502 & 0.7394 & 0.8048 & 0.8165 & 0.8161 & 0.7900 \\ 
+  borda\_count & rr & 0.7970 & 0.8010 & 0.7637 & 0.7673 & 0.7686 & 0.7482 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{vertebral\_column2} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.7648 & 0.7098 & 0.7624 & 0.7643 & 0.7640 & 0.7912 \\ 
+  euclidean & distance & 0.7990 & 0.7295 & 0.7767 & 0.7786 & 0.7795 & 0.7814 \\ 
+  chebyshev & distance & 0.7667 & 0.7393 & 0.7669 & 0.7788 & 0.7883 & 0.7612 \\ 
+  plurality & rr & 0.7912 & 0.5764 & 0.5819 & 0.5100 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.7681 & 0.7269 & 0.7560 & 0.6117 & 0.5426 & 0.5050 \\ 
+  t3approval & rr & 0.7352 & 0.6821 & 0.7614 & 0.7431 & 0.6564 & 0.5576 \\ 
+  t5approval & rr & 0.6810 & 0.6660 & 0.7655 & 0.7757 & 0.7707 & 0.7600 \\ 
+  t7approval & rr & 0.6352 & 0.6352 & 0.7600 & 0.7852 & 0.7714 & 0.7707 \\ 
+  borda\_count & rr & 0.7962 & 0.7098 & 0.7669 & 0.7857 & 0.7914 & 0.7912 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{vertebral\_column3} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.8197 & 0.8424 & 0.8419 & 0.8441 & 0.8442 & 0.8412 \\ 
+  euclidean & distance & 0.8393 & 0.8312 & 0.8287 & 0.8296 & 0.8371 & 0.8420 \\ 
+  chebyshev & distance & 0.8000 & 0.8272 & 0.8195 & 0.8182 & 0.8199 & 0.8390 \\ 
+  plurality & rr & 0.8296 & 0.6391 & 0.6311 & 0.5144 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.8258 & 0.8293 & 0.8149 & 0.7271 & 0.5677 & 0.5136 \\ 
+  t3approval & rr & 0.8060 & 0.8080 & 0.8368 & 0.8141 & 0.7389 & 0.6020 \\ 
+  t5approval & rr & 0.7891 & 0.7790 & 0.8330 & 0.8266 & 0.8498 & 0.8302 \\ 
+  t7approval & rr & 0.7841 & 0.7824 & 0.8175 & 0.8318 & 0.8406 & 0.8463 \\ 
+  borda\_count & rr & 0.8264 & 0.8223 & 0.8138 & 0.8258 & 0.8440 & 0.8388 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{wine} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9849 & 0.9682 & 0.9775 & 0.9687 & 0.9812 & 0.9812 \\ 
+  euclidean & distance & 0.9700 & 0.9574 & 0.9649 & 0.9687 & 0.9685 & 0.9761 \\ 
+  chebyshev & distance & 0.9555 & 0.9290 & 0.9567 & 0.9364 & 0.9611 & 0.9686 \\ 
+  plurality & rr & 0.9664 & 0.7905 & 0.7906 & 0.5472 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.9575 & 0.9571 & 0.9573 & 0.8805 & 0.6714 & 0.5175 \\ 
+  t3approval & rr & 0.9525 & 0.9525 & 0.9649 & 0.9600 & 0.9022 & 0.7398 \\ 
+  t5approval & rr & 0.9525 & 0.9450 & 0.9538 & 0.9638 & 0.9611 & 0.9609 \\ 
+  t7approval & rr & 0.9486 & 0.9389 & 0.9577 & 0.9685 & 0.9648 & 0.9570 \\ 
+  borda\_count & rr & 0.9664 & 0.9536 & 0.9686 & 0.9724 & 0.9741 & 0.9778 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{wisconsin} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.9436 & 0.9021 & 0.9603 & 0.9517 & 0.9507 & 0.9538 \\ 
+  euclidean & distance & 0.9107 & 0.8470 & 0.9282 & 0.9369 & 0.9472 & 0.9336 \\ 
+  chebyshev & distance & 0.8586 & 0.8394 & 0.9196 & 0.9383 & 0.9427 & 0.9408 \\ 
+  plurality & rr & 0.9096 & 0.7451 & 0.7575 & 0.5781 & 0.5356 & 0.5147 \\ 
+  t2approval & rr & 0.9169 & 0.8587 & 0.9398 & 0.8314 & 0.7026 & 0.5991 \\ 
+  t3approval & rr & 0.9129 & 0.8607 & 0.9366 & 0.9463 & 0.8942 & 0.7925 \\ 
+  t5approval & rr & 0.9004 & 0.8701 & 0.9356 & 0.9514 & 0.9599 & 0.9453 \\ 
+  t7approval & rr & 0.9043 & 0.8617 & 0.9273 & 0.9491 & 0.9523 & 0.9557 \\ 
+  borda\_count & rr & 0.9097 & 0.8575 & 0.9335 & 0.9452 & 0.9473 & 0.9422 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{yeast\_0\_3\_5\_9\_vs\_7\_8} 
+\begin{tabular}{llrrrrrr}
+  \hline
+method & type & 1 & 2 & 3 & 5 & 7 & 9 \\ 
+  \hline
+manhattan & distance & 0.6882 & 0.6112 & 0.6325 & 0.6090 & 0.5934 & 0.5967 \\ 
+  euclidean & distance & 0.6915 & 0.6145 & 0.6425 & 0.6190 & 0.6134 & 0.6034 \\ 
+  chebyshev & distance & 0.6748 & 0.6067 & 0.6201 & 0.6345 & 0.6356 & 0.6167 \\ 
+  plurality & rr & 0.6837 & 0.5189 & 0.5378 & 0.5200 & 0.5000 & 0.5000 \\ 
+  t2approval & rr & 0.6770 & 0.6156 & 0.6247 & 0.5778 & 0.5100 & 0.5100 \\ 
+  t3approval & rr & 0.6370 & 0.6156 & 0.6469 & 0.6134 & 0.5478 & 0.5189 \\ 
+  t5approval & rr & 0.5680 & 0.5445 & 0.6480 & 0.6101 & 0.6156 & 0.5867 \\ 
+  t7approval & rr & 0.5367 & 0.5289 & 0.6112 & 0.6234 & 0.6134 & 0.6056 \\ 
+  borda\_count & rr & 0.6793 & 0.6245 & 0.6447 & 0.6312 & 0.6123 & 0.6145 \\ 
+   \hline
+\end{tabular}
+\end{table}
+ 
