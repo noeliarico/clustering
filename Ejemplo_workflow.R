@@ -1,10 +1,101 @@
 library(factoextra)
+library(FactoMineR)
 data("USArrests")
 df <- scale(USArrests)
 apply(df, 2, summary)
 
 kmeans(df, 2, iter.max = 10, nstart = 1)
-fviz_nbclust(df, kmeans, wss)
+fviz_nbclust(df, kmeans, method = "wss") +
+  geom_vline(xintercept = 4, linetype = 2)+
+  labs(subtitle = "Elbow method")
+
+fviz_pca_var(PCA(df,  graph = FALSE), col.var="contrib",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE # Avoid text overlapping
+)
+
+fviz_pca_ind(PCA(df,  graph = FALSE), col.ind = "cos2",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE # Avoid text overlapping (slow if many points)
+)
+
+
+iris.pca <- PCA(iris[,-5], graph = FALSE)
+# Visualize
+# Use habillage to specify groups for coloring
+fviz_pca_ind(iris.pca,
+             label = "none", # hide individual labels
+             habillage = iris$Species, # color by groups
+             palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+             addEllipses = TRUE # Concentration ellipses
+)
+
+# 1. Loading and preparing data
+data("USArrests")
+df <- scale(USArrests)
+# 2. Compute k-means
+set.seed(123)
+km.res <- kmeans(scale(USArrests), 4, nstart = 25)
+# 3. Visualize
+library("factoextra")
+fviz_cluster(km.res, data = df,
+             palette = c("#00AFBB","#2E9FDF", "#E7B800", "#FC4E07"),
+             ggtheme = theme_minimal(),
+             main = "Partitioning Clustering Plot"
+)
+
+# 1. Loading and preparing data
+
+df <- scale(iris[,-5])
+# 2. Compute k-means
+set.seed(123)
+km.res <- kmeans(scale(iris[,-5]), 3, nstart = 25)
+# 3. Visualize
+library("factoextra")
+fviz_cluster(km.res, data = df,
+             palette = c("#00AFBB","#2E9FDF", "#E7B800", "#FC4E07"),
+             ggtheme = theme_minimal(),
+             main = "Partitioning Clustering Plot"
+)
+
+
+find_hull <- function(iris) iris[chull(iris$Petal.Width, iris$Petal.Length), ]
+hulls <- ddply(iris, "Species", find_hull)
+
+
+
+iris %>% select(Petal.Width, Petal.Length, Species) %>% group_by(Species) %>% group_map(~ find_hull(., "Petal.Width", "Petal.Length"))
+
+plot_real_clusters <- function(data, clusters, x, y) {
+  hulls <- data %>% 
+    group_by_at(clusters) %>% 
+    group_modify(~ find_hull(., x, y)) %>%
+    ungroup() %>%
+    bind_rows()
+
+  ggplot(data, aes_string(x = x, y = y,
+                   color = clusters, fill = clusters)) +
+    geom_point() +
+    geom_polygon(data = hulls, alpha = 0.1) +
+    theme_bw()
+}
+
+plot_real_clusters(iris, "Species", "Petal.Width", "Petal.Length")
+
+
+
+find_hull <- function(iris) iris[chull(iris$Petal.Width, iris$Petal.Length), ]
+hulls <- ddply(iris, "Species", find_hull)
+
+#plot with hull
+ggplot(iris,aes(x=mass,y=length,color=age))+geom_point()+
+  geom_polygon(data=hulls,fill=NA)+ theme_bw()
+
+
+library(cluster)
+clusplot(wine.stand, k.means.fit$cluster, main='2D representation of the Cluster solution',
+         color=TRUE, shade=TRUE,
+         labels=2, lines=0)
 
 # Compute k-means with k = 4
 set.seed(123)

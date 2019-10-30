@@ -1,0 +1,78 @@
+---
+title: "Benchmark datasets for clustering"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r libraries, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
+
+```{r functions, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE}
+find_hull <- function(data, x, y) {
+  indexes <- data %>% select(x, y) %>% chull()
+  data %>% slice(indexes)
+} 
+
+plot_real_clusters <- function(data, clusters, x = "V1", y = "V2") {
+  data <- get(data)
+  
+  hulls <- data %>% 
+    group_by_at(clusters) %>% 
+    group_modify(~ find_hull(., x, y)) %>%
+    ungroup() %>%
+    bind_rows()
+
+  ggplot(data, aes_string(x = x, y = y,
+                   color = clusters, fill = clusters)) +
+    geom_point() +
+    geom_polygon(data = hulls, alpha = 0.1) +
+    theme_bw()
+}
+
+output_dataset <- function(x) {
+  cat(x$the_info)
+  print(x$the_plot)
+}
+
+dataset_to_markdown <- function(data) {
+  dataname <- paste("#", data, "\n\n")
+  data <- get(data)
+  out <- paste0(
+    "\n\n",
+    paste(dataname),
+    paste("- features: ", ncol(data), "\n"),
+    paste("- objects: ", nrow(data), "\n"),
+    paste("- clusters: ", length(unique(data %>% pull(real_cluster))), "\n"),
+    "\n\n")
+  out
+}
+
+dataset_to_markdown_and_plot <- function(data) {
+  list("the_info" = dataset_to_markdown(data),
+       "the_plot" = plot_real_clusters(data, "real_cluster"))
+}
+
+```
+
+```{r data, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE}
+
+# Load data from rda files
+objects <- list.files("datasets/objects", full.names = TRUE)
+lapply(objects, load, .GlobalEnv)
+rm(objects)
+
+ds <- c("a1", "a2", "a3",
+        "s1", "s2", "s3", "s4")
+dsc <- paste0(ds, "c")
+
+```
+
+
+```{r results = "asis", echo = FALSE}
+all <- lapply(dsc, dataset_to_markdown_and_plot)
+a <- lapply(all, output_dataset)
+rm(a) # Not interested in the output, only in show the information
+```

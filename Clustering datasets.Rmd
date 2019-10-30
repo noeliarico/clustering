@@ -1,9 +1,0 @@
----
-title: "Clustering datasets"
-output: html_notebook
----
-
-## Clustering datasets
-
-### Synthetic data
-
