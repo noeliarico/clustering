@@ -76,4 +76,52 @@ save(a2, a2c, file = "datasets/objects/a2.RData")
 save(a3, a3c, file = "datasets/objects/a3.RData")
 
 
+dim064 <- read.table("datasets/files/dim064.txt")
+dim128 <- read.table("datasets/files/dim128.txt")
+dim256 <- read.table("datasets/files/dim256.txt")
+dim512 <- read.table("datasets/files/dim512.txt")
+dim1024 <- read.table("datasets/files/dim1024.txt")
 
+dim064c <- dim064 %>% 
+  bind_cols(read_csv("datasets/files/dim064-pa.txt", skip = 5, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:16))
+
+dim128c <- dim128 %>% 
+  bind_cols(read_csv("datasets/files/dim128-pa.txt", skip = 5, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:16))
+
+dim256c <- dim256 %>% 
+  bind_cols(read_csv("datasets/files/dim256-pa.txt", skip = 5, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:16))
+
+dim512c <- dim512 %>% 
+  bind_cols(read_csv("datasets/files/dim512-pa.txt", skip = 5, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:16))
+
+dim1024c <- dim1024 %>% 
+  bind_cols(read_csv("datasets/files/dim1024-pa.txt", skip = 5, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:16))
+
+save(dim064, dim064c, file = "datasets/objects/dim064.RData")
+save(dim128, dim128c, file = "datasets/objects/dim128.RData")
+save(dim256, dim256c, file = "datasets/objects/dim256.RData")
+save(dim512, dim512c, file = "datasets/objects/dim512.RData")
+save(dim1024, dim1024c, file = "datasets/objects/dim1024.RData")
+
+unbalance <- read.table("datasets/files/unbalance.txt")
+unbalancec <- unbalance %>% 
+  bind_cols(read_csv("datasets/files/unbalance-gt.txt", skip = 4, 
+                     col_names = "real_cluster", 
+                     col_types = cols(real_cluster = col_factor()))) %>%
+  mutate(real_cluster = factor(real_cluster, levels = 1:8))
+save(unbalance, unbalancec, file = "datasets/objects/unbalance.RData")

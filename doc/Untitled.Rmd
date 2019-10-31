@@ -62,12 +62,12 @@ dataset_to_markdown_and_plot <- function(data) {
 # Load data from rda files
 objects <- list.files("datasets/objects", full.names = TRUE)
 lapply(objects, load, .GlobalEnv)
-rm(objects)
 
-ds <- c("a1", "a2", "a3",
-        "s1", "s2", "s3", "s4")
+
+ds <- str_remove(list.files("datasets/objects", full.names = FALSE), ".RData")
 dsc <- paste0(ds, "c")
 
+rm(objects)
 ```
 
 

@@ -1,1 +1,0 @@
-void calculate_points(int *ranking, int *points, int *pn_objects);
