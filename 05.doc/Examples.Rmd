@@ -1,7 +1,9 @@
 ---
-title: "R Notebook"
+title: "Clustering con distintas distancias"
 output: html_notebook
 ---
+
+# Los datos
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 library(clusterlab)
@@ -11,7 +13,7 @@ library(consensus)
 ```
 
 
-```{r}
+```{r message=FALSE}
 data <- clusterlab(centers = 3, # the number of clusters to simulate 
                    # the number of units of the radius of the circle on which the clusters are generated
                    r = 2, 
@@ -31,10 +33,31 @@ data <- clusterlab(centers = 3, # the number of clusters to simulate
 Los datos generados aleatoriamente son los siguientes:
 
 ```{r}
-(points <- t(data$synthetic_data))
+(points <- as.tibble(t(data$synthetic_data)) %>% rename(x = 1, y = 2))
 ```
 
-Coy a mirar la distancia de c1s1 al resto de puntos. Esa distancia la voy a calcular utilizando 5 valores de minkowski diferentes
+```{r}
+# Clean the object so it has a good format
+clusters <- data$identity_matrix %>% pull(cluster)
+data <- points %>% mutate(cluster = clusters) 
+``` 
+
+Claramente, los clusters que se generan son:
+
+```{r}
+plot_real_clusters(data, "cluster", "x", "y")
+```
+
+```{r}
+kmeansM2 <- kmeans(data, centers = 3, nstart = 10)
+```
+
+```{r}
+kmeansM2$iter
+```
+
+<!-- 
+Voy a mirar la distancia de c1s1 al resto de puntos. Esa distancia la voy a calcular utilizando 5 valores de minkowski diferentes
 
 ```{r}
 for(thep in 1:5) {
@@ -43,4 +66,4 @@ for(thep in 1:5) {
   print(distp)
 }
 ```
-
+-->

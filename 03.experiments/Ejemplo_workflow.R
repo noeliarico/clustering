@@ -66,19 +66,7 @@ hulls <- ddply(iris, "Species", find_hull)
 
 iris %>% select(Petal.Width, Petal.Length, Species) %>% group_by(Species) %>% group_map(~ find_hull(., "Petal.Width", "Petal.Length"))
 
-plot_real_clusters <- function(data, clusters, x, y) {
-  hulls <- data %>% 
-    group_by_at(clusters) %>% 
-    group_modify(~ find_hull(., x, y)) %>%
-    ungroup() %>%
-    bind_rows()
 
-  ggplot(data, aes_string(x = x, y = y,
-                   color = clusters, fill = clusters)) +
-    geom_point() +
-    geom_polygon(data = hulls, alpha = 0.1) +
-    theme_bw()
-}
 
 plot_real_clusters(iris, "Species", "Petal.Width", "Petal.Length")
 
