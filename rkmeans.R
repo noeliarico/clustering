@@ -12,5 +12,12 @@ rkmeans <- function(data, k, ncenters, maxiter) {
      )
 }
 
+dyn.load("02.method/rkmeans/rkmeans.so")
 
+si <- iris[c(1,2,3,4,50,51,52,53,100,101,102,103),-5]
+
+out <- rkmeans(si, 3, 3, 5)
+
+set.seed(2020)
+out <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 1, trace = FALSE) 
 

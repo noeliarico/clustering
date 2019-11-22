@@ -28,6 +28,7 @@
 void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
                   int *pmaxiter, int *nc, double *wss)
 {
+  
   printf("Hola Noelia\n");
   int n = *pn, k = *pk, p = *pp, maxiter = *pmaxiter;
   int iter, i, j, c, it, inew = 0;
@@ -39,11 +40,12 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     cl[i] = -1;
   }
   
-  for(i = 0; i < 10; i++) {
-    printf("x[i]%f\n", x[i]);
-  }
-  
+  /* For a given random set of centers, */
   for(iter = 0; iter < maxiter; iter++) {
+    
+    printf("-----------------------------------------------------------------------------------------\n");
+    printf("----------------------------- Iter: %d ---------------------------------------------------\n", iter);
+    printf("-----------------------------------------------------------------------------------------\n");
     updated = FALSE;
     /* for each point */
     for(i = 0; i < n; i++) {
@@ -51,6 +53,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
       best = INFINITY;
       /* calculate the distance from the point to the cluster */
       for(j = 0; j < k; j++) {
+        printf("Distance between p%d (%f,%f) and c%d (%f,%f)", i+1, x[i], x[i+p], j+1, cen[j],cen[j+k]);
         dd = 0.0;
         /* sum the distance between each column of the center and the point*/
         for(c = 0; c < p; c++) {
@@ -61,40 +64,56 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
           //printf("k: %d\n", k);
           //printf("x[i+n*c]: %f\n", x[i+n*c]);
           int value = i+n*c;
-          printf("[i+n*c] %d\n", value);
+          //printf("[i+n*c] %d\n", value);
           value = j+k*c;
-          printf("[j+k*c]: %d\n", value);
+          //printf("[j+k*c]: %d\n", value);
           tmp = x[i+n*c] - cen[j+k*c];
-          printf("tmp: %f\n", tmp);
+          //printf("tmp: %f\n", tmp);
           dd += tmp * tmp;
-          printf("dd: %f\n", dd);
           //printf("dd: %f\n", dd);
-          printf("---------\n");
+          //printf("dd: %f\n", dd);
+          //printf("---------\n");
         }
         
+        printf(" = %f \n", dd);
+        
         if(dd < best) {
+          printf("| Distance %f better than best %f |\n", dd, best);
           best = dd;
           inew = j+1;
         }
+        
+        
+        //printf("---------\n");
       
-        printf("best: %f\n", best);
-        printf("---------\n");
+        //printf("best: %f\n", best);
+        //printf("---------\n");
         
 //      }
-//      if(cl[i] != inew) {
-//        updated = TRUE;
-//        cl[i] = inew;
-//      }
+      if(cl[i] != inew) {
+        updated = TRUE;
+        cl[i] = inew;
+        printf("| The cluster has been updated |\n");
+        
+      }
+      
+      
     }
-//    if(!updated) break;
+      printf(".------------------------------.\n");
+      printf("| Object assigned to cluster %d |\n", cl[i]);
+      printf(".------------------------------.\n");
+      printf("-----------------------------------------------------------------------------------------\n\n");
+    }
+      if(!updated) break;
+      
     /* update each centre */
-//    for(j = 0; j < k*p; j++) cen[j] = 0.0;
-//    for(j = 0; j < k; j++) nc[j] = 0;
-//    for(i = 0; i < n; i++) {
-//      it = cl[i] - 1; nc[it]++;
-//      for(c = 0; c < p; c++) cen[it+c*k] += x[i+c*n];
-    }
-//    for(j = 0; j < k*p; j++) cen[j] /= nc[j % k];
+      for(j = 0; j < k*p; j++) cen[j] = 0.0;
+      for(j = 0; j < k; j++) nc[j] = 0;
+      for(i = 0; i < n; i++) {
+        it = cl[i] - 1; nc[it]++;
+      for(c = 0; c < p; c++) cen[it+c*k] += x[i+c*n];
+    
+    for(j = 0; j < k*p; j++) cen[j] /= nc[j % k];
   }
   
   printf("Bye Noelia\n");
