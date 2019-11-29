@@ -20,7 +20,25 @@ rkmeans <-
   function(x, centers, iter.max = 10L, nstart = 1L, trace = FALSE)
   {
     #.Mimax <- .Machine$integer.max
-
+    Crkmeans <- function() {
+      Z <- .C("rkmeans", x, nobjects, nvariables,
+                   centers = centers, k,
+                   c1 = integer(nobjects), iter = iter.max,
+                   nc = integer(k), wss = double(k))
+      if(any(Z$nc == 0)) {
+        warning("empty cluster: try a better set of initial centers",
+                call. = FALSE)
+        Z$ifault <- 2L
+      }
+      if(Z$iter > iter.max) {
+        warning(sprintf(ngettext(iter.max,
+                                 "did not converge in %d iteration",
+                                 "did not converge in %d iterations"),
+                        iter.max), call. = FALSE, domain = NA)
+      }
+      Z
+    }
+    
     x <- as.matrix(x) # data to matrix so it can be used in C
     
     ## as.integer(<too large>) gives NA ==> not allowing too large nrow() / ncol():
@@ -30,10 +48,6 @@ rkmeans <-
     # Check if the parameter centers is valid
     if(missing(centers))
       stop("'centers' must be a number or a matrix")
-    
-    
-    
-    
     
     storage.mode(x) <- "double"
     if(length(centers) == 1L) { # If the center is a number then we create random centers
@@ -73,32 +87,15 @@ rkmeans <-
     storage.mode(centers) <- "double"
     
     
+    Z <- Crkmeans()
     
-    
-    
-    Z <- .C("rkmeans", x, nobjects, nvariables,
-            centers = centers, k,
-            c1 = integer(nobjects), iter = iter.max,
-            nc = integer(k), wss = double(k))
-    
-    
-    
-    if(any(Z$nc == 0))
-      warning("empty cluster: try a better set of initial centers",
-              call. = FALSE)
-    
-    if(Z$iter > iter.max) {
-      warning(sprintf(ngettext(iter.max,
-                               "did not converge in %d iteration",
-                               "did not converge in %d iterations"),
-                      iter.max), call. = FALSE, domain = NA)
-    }
+    #Z$iter <- Z$iter -1 # noelia
     
     best <- sum(Z$wss)
     if(nstart >= 2L && !is.null(cn))
       for(i in 2:nstart) {
         centers <- cn[sample.int(mm, k), , drop=FALSE]
-        ZZ <- do_one(nmeth)
+        ZZ <- Crkmeans()
         if((z <- sum(ZZ$wss)) < best) {
           Z <- ZZ
           best <- z
