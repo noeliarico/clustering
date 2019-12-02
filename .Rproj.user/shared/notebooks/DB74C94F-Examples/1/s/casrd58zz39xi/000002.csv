@@ -1,0 +1,7 @@
+"0","```r
+for(thep in 1:5) {
+  distp <- as.matrix(dist(points, method = \"minkowski\", p = thep))[-1, 1]
+  print(\"---------------------------------------------------------------------\")
+  print(distp)
+}
+```"
