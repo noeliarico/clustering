@@ -1,7 +1,0 @@
-"0","```r
-(points <- as.tibble(t(data$synthetic_data)) %>% rename(x = 1, y = 2))
-
-```"
-"1","`as.tibble()` is deprecated, use `as_tibble()` (but mind the new semantics).
-[90mThis warning is displayed once per session.[39m
-"

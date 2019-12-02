@@ -30,6 +30,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
              int *pmaxiter, int *nc, double *wss, int *pndist, int *pdist)
 {
   
+  
   //printf("Hola Noelia\n");
   int n = *pn, k = *pk, p = *pp, maxiter = *pmaxiter;
   int ndist = *pndist, dist = *pdist;
@@ -42,62 +43,53 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     cl[i] = -1;
   }
   
+  
   /* For a given random set of centers, */
   for(iter = 0; iter < maxiter; iter++) {
     
     //printf("-----------------------------------------------------------------------------------------\n");
-    //printf("----------------------------- Iter: %d ---------------------------------------------------\n", iter);
+    printf("\n----------------------------- Iter: %d ---------------------------------------------------\n", iter+1);
     //printf("-----------------------------------------------------------------------------------------\n");
     updated = FALSE;
     /* for each point */
     for(i = 0; i < n; i++) {
       //best = R_PosInf;
       best = INFINITY;
-      /* calculate the distance from the point to the cluster */
-      for(j = 0; j < k; j++) {
-        dd = 0.0;
-        /* sum the distance between each column of the center and the point*/
-        for(c = 0; c < p; c++) {
-          ////printf("i: %d\n", i);
-          ////printf("n: %d\n", n);
-          ////printf("c: %d\n", c);
-          ////printf("j: %d\n", j);
-          ////printf("k: %d\n", k);
-          ////printf("x[i+n*c]: %f\n", x[i+n*c]);
-          //int value = i+n*c;
-          ////printf("[i+n*c] %d\n", value);
-          //value = j+k*c;
-          ////printf("[j+k*c]: %d\n", value);
-          tmp = x[i+n*c] - cen[j+k*c]; 
-          ////printf("tmp: %f\n", tmp);
-          dd += tmp * tmp; // square the value
-          ////printf("dd: %f\n", dd);
-          ////printf("dd: %f\n", dd);
-          ////printf("---------\n");
-        }
         
-        printf("[%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+n], j+1, cen[j], cen[j+k], dd);
-        dd = distance_measure(dist, // index of distance to compute
-                         x, // data
+      if(dist < 100) { // for normal distances
+        /* calculate the distance from the point to each cluster */
+        for(j = 0; j < k; j++) {
+          dd = 0.0;
+          dd = distance_measure(dist, // index of distance to compute
+                           x, // data
+                           p, // total number of variables of the dataset
+                           n, // total number of objects of the dataset
+                           i, // calculating the distance from i to cluster j
+                           j, // index of the cluster
+                           k, // total number of clusters
+                           cen);
+          printf("[p%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+n], j+1, cen[j], cen[j+k], dd);
+          
+          if(dd < best) {
+            //printf("| Distance %f better than best %f |\n", dd, best);
+            best = dd;
+            inew = j+1;
+          }
+        } // end of calculate the distance from the point to the cluster
+      } // end of assign step for normal distances
+      
+      else { // for ranking rules
+        printf("[p%d] rankings... (%f,%f)\n", i+1, x[i], x[i+n]);
+        inew = srr(dist,
+                   x, // data
                          p, // total number of variables of the dataset
                          n, // total number of objects of the dataset
                          i, // calculating the distance from i to cluster j
-                         j, // index of the cluster
+                         //j, // index of the cluster
                          k, // total number of clusters
                          cen);
-        
-        if(dd < best) {
-          //printf("| Distance %f better than best %f |\n", dd, best);
-          best = dd;
-          inew = j+1;
-        }
-        
-        ////printf("---------\n");
-        
-        ////printf("best: %f\n", best);
-        ////printf("---------\n");
-        
-      } // end of calculate the distance from the point to the cluster
+      }
+      
       
       if(cl[i] != inew) {
         updated = TRUE;
@@ -106,20 +98,19 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
         
       } 
       
-      //printf(".------------------------------.\n");
-      printf("| Object assigned to cluster %d |\n", cl[i]);
-      printf("--------------------------------\n");
+      printf("--> Object assigned to cluster %d |\n", cl[i]);
+      //printf("--------------------------------\n");
       //printf("-----------------------------------------------------------------------------------------\n\n");
-      
-      
       
     }  // end of the assigning step, at this line all the points have been 
     // assigned to the cluster
     
     
+    
     // If the variable  update has non being modified in any of the points
     
     if(!updated) {
+      printf("All the points belong to the same cluster than in the previous iter\n");
       break;
     }
     // Updating step
@@ -145,6 +136,8 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
   // Calculate the within error
   // Initialice all errors to zero
   
+  
+  
   for(d = 0; d < ndist; d++) {
     //for(j = 0; j < k; j++) {
       //wss[d+ndist*j] = 0.0;
@@ -162,9 +155,10 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
       
       wss[d+ndist*it] += dd*dd;
     } 
+    
   }
-  printf("ndist = %d", ndist);
 }
+
 
 
 

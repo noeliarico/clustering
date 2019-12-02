@@ -1,6 +1,0 @@
-"0","```r
-kmeansM2 <- kmeans(data)
-
-```"
-"1","Error in kmeans(data) : 'centers' must be a number or a matrix
-"

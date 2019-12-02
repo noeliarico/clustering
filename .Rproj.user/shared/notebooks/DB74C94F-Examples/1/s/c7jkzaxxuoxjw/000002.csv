@@ -1,5 +1,0 @@
-"0","```r
-# Clean the object so it has a good format
-clusters <- data$identity_matrix %>% pull(cluster)
-data <- points %>% mutate(cluster = clusters) 
-```"

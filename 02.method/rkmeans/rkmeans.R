@@ -25,6 +25,7 @@ rkmeans <-
     }
     
     x <- as.matrix(x) # data to matrix so it can be used in C
+    print(x)
     
     ndist <- as.integer(length(distances))
     
@@ -78,12 +79,13 @@ rkmeans <-
     
     
     Z <- Crkmeans()
-    print("wss")
-    print(Z$wss)
-    best <- sum(Z$wss)
-    print(ndist)
+    #print("wss")
+    #print(Z$wss)
+    best <- sum(Z$wss) # original
+    #print(ndist)
     #Z$iter <- Z$iter -1 # noelia
     
+    best <- rowSums(Z$wss)# noelia
     
     if(nstart >= 2L && !is.null(cn)) {
       for(i in 2:nstart) {
