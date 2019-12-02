@@ -20,10 +20,10 @@ dyn.load("02.method/rkmeans/rkmeans.so")
 #out <- rkmeans(si, 3, 3, 5)
 
 set.seed(2020)
-out_rkmeans <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 2, trace = FALSE) 
+out_rkmeans <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 10, trace = FALSE) 
 
 set.seed(2020)
-out_kmeans <- kmeans(x = points, centers = 3, iter.max = 5, nstart = 2, algorithm = "Lloyd", trace = FALSE)
+out_kmeans <- kmeans(x = points, centers = 3, iter.max = 5, nstart = 1, algorithm = "Lloyd", trace = FALSE)
 
 # con la inicializacion aleatoria de los clusters da distinto orden
 expect_identical(out_rkmeans$cluster, out_kmeans$cluster)
@@ -36,3 +36,13 @@ expect_identical(out_rkmeans$size, out_kmeans$size)
 expect_identical(out_rkmeans$iter, out_kmeans$iter)
 expect_identical(out_rkmeans$ifault, out_kmeans$ifault)
 
+
+dyn.load("02.method/rkmeans/rkmeans.so")
+set.seed(2020)
+out_rkmeans1 <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 1, trace = FALSE, distances = c(1, 2, 3, 4, 5), dist = 1) 
+
+set.seed(2020)
+out_rkmeans2 <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 1, trace = FALSE, distances = c(1, 2, 3, 4, 5), dist = 2) 
+
+set.seed(2020)
+out_rkmeans4 <- rkmeans(x = points, centers = 3, iter.max = 5, nstart = 1, trace = FALSE, distances = c(1, 2, 3, 4, 5), dist = 4) 

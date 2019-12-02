@@ -1,5 +1,6 @@
 #include<math.h>
 #include<stdio.h>
+#include<stdlib.h>
 
 ////////////////////////////////////////////////////////////////////////////////
 // Lp Minkowski distance measures //////////////////////////////////////////////
@@ -104,30 +105,45 @@ double distance_measure(int distance, // index of distance to compute
                       double* cen) {// array of centers 
   int c;
   double dd = 0.0, tmp =0.0;
+  int xi, yi;
+  double sum, da, db;
   
   switch (distance) {
-  case 2:
-    for(c = 0; c < ncol; c++) {
-      //printf("i: %d\n", i);
-      //printf("n: %d\n", n);
-      //printf("c: %d\n", c);
-      //printf("j: %d\n", j);
-      //printf("k: %d\n", k);
-      //printf("x[i+n*c]: %f\n", x[i+n*c]);
-      //int value = i + nrow * c;
-      //printf("[i+n*c] %d\n", value);
-      //value = j + k * c;
-      //printf("[j+k*c]: %d\n", value);
+  
+  case 1: // manhattan distance
+    for(c = 0; c < ncol; c++) { 
       tmp = x[i+nrow*c] - cen[j+k*c];
-      printf("tmp en distances.c: %f\n", tmp);
-      dd += tmp * tmp; // square the value
-      //printf("dd: %f\n", dd);
-      //printf("dd: %f\n", dd);
-      //printf("---------\n");
+      dd += fabs(tmp); // add the absolute value of the difference
     }
+    return dd;
+    
+  case 2:
+    for(c = 0; c < ncol; c++) { // for each column
+      tmp = x[i+nrow*c] - cen[j+k*c]; // distance between point and center in that dimension
+      //printf("tmp en distances.c: %f\n", tmp);
+      dd += tmp * tmp; // square the value
+    }
+    dd = pow(dd, 1.0/2.0);
     printf("Euclidean distance en distances.c= %f \n", dd);
     return dd;
-    //break;
+    
+  case 3:
+    return -1;
+    
+  case 4: // cosine distance
+    
+    
+    
+    for(c = 0; c < ncol; c++) { 
+      xi = x[i+nrow*c];
+      yi = cen[j+k*c];
+      sum += xi * xi;
+      da += xi * yi;
+      db += yi * yi;
+    }
+    
+    return (sum / (sqrt(da) * sqrt(db)));
+    
   default:
     printf("Unknown distance");
     return 0.0;
