@@ -55,19 +55,19 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     for(i = 0; i < n; i++) {
       //best = R_PosInf;
       best = INFINITY;
-        
+      
       if(dist < 100) { // for normal distances
         /* calculate the distance from the point to each cluster */
         for(j = 0; j < k; j++) {
           dd = 0.0;
           dd = distance_measure(dist, // index of distance to compute
-                           x, // data
-                           p, // total number of variables of the dataset
-                           n, // total number of objects of the dataset
-                           i, // calculating the distance from i to cluster j
-                           j, // index of the cluster
-                           k, // total number of clusters
-                           cen);
+                                x, // data
+                                p, // total number of variables of the dataset
+                                n, // total number of objects of the dataset
+                                i, // calculating the distance from i to cluster j
+                                j, // index of the cluster
+                                k, // total number of clusters
+                                cen);
           printf("[p%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+n], j+1, cen[j], cen[j+k], dd);
           
           if(dd < best) {
@@ -79,15 +79,15 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
       } // end of assign step for normal distances
       
       else { // for ranking rules
-        printf("[p%d] rankings... (%f,%f)\n", i+1, x[i], x[i+n]);
+        //printf("[p%d] rankings... (%f,%f)\n", i+1, x[i], x[i+n]);
         inew = srr(dist,
                    x, // data
-                         p, // total number of variables of the dataset
-                         n, // total number of objects of the dataset
-                         i, // calculating the distance from i to cluster j
-                         //j, // index of the cluster
-                         k, // total number of clusters
-                         cen);
+                   p, // total number of variables of the dataset
+                   n, // total number of objects of the dataset
+                   i, // calculating the distance from i to cluster j
+                   //j, // index of the cluster
+                   k, // total number of clusters
+                   cen);
       }
       
       
@@ -108,6 +108,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     
     
     // If the variable  update has non being modified in any of the points
+    
     
     if(!updated) {
       printf("All the points belong to the same cluster than in the previous iter\n");
@@ -136,32 +137,25 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
   // Calculate the within error
   // Initialice all errors to zero
   
-  
-  
   for(d = 0; d < ndist; d++) {
     //for(j = 0; j < k; j++) {
-      //wss[d+ndist*j] = 0.0;
+    //wss[d+ndist*j] = 0.0;
     //}
     for(i = 0; i < n; i++) { // For each object of the dataset
       it = cl[i] - 1; // it stores the cluster of this object
       dd = distance_measure(d+1, // index of distance to compute
-                          x, // data
-                          p, // total number of variables of the dataset
-                          n, // total number of objects of the dataset
-                          i, // calculating the distance from i to cluster it
-                          it, // index of the cluster
-                          k, // total number of clusters
-                          cen);
+                            x, // data
+                            p, // total number of variables of the dataset
+                            n, // total number of objects of the dataset
+                            i, // calculating the distance from i to cluster it
+                            it, // index of the cluster
+                            k, // total number of clusters
+                            cen);
       
       wss[d+ndist*it] += dd*dd;
     } 
     
+    
+    
   }
 }
-
-
-
-
-
-
-

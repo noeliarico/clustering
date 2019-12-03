@@ -25,7 +25,7 @@ rkmeans <-
     }
     
     x <- as.matrix(x) # data to matrix so it can be used in C
-    print(x)
+    #print(x)
     
     ndist <- as.integer(length(distances))
     

@@ -5,20 +5,20 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4253962096",
+    "hash" : "879252017",
     "id" : "B0304809",
-    "lastKnownWriteTime" : 1575237199,
-    "last_content_update" : 1575237199783,
+    "lastKnownWriteTime" : 1575366649,
+    "last_content_update" : 1575366649083,
     "path" : "~/Desktop/Github/clustering/02.method/rkmeans/rkmeans.c",
     "project_path" : "02.method/rkmeans/rkmeans.c",
     "properties" : {
-        "cursorPosition" : "92,9",
-        "scrollLine" : "78"
+        "cursorPosition" : "137,34",
+        "scrollLine" : "134"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 10,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "c"

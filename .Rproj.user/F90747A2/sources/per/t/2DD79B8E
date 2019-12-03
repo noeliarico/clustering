@@ -5,20 +5,20 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1594523031",
+    "hash" : "1206511606",
     "id" : "2DD79B8E",
-    "lastKnownWriteTime" : 1575237190,
-    "last_content_update" : 1575237190594,
+    "lastKnownWriteTime" : 1575366606,
+    "last_content_update" : 1575366606649,
     "path" : "~/Desktop/Github/clustering/02.method/distances/distances.c",
     "project_path" : "02.method/distances/distances.c",
     "properties" : {
-        "cursorPosition" : "144,41",
-        "scrollLine" : "136"
+        "cursorPosition" : "428,6",
+        "scrollLine" : "416"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 6,
+    "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "c"

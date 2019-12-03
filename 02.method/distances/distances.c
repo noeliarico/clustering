@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 
-
+/*
 // x -> first vector
 // y -> second vector
 // pn -> length of the vectors
@@ -63,7 +63,7 @@ void dist_cosine(double *x, double *y, int *pn, double *result) {
   *result = sum / (sqrt(da) * sqrt(db));
 }
 
-
+*/
 
 double distance_measure(int distance, // index of distance to compute
                       double* x, // data
@@ -203,6 +203,7 @@ double distance_measure(int distance, // index of distance to compute
     //printf("sum = %f\n", sum);
     return sum;
     
+    
   case 9: // Matusita
     
     sum = 0.0, sum1 = 0.0;
@@ -295,13 +296,14 @@ double distance_measure(int distance, // index of distance to compute
     }
     
     
+    
   //////////////////////////////////////////////////////////////////////////////
   // PLURALITY /////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////
  
     
   default:
-    printf("Unknown distance");
+    //printf("Unknown distance [%d]\n",distance);
     return 0.0;
     
   }
@@ -323,7 +325,8 @@ int srr(int dist,
   int ranking[k];
   double points[k];
   
-  for(d = 1; d <= 6; d++) { // for each distance
+  for(d = 1; d <= 13; d++) { // for each distance
+    printf("Distance %d\n", d);
     for(j = 0; j < k; j++) { // for each cluster
      
       
@@ -336,6 +339,7 @@ int srr(int dist,
                             j, // index of the cluster
                             k, // total number of clusters
                             cen);
+      
       distance[j] = dd;
       printf("[p%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+nrow], j+1, cen[j], cen[j+k], dd);
       
@@ -343,11 +347,11 @@ int srr(int dist,
     
     // Now distance contains the distance d from the point i to each cluster
     
-    /*
-    for(iter = 0; iter < k; iter++) {
-      printf("%f ", distance[iter]);
-    }
-    printf("\n"); */
+    
+    //for(iter = 0; iter < k; iter++) {
+      //printf("%f ", distance[iter]);
+    //}
+    //printf("\n"); 
       
     // We are going to translate this measures to a ranking
       
@@ -380,8 +384,6 @@ int srr(int dist,
         }
       }
       
-      
-      
       //printf("--> min = %f\n", min);
       
       for(j = 0; j < k; j++) { 
@@ -393,11 +395,11 @@ int srr(int dist,
         } 
       }
       
-      /*
+      
       for(j = 0; j < k; j++) {
-        printf("%f ", distance[j]);
+        //printf("%f ", distance[j]);
       }
-      printf("\n"); */
+      //printf("\n"); 
       
       
       pos++; 
@@ -433,9 +435,9 @@ int srr(int dist,
     
     // print points
     for(j = 0; j < k; j++) { 
-      printf("Points: %f ", points[j]);
+      //printf("Points: %f ", points[j]);
     }
-    printf("\n");
+    //printf("\n");
     
   }
   
@@ -449,5 +451,5 @@ int srr(int dist,
   }
   
   
-  return j+1;
+  return the_cluster+1;
 }
