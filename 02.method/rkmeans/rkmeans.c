@@ -17,6 +17,7 @@
  *  https://www.R-project.org/Licenses/
  */
 
+
 //#include "modreg.h" /* for declarations for registration */
 #include <stdio.h>
 #include <math.h>
@@ -42,7 +43,6 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
   for(i = 0; i < n; i++) {
     cl[i] = -1;
   }
-  
   
   /* For a given random set of centers, */
   for(iter = 0; iter < maxiter; iter++) {
@@ -132,6 +132,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     // Compute the mean of each column so we have the centers of the clusters
     for(j = 0; j < k*p; j++) cen[j] /= nc[j % k];
   }
+  
   
   *pmaxiter = iter + 1;
   // Calculate the within error

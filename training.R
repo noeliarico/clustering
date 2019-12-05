@@ -7,8 +7,9 @@ train_rkmeans <- function(points, cen) {
   
   pb <- txtProgressBar(min = 0, max = 15)
   
-  desired_length <- 15 # 13+2
+  desired_length <- 14 # 13+2
   results <- vector(mode = "list", length = desired_length)
+  
   for(i in 1:13) {
     setTxtProgressBar(pb, i)
     set.seed(2020)
@@ -16,18 +17,21 @@ train_rkmeans <- function(points, cen) {
                            trace = FALSE, distances = 1:13, dist = i) 
     results[[i]] <- out_rkmeans
   }
-  setTxtProgressBar(pb, 14)
-  set.seed(2020)
-  out_rkmeans <- rkmeans(x = points, centers = cen, iter.max = 100, nstart = 1, 
-                         trace = FALSE, distances = 1:13, dist = 101) 
-  results[[14]] <- out_rkmeans
-  
+  # 
+  # setTxtProgressBar(pb, 14)
+  # set.seed(2020)
+  # out_rkmeans <- rkmeans(x = points, centers = cen, iter.max = 100, nstart = 1, 
+  #                        trace = FALSE, distances = 1:13, dist = 101) 
+  # results[[14]] <- out_rkmeans
+  # 
   setTxtProgressBar(pb, 15)
   set.seed(2020)
   out_rkmeans <- rkmeans(x = points, centers = cen, iter.max = 100, nstart = 1, 
                          trace = FALSE, distances = 1:13, dist = 102) 
-  results[[15]] <- out_rkmeans
+  results[[14]] <- out_rkmeans
   close(pb)
+  
+  names(results) <- distances
   return(results)
 }
 
@@ -46,26 +50,72 @@ sapply(results_a2, function(x) sum(x$tot.withinss))
 
 ###### Random datasets
 
-dr <- vector(mode = "list", length = 6)
-for(i in 1:6) {
-  resultsd1 <- train_rkmeans(datasets[[i]], i+2)
+distances <- c(
+# Lp Minkowski distance measures //////////////////////////////////////////////
+  "manhattan", # 1
+  "euclidean", # 2
+  "chebyshev", # 3
+# L1 distance measures ////////////////////////////////////////////////////////
+  "canberra", # 4
+  "gower", # 5
+# Inner product distance measures /////////////////////////////////////////////
+  "jaccard", # 6
+  "cosine", # 7
+# Squared Chord distance measures /////////////////////////////////////////////
+  "SqrdChrd", # 8
+  "matusita", # 9
+# Squared L2 distance measures ////////////////////////////////////////////////
+  "clark", # 10
+  "trngDiscr", # 11
+# Vicissitude distance measures ///////////////////////////////////////////////
+  "VSD3", # 12
+  "maxSymmSq", # 13
+
+  # Scoring distance functions
+  #"plurality", # 101
+  "bordaCount" # 102
+)
+
+ies <- rep(2:8, 5)
+dr <- vector(mode = "list", length = 35)
+for(i in 1:35) {
+  resultsd1 <- train_rkmeans(datasets[[i]], ies[i])
   dr[[i]] <- resultsd1
 }
 
-calculate_errors <- function(resultsd1) {
-  errorsd1 <- sapply(resultsd1, function(x) x$tot.withinss)
-  colnames(errorsd1) <- c(paste0("train_d", 1:13), "train_plurality", "train_borda")
-  rownames(errorsd1) <- c(paste0("error_d", 1:13))
-  colSums(errorsd1)
+calculate_errors <- function(resultsi) {
+  errorsi <- sapply(resultsi, function(x) x$tot.withinss)
+  rownames(errorsi) <- c(paste0("errord_", distances[1:13]))
+  errorsi
+  #colSums(errorsd1)
 }
 
 errors <- lapply(dr, calculate_errors)
 
+sorted_errors_by_dataset <- function(y) {
+  out <- lapply(1:nrow(y), function(x) {
+    sort(y[x,])
+  })
+  names(out) <- distances[1:13]
+  out
+}
 
-resultsd2 <- train_rkmeans(datasets[[2]], 4)
-sapply(resultsd2, function(x) sum(x$tot.withinss))
-resultsd3 <- train_rkmeans(datasets[[3]], 5)
-sapply(resultsd2, function(x) sum(x$tot.withinss))
+sebd <- lapply(errors, sorted_errors_by_dataset)
+# Create ranking
+(rankingsOfErrors <- lapply(sebd, function(x) lapply(x, ranking)))
+rankingsOfErrors <- lapply(rankingsOfErrors, function(x) Reduce(bind_rows, x))
+rankingsOfErrors <- lapply(rankingsOfErrors, profile_of_rankings)
+lapply(rankingsOfErrors, borda_count)
 
-save(dr, errors, file = "results.RData")
-load("results.RData")
+
+# iters
+iters <- lapply(dr, function(x) {unlist(lapply(x, function(y) y$iter))})
+lapply(iters, sort)
+
+pairs_comparison <- as_tibble(t(combn(distances, 2)), .name_repair =  ~ c("d1", "d2")) 
+colnames(pairs_comparison) <- c("d1", "d2")
+pairs_comparison <- pairs_comparison %>% filter(d1 != d2)
+
+#save(dr, errors, file = "results.RData")
+#load("results.RData")
+print("end")

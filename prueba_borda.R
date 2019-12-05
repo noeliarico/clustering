@@ -6,7 +6,6 @@ data <- clusterlab(centers = 5, # the number of clusters to simulate
                    numbervec = c(3, 3, 3, 3, 3),
                    # standard deviation of each cluster
                    sdvec = c(1, 3, 2, 1, 1),
-                   # how many units to push each cluster away from the initial placement
                    alphas = c(3, 5, 1, 4, 2),
                    # the number of features for the data
                    features = 2,

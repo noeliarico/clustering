@@ -103,7 +103,7 @@ double distance_measure(int distance, // index of distance to compute
     //printf("Euclidean distance en distances.c= %f \n", dd);
     return dd;
     
-  case 3: // Chebyshex distance
+  case 3: // Chebyshev distance
     max  = 0.0;
     sum1 = 0.0;
     for(c = 0; c < ncol; c++) { 
@@ -253,20 +253,20 @@ double distance_measure(int distance, // index of distance to compute
   // Vicissitude distance measures ///////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
     
-  case 12: // Vicis symmetric distance VSD
+  case 12: // Vicis symmetric distance VSD3
     
     sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
     for(c = 0; c < ncol; c++) { 
       xi = x[i+nrow*c];
       yi = cen[j+k*c];
       sum1 = (xi - yi) * (xi - yi);
-      if(xi < yi) {
+      if(xi > yi) {
         sum2 = xi;
       }
       else {
         sum2 = yi;
       }
-      sum2 = sum2 * sum2;
+      sum2 = sum2;
       if(sum2 > 0) {
         sum += sum1 / sum2;
       }
