@@ -363,13 +363,15 @@ int srr(int dist,
     // This happens when the centers are picked up randomly from the data
     // for the first iteration
     for(j = 0; j < k; j++) { 
-      if(distance[j] == 0) {
+      if(distance[j] == 0.0) {
         ranking[j] = pos;
         updated = 1;
       }
     }
     
-    if(updated == 1) pos++;
+    if(updated == 1) {
+      pos++;
+    }
     
     for(iter = 0; iter < k; iter++) {
       

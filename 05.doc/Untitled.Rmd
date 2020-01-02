@@ -64,15 +64,15 @@ objects <- list.files("datasets/objects", full.names = TRUE)
 lapply(objects, load, .GlobalEnv)
 
 
-ds <- str_remove(list.files("datasets/objects", full.names = FALSE), ".RData")
-dsc <- paste0(ds, "c")
+#ds <- str_remove(list.files("datasets/objects", full.names = FALSE), ".RData")
+#dsc <- paste0(ds, "c")
 
 rm(objects)
 ```
 
 
 ```{r results = "asis", echo = FALSE}
-all <- lapply(dsc, dataset_to_markdown_and_plot)
+all <- lapply(ds, dataset_to_markdown_and_plot)
 a <- lapply(all, output_dataset)
 rm(a) # Not interested in the output, only in show the information
 ```

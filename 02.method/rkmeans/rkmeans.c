@@ -17,7 +17,6 @@
  *  https://www.R-project.org/Licenses/
  */
 
-
 //#include "modreg.h" /* for declarations for registration */
 #include <stdio.h>
 #include <math.h>
