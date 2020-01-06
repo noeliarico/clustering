@@ -1,5 +1,8 @@
-
-for(the_seed in 1200:1500) {
+# The aim of this file is looking for a small dataset to use as an example for
+# explaining the method rkmeans. An example which illustrates good results of Borda
+for(the_seed in 1000:2500) { # Try 500 different seeds
+  
+  # Create a dataset of 2 varibles with 5 clustes of three points each
   data <- clusterlab(centers = 5, # the number of clusters to simulate 
                      # the number of units of the radius of the circle on which the clusters are generated
                      r = 2, 
@@ -10,45 +13,45 @@ for(the_seed in 1200:1500) {
                      alphas = c(3, 5, 1, 4, 2),
                      # the number of features for the data
                      features = 2,
-                     #seed = 1234)
-                     #seed = 1)
-                     #seed = 11234) # VSD3
                      seed = the_seed, showplots = FALSE)
-  
   (points <- as_tibble(t(data$synthetic_data)) %>% rename(x = 1, y = 2))
-  points <- points %>% mutate(cluster = data$identity_matrix$cluster)
-  #normalize <- function(x){((x-min(x))/(max(x)-min(x)))}
+  
+  #normalize <- function(x){((x-min(x))/(max(x)-min(x)))} # ya se hace en el train_rkmeans
   #points <- as_tibble(apply(points, 2, normalize))
-  ggplot(points, aes(x, y)) + geom_point(aes(color = cluster), size = 6) + theme_light()
+  points <- points %>% mutate(cluster = data$identity_matrix$cluster)
+  #ggplot(points, aes(x, y)) + geom_point(aes(color = cluster), size = 6) + theme_light()
   
+  #dyn.load("02.method/distances/distances.so")
+  #dyn.load("02.method/rkmeans/rkmeans.so")
   
-  
-  dyn.load("02.method/distances/distances.so")
-  dyn.load("02.method/rkmeans/rkmeans.so")
-  
-  for(n in 1:5000) {
+  #for(n in 1:5000) {
+    # Clustering with rkmeans
+    set.seed(the_seed)
     out_points <- train_rkmeans(points, 5, 5)
-    errors <- sapply(out_points, function(x) x$tot.withinss)
-    rownames(errors) <- c(paste0("errord_", distances[1:13]))
+    errors <- calculate_errors(out_points)
     errors <- sorted_errors_by_dataset(errors)
+    rankingsOfErrors <- lapply(errors, ranking)
+    rankingsOfErrors <- profile_of_rankings(Reduce(bind_rows, rankingsOfErrors))
+    rankingsOfErrors_borda <- borda_count(rankingsOfErrors)
     
-    total <- 0
-    for(i in 1:length(errors)) {
-      print(names(errors[[i]][1]))
-      if(names(errors[[i]][1]) == "borda_count") {
-        total <- total + 1
+    the_best <- names(rankingsOfErrors_borda)[rankingsOfErrors_borda == 1]
+    if(length(the_best) == 1) {
+      if(the_best == "bordaCount") {
+        sink("search.txt", append = TRUE)
+        cat("Seed ", the_seed, " -- The best!!\n")
+        cat(the_best, "\n")
+        sink()
+        print(paste0(the_seed,";", n))
+        #break() # El primero que encuentra es 1007
       }
+    } else {
+      sink("search.txt", append = TRUE)
+      cat("Seed", the_seed, "-- Ties\n")
+      cat(the_best, "\n")
+      sink()
     }
     
-    if(total == 1) {
-      print(paste0(the_seed,";", n))
-      break()
-    }
-  }
-  
-    
-      
-  
+  #}
   
   
 }

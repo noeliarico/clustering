@@ -105,6 +105,7 @@ rkmeans <-
       names(cluster) <- rn
     totss <- sum(scale(x, scale = FALSE)^2)
 
+    names(best) <- paste0("errord_",selected_distances)
     structure(list(cluster = cluster, centers = centers, totss = totss,
                    withinss = Z$wss, tot.withinss = best,
                    betweenss = totss - best, size = Z$nc,
@@ -122,7 +123,7 @@ print.rkmeans <- function(x, ...)
   #cat("\nClustering vector:\n")
   #print(x$cluster, ...)
   #cat("\nWithin cluster sum of squares by cluster:\n")
-  print(x$withinss, ...)
+  print(x$tot.withinss, ...)
   # ratio <- sprintf(" (between_SS / total_SS = %5.1f %%)\n",
   #                  100 * x$betweenss/x$totss)
   # cat(sub(".", getOption("OutDec"), ratio, fixed = TRUE),
