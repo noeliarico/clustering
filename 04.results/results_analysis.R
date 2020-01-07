@@ -37,7 +37,8 @@ rankingsOfErrors_toplot <- rankingsOfErrors_toplot %>% transmute_all(as.factor)
 # Compare the results by k
 ggplot(rankingsOfErrors_toplot, aes(position, dataset)) + 
   geom_tile(fill = "white", color = "black") +
-  geom_jitter(aes(color = method, shape = method), height = 0) +
+  #geom_jitter(aes(color = method, shape = method), height = 0) +
+  geom_point(aes(color = method, shape = method)) +
   scale_color_manual(values = c("red", rep("black", 13))) +
   scale_shape_manual(values = 0:14)  +
   facet_grid(k ~ ., scales = "free", space = "free")
@@ -46,6 +47,7 @@ ggplot(rankingsOfErrors_toplot, aes(position, dataset)) +
 ggplot(rankingsOfErrors_toplot, aes(position, dataset)) + 
   geom_tile(fill = "white", color = "black") +
   geom_jitter(aes(color = method, shape = method), height = 0) +
+  
   scale_color_manual(values = c("red", rep("black", 13))) +
   scale_shape_manual(values = 0:14)  +
   facet_grid(nfeatures ~ ., scales = "free", space = "free")

@@ -38,6 +38,4 @@ rankingsOfErrors <- profile_of_rankings(Reduce(bind_rows, rankingsOfErrors))
 rankingsOfErrors_borda <- borda_count(rankingsOfErrors)
 
 
-#}
-
 

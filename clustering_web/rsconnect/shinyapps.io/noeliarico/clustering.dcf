@@ -1,0 +1,12 @@
+name: clustering
+title: clustering
+username:
+account: noeliarico
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1629291
+bundleId: 2710914
+url: https://noeliarico.shinyapps.io/clustering/
+when: 1578365643.46457
+asMultiple: FALSE
+asStatic: FALSE

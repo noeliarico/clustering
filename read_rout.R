@@ -54,7 +54,7 @@ iters_info <- bind_rows(ps, cs) %>% mutate(point = as.factor(point)) %>%
 ggplot(points, aes(x, y)) + geom_point(aes(color = cluster), size = 6) + theme_light()
 
 # Predicted
-ggplot(iters_info, aes(x, y, shape = type)) + 
+ggplot(iters_info %>% filter(distance != "gower"), aes(x, y, shape = type)) + 
   geom_point(aes(color = cluster)) + 
   facet_grid(distance ~ iter) +#, ncol = 7) +
   #scale_color_manual(values = c("red", "black"))

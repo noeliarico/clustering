@@ -1,4 +1,3 @@
-datasets <- readRDS("datasets.rds")
 library(factoextra)
 library(FactoMineR)
 library(tidyverse)

@@ -1,0 +1,12 @@
+name: clustering_web
+title: clustering_web
+username:
+account: noeliarico
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1629286
+bundleId: 2710890
+url: https://noeliarico.shinyapps.io/clustering_web/
+when: 1578364918.70713
+asMultiple: FALSE
+asStatic: FALSE
