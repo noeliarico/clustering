@@ -3,6 +3,7 @@ library(clusterlab)
 library(tidyverse)
 library(testthat)
 
+# Load the methods developed in c
 dyn.load("02.method/distances/distances.so")
 dyn.load("02.method/rkmeans/rkmeans.so")
 

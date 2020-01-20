@@ -2,69 +2,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
-/*
-// x -> first vector
-// y -> second vector
-// pn -> length of the vectors
-// pr -> p value of the minkowski distance
-// result -> empty (0) vector of length pn to store the results
-void dist_minkowski(double *x, double *y, int *pn, int *pp, double *result) {
-  
-  int n = *pn;
-  int p = *pp;
-  //printf("p: %d\n", p);
-  //printf("p: %f\n", 1.0/p);
-  
-  double sum = 0;
-  for (int i = 0; i < n; i ++) {
-    //printf("- x[i] %f y[i] %f \n", x[i], y[i]);
-    sum += pow(x[i] - y[i], p);
-    //printf("-- sum: %f\n", sum);
-  }
-  //printf("sum: %f\n", sum);
-  *result = pow(sum, (1.0/p));
-}
-
-
-
-void dist_canberra(double *x, double *y, int *pn, double *result) {
-  
-  int n = *pn;
-  
-  double sum = 0;
-  for (int i = 0; i < n; i ++) {
-    //printf("- x[i] %f y[i] %f \n", x[i], y[i]);
-    if(fabs(x[i] + y[i]) > 0) {
-      sum += fabs(x[i] - y[i]) / fabs(x[i] + y[i]);
-    }
-    //printf("\n-- sum: %f\n", sum);
-    
-  }
-  //printf("sum: %f\n", sum);
-  *result = sum;
-}
-
-// mean character distance (MCD)
-
-void dist_cosine(double *x, double *y, int *pn, double *result) {
-  
-  int n = *pn;
-  double sum = 0;
-  double da = 0.0;
-  double db = 0.0;
-  
-  for (int i = 0; i < n; i ++) {
-    sum += x[i] * x[i] ;
-    da += x[i] * y[i] ;
-    db += y[i] * y[i] ;
-  }
-  
-  *result = sum / (sqrt(da) * sqrt(db));
-}
-
-*/
-
 double distance_measure(int distance, // index of distance to compute
                       double* x, // data
                       int ncol, // total number of variables of the dataset
@@ -76,9 +13,11 @@ double distance_measure(int distance, // index of distance to compute
   int c;
   double dd = 0.0, tmp =0.0;
   double xi = 0.0, yi = 0.0;
-  double sum, max, da, db;
+  double sum, max;
   double numerator, denominator;
   double sum1, sum2, sum3, sum4;
+
+  printf("Distance %d \n", distance);
   
   switch (distance) {
   
@@ -99,9 +38,9 @@ double distance_measure(int distance, // index of distance to compute
       //printf("tmp en distances.c: %f\n", tmp);
       dd += tmp * tmp; // square the value
     }
-    dd = pow(dd, 1.0/2.0);
+    //dd = pow(dd, 1.0/2.0);
     //printf("Euclidean distance en distances.c= %f \n", dd);
-    return dd;
+    return sqrt(dd);
     
   case 3: // Chebyshev distance
     max  = 0.0;
@@ -161,17 +100,18 @@ double distance_measure(int distance, // index of distance to compute
       sum3 += yi * yi;
       sum4 += xi * yi;
     }
-    if(sum1 == 0 || sum2 == 0 || sum3 == 0) {
+    if((sum2 + sum3 - sum4) == 0) {
       return 0;
     }
     else{
-      return (sum1 / (sum2 + sum3 + sum4));
+      return (sum1 / (sum2 + sum3 - sum4));
     }
     
     
   case 7: // Cosine distance 
     
     sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
+    double denom = 0.0;
     for(c = 0; c < ncol; c++) { 
       xi = x[i+nrow*c];
       yi = cen[j+k*c];
@@ -179,11 +119,12 @@ double distance_measure(int distance, // index of distance to compute
       sum2 += xi * xi;
       sum3 += yi * yi;
     }
-    if(sum1 == 0 || sum2 == 0 || sum3 == 0) {
+    denom = sqrt(sum2) * sqrt(sum3);
+    if(denom == 0) {
       return 0;
     }
     else {
-      return (1 - (sum1 / (sqrt(sum2) * sqrt(sum3))));
+      return (1 - (sum1 / denom));
     }
     
   ////////////////////////////////////////////////////////////////////////////////
@@ -214,7 +155,7 @@ double distance_measure(int distance, // index of distance to compute
       sum1 = sum1 * sum1; // square of the differences
       sum += sum1;
     }
-    return sum1;
+    return sqrt(sum);
     
   ////////////////////////////////////////////////////////////////////////////////
   // Squared L2 distance measures ////////////////////////////////////////////////
@@ -234,7 +175,33 @@ double distance_measure(int distance, // index of distance to compute
     }
     return sqrt(sum);
     
-  case 11: // Squared x2 distance, a.k.a triangular discrimination distance. This distance is a quasi distance
+  case 11:  // Neyman
+    
+    sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
+    for(c = 0; c < ncol; c++) { 
+      xi = x[i+nrow*c];
+      yi = cen[j+k*c];
+      sum1 = (xi - yi) * (xi - yi);
+      if(xi > 0) {
+        sum += sum1 / xi;
+      }
+    }
+    return sqrt(sum);
+    
+  case 12:  // Pearson
+    
+    sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
+    for(c = 0; c < ncol; c++) { 
+      xi = x[i+nrow*c];
+      yi = cen[j+k*c];
+      sum1 = (xi - yi) * (xi - yi);
+      if(yi > 0) {
+        sum += sum1 / yi;
+      }
+    }
+    return sqrt(sum);
+    
+  case 13: // Squared x2 distance, a.k.a triangular discrimination distance. This distance is a quasi distance
     
     sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
     for(c = 0; c < ncol; c++) { 
@@ -253,7 +220,7 @@ double distance_measure(int distance, // index of distance to compute
   // Vicissitude distance measures ///////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
     
-  case 12: // Vicis symmetric distance VSD3
+  case 14: // Vicis symmetric distance VSD3
     
     sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
     for(c = 0; c < ncol; c++) { 
@@ -266,14 +233,13 @@ double distance_measure(int distance, // index of distance to compute
       else {
         sum2 = yi;
       }
-      sum2 = sum2;
       if(sum2 > 0) {
         sum += sum1 / sum2;
       }
     }
     return sum;
   
-  case 13: // Max symmetric x2 distane MiSCSD
+  case 15: // Max symmetric x2 distane MiSCSD
     
     sum = 0.0, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;
     for(c = 0; c < ncol; c++) { 
@@ -284,23 +250,17 @@ double distance_measure(int distance, // index of distance to compute
         sum2 = sum1 / xi;
       }
       if(xi > 0) {
-        sum3 = sum1 / xi;
+        sum3 = sum1 / yi;
       }
     }
     
-    if(sum1 > sum2) {
+    if(sum2 > sum3) {
       return sum2;
     }
     else {
       return sum3;
     }
     
-    
-    
-  //////////////////////////////////////////////////////////////////////////////
-  // PLURALITY /////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////////////
- 
     
   default:
     //printf("Unknown distance [%d]\n",distance);
@@ -309,7 +269,6 @@ double distance_measure(int distance, // index of distance to compute
   }
 }
 
-
 int srr(int dist, 
         double* x, // data
                  int ncol, // total number of variables of the dataset
@@ -317,21 +276,23 @@ int srr(int dist,
                  int i, // calculating the distance from i to cluster j
                  //int j, // index of the cluster
                  int k, // total number of clusters
-                 double* cen) {// array of centers 
-  
-  int xi, yi, d, j, pos, iter, updated = 0, maxp = 0, the_cluster;
+                 double* cen,
+                 int ndist,
+                 int *selected_distances) {// array of centers 
+
+  int d, j, pos, iter, updated = 0, maxp = 0, the_cluster;
   double dd, min, max, newvalue;
   double distance[k];
   int ranking[k];
   double points[k];
   
-  for(d = 1; d <= 13; d++) { // for each distance
+  for(d = 0; d < 15; d++) { // for each distance
     printf("Distance %d\n", d);
     for(j = 0; j < k; j++) { // for each cluster
      
       
       // calculate the distance from the point to the cluster
-      dd = distance_measure(d, // index of the distance
+      dd = distance_measure(selected_distances[d], // index of the distance
                             x, // data
                             ncol, // total number of variables of the dataset
                             nrow, // total number of objects of the dataset

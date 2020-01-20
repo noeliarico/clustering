@@ -27,15 +27,14 @@
 #include "/Users/noeliarico/Desktop/Github/clustering/02.method/distances/distances.c"
 
 void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
-             int *pmaxiter, int *nc, double *wss, int *pndist, int *pdist)
+             int *pmaxiter, int *nc, double *wss, int *pndist, int *pdist,
+             int *selected_distances)
 {
   
-  
-  //printf("Hola Noelia\n");
   int n = *pn, k = *pk, p = *pp, maxiter = *pmaxiter;
   int ndist = *pndist, dist = *pdist;
   int iter, i, j, c, d, it, inew = 0;
-  double best, dd, tmp;
+  double best, dd;
   Rboolean updated; // 0 if false 1 if true
   
   /* For each row, initialize the cluster to which the instance belong to -1*/
@@ -86,7 +85,9 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
                    i, // calculating the distance from i to cluster j
                    //j, // index of the cluster
                    k, // total number of clusters
-                   cen);
+                   cen,
+                   ndist,
+                   selected_distances);
       }
       
       
@@ -132,7 +133,6 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     for(j = 0; j < k*p; j++) cen[j] /= nc[j % k];
   }
   
-  
   *pmaxiter = iter + 1;
   // Calculate the within error
   // Initialice all errors to zero
@@ -143,7 +143,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     //}
     for(i = 0; i < n; i++) { // For each object of the dataset
       it = cl[i] - 1; // it stores the cluster of this object
-      dd = distance_measure(d+1, // index of distance to compute
+      dd = distance_measure(selected_distances[d], // numeric code of the distance to compute
                             x, // data
                             p, // total number of variables of the dataset
                             n, // total number of objects of the dataset
@@ -158,4 +158,10 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     
     
   }
+  
+  //printf("------------------------- Ndist: %d \n", ndist);
+  //printf("------------------------- Selected distances\n ");
+  //for(d = 0; d < ndist; d++) {
+    //printf("%d-", selected_distances[d]);
+  //}
 }

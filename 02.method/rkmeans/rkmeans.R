@@ -1,5 +1,5 @@
 rkmeans <-
-  function(x, centers, iter.max = 10L, nstart = 1L, trace = FALSE, distances = 2, dist = 2)
+  function(x, centers, iter.max = 10L, nstart = 1L, trace = FALSE, selected_distances = c(1, 2), dist = 2)
   {
     #.Mimax <- .Machine$integer.max
     
@@ -8,7 +8,9 @@ rkmeans <-
       Z <- .C("rkmeans", x, nobjects, nvariables,
                 centers = centers, k,
                 c1 = integer(nobjects), iter = iter.max,
-                nc = integer(k), wss = wss, ndist = ndist, dist = as.integer(dist))
+                nc = integer(k), wss = wss, ndist = ndist, 
+                dist = as.integer(dist), 
+                sd = selected_distances)
       
       if(any(Z$nc == 0)) {
         warning("empty cluster: try a better set of initial centers",
@@ -27,7 +29,8 @@ rkmeans <-
     x <- as.matrix(x) # data to matrix so it can be used in C
     #print(x)
     
-    ndist <- as.integer(length(distances))
+    # Number of "distances" = Number of elected distances + 1 social choice function
+    ndist <- as.integer(length(selected_distances))
     
     ## as.integer(<too large>) gives NA ==> not allowing too large nrow() / ncol():
     nobjects <- as.integer(nrow(x)); if(is.na(nobjects)) stop("Too much objects")
@@ -66,7 +69,7 @@ rkmeans <-
     k <- as.integer(k) # Number of clusters to be created
     if(is.na(k)) stop("'invalid value of 'k'")
     
-    wss <- matrix(rep(double(k), length(distances)), ncol = k)
+    wss <- matrix(rep(double(k), length(selected_distances)), ncol = k)
     
     #wss <- double(k)
     

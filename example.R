@@ -19,18 +19,19 @@ data <- clusterlab(centers = 5, # the number of clusters to simulate
                    seed = the_seed, showplots = FALSE)
 (points <- as_tibble(t(data$synthetic_data)) %>% rename(x = 1, y = 2))
 
-#normalize <- function(x){((x-min(x))/(max(x)-min(x)))} # ya se hace en el train_rkmeans
+#normalize <- function(x){((x-min(x))/(max(x)-min(x)))} # this is already done in train_rkmeans
 #points <- as_tibble(apply(points, 2, normalize))
 points <- points %>% mutate(cluster = data$identity_matrix$cluster)
 #ggplot(points, aes(x, y)) + geom_point(aes(color = cluster), size = 6) + theme_light()
 
+# Load the methods just in case...
 dyn.load("02.method/distances/distances.so")
 dyn.load("02.method/rkmeans/rkmeans.so")
 
 #for(n in 1:5000) {
 # Clustering with rkmeans
 set.seed(the_seed)
-out_points <- train_rkmeans(points, 5, 5)
+out_points <- train_rkmeans(points, 5, iter.max = 1)
 errors <- calculate_errors(out_points)
 errors <- sorted_errors_by_dataset(errors)
 rankingsOfErrors <- lapply(errors, ranking)
