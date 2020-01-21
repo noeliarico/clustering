@@ -290,9 +290,10 @@ int srr(int dist,
     points[i] = 0.0;
   }
   
-  
   for(d = 0; d < ndist; d++) { // for each distance
+    
     the_d = selected_distances[d];
+    printf("The d %d", the_d);
     
     for(j = 0; j < k; j++) { // for each cluster
      
@@ -307,7 +308,7 @@ int srr(int dist,
                             cen);
       
       distance[j] = dd;
-      printf("[p%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+nrow], j+1, cen[j], cen[j+k], dd);
+      printf("[p%d] RANKING -> Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+nrow], j+1, cen[j], cen[j+k], dd);
       
     }
     
@@ -381,8 +382,8 @@ int srr(int dist,
     if(dist == 101) {
       for(j = 0; j < k; j++) { 
         printf("%d ", ranking[j]);
-        if(ranking[j] == 1){
-          points[j] += 1;
+        if(ranking[j] == 1) {
+          points[j] += 1.0;
         }
       }
       printf("\n");
@@ -398,11 +399,13 @@ int srr(int dist,
         }
       }
       printf("\n");
+      double max = (double) maxp;
+      printf("Max: %f\n", max);
       // Give points to each candidate according to their position
       // These points are stored directly in the vector points, which
       // updates the score of each candidate in each iteration
       for(j = 0; j < k; j++) { 
-        points[j] += (double) (maxp - ranking[j]);
+        points[j] += max - (double) ranking[j];
       }
     }
     

@@ -24,7 +24,7 @@
 #include "/Library/Frameworks/R.framework/Resources/include/Rmath.h"
 #include "/Library/Frameworks/R.framework/Resources/include/Rdefines.h"
 #include "/Library/Frameworks/R.framework/Resources/include/Rinternals.h"
-#include "/Users/noeliarico/Desktop/Github/clustering/02.method/distances/distances.c"
+#include "/Users/noelia/Desktop/Github/clustering/02.method/distances/distances.c"
 
 void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
              int *pmaxiter, int *nc, double *wss, int *pndist, int *pdist,
@@ -66,7 +66,8 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
                                 j, // index of the cluster
                                 k, // total number of clusters
                                 cen);
-          printf("[p%d] Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+n], j+1, cen[j], cen[j+k], dd);
+          printf("[p%d] DISTANCE -> Distance between p%d (%f,%f) and c%d (%f,%f) = %f \n", i+1, i+1, x[i], x[i+n], j+1, cen[j], cen[j+k], dd);
+          
           
           if(dd < best) {
             //printf("| Distance %f better than best %f |\n", dd, best);
