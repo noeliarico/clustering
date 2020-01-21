@@ -2,8 +2,8 @@
 # distance measure use for the clustering process
 # The row shows the error calculated with each of the distance measures for
 # every version of the clustering
-results_dataset_errors <- lapply(datasets_results[1:10], calculate_errors)
-names(results_dataset_errors) <- names(datasets[1:10])
+results_dataset_errors <- lapply(datasets_results, calculate_errors)
+names(results_dataset_errors) <- names(datasets)
 
 results_dataset_errors_sorted <- lapply(results_dataset_errors, sorted_errors_by_dataset)
 
