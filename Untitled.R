@@ -1,5 +1,3 @@
-selected_distances <- c(1:15)[!(c(1:15) %in% c(5,8,13))]
-
 distances <- c(
   # Lp Minkowski distance measures //////////////////////////////////////////////
   "man", # 1 - manhattan
@@ -27,3 +25,5 @@ distances <- c(
   #"plurality", # 101
   "bordaCount" # 102
 )
+
+selected_distances <- c(1:15)[!(c(1:15) %in% c(5,8,11,13))]

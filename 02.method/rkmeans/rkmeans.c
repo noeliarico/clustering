@@ -90,14 +90,13 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
                    selected_distances);
       }
       
-      
       if(cl[i] != inew) {
         updated = TRUE;
         cl[i] = inew;
         //printf("| The cluster has been updated |\n");
         
       } 
-      
+   
       printf("--> Object assigned to cluster %d |\n", cl[i]);
       //printf("--------------------------------\n");
       //printf("-----------------------------------------------------------------------------------------\n\n");
@@ -133,7 +132,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
     for(j = 0; j < k*p; j++) cen[j] /= nc[j % k];
   }
   
-  *pmaxiter = iter + 1;
+  *pmaxiter = iter + 1; // The one tu
   // Calculate the within error
   // Initialice all errors to zero
   
@@ -154,8 +153,6 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
       
       wss[d+ndist*it] += dd*dd;
     } 
-    
-    
     
   }
   

@@ -108,7 +108,7 @@ rkmeans <-
       names(cluster) <- rn
     totss <- sum(scale(x, scale = FALSE)^2)
 
-    names(best) <- paste0("errord_",selected_distances)
+    names(best) <- paste0("errord_",distances[selected_distances])
     structure(list(cluster = cluster, centers = centers, totss = totss,
                    withinss = Z$wss, tot.withinss = best,
                    betweenss = totss - best, size = Z$nc,

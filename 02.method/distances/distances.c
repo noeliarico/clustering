@@ -17,7 +17,7 @@ double distance_measure(int distance, // index of distance to compute
   double numerator, denominator;
   double sum1, sum2, sum3, sum4;
 
-  printf("Distance %d \n", distance);
+  printf("Computing the distance using: %d \n", distance);
   
   switch (distance) {
   
@@ -280,19 +280,24 @@ int srr(int dist,
                  int ndist,
                  int *selected_distances) {// array of centers 
 
-  int d, j, pos, iter, updated = 0, maxp = 0, the_cluster;
+  int d = 0, j, pos, iter, updated = 0, maxp = 0, the_cluster, the_d = 0;
   double dd, min, max, newvalue;
   double distance[k];
   int ranking[k];
   double points[k];
   
-  for(d = 0; d < 15; d++) { // for each distance
-    printf("Distance %d\n", d);
+  for(i = 0; i < k; i++) {
+    points[i] = 0.0;
+  }
+  
+  
+  for(d = 0; d < ndist; d++) { // for each distance
+    the_d = selected_distances[d];
+    
     for(j = 0; j < k; j++) { // for each cluster
      
-      
-      // calculate the distance from the point to the cluster
-      dd = distance_measure(selected_distances[d], // index of the distance
+      // Calculate the distance from the point to the cluster j
+      dd = distance_measure(the_d, // index of the distance
                             x, // data
                             ncol, // total number of variables of the dataset
                             nrow, // total number of objects of the dataset
@@ -307,15 +312,15 @@ int srr(int dist,
     }
     
     // Now distance contains the distance d from the point i to each cluster
-    
-    
-    //for(iter = 0; iter < k; iter++) {
-      //printf("%f ", distance[iter]);
-    //}
-    //printf("\n"); 
+    /*
+    for(iter = 0; iter < k; iter++) {
+      printf("%f ", distance[iter]);
+    }
+    printf("\n"); */
       
     // We are going to translate this measures to a ranking
       
+    // We need to iterate over the values of the distances stored in the vector distance
     // For each iter, check which is the mim value and then calculate the different
     // so the ones with 0 difference are the closest
     pos = 1;
@@ -334,16 +339,18 @@ int srr(int dist,
       pos++;
     }
     
+    // k is the total number of clusters
     for(iter = 0; iter < k; iter++) {
       
       min = INFINITY;
       
-      // get the minimum value
-      
-      
+      // Get the min value in the vector distance at the moment
       for(j = 0; j < k; j++) { 
-        if(distance[j] != 0 && distance[j] < min) {
-          min = distance[j];
+        // The ones with 0 does not count
+        if(distance[j] != 0) {
+          if(distance[j] < min) {
+            min = distance[j];
+          }
         }
       }
       
@@ -359,15 +366,15 @@ int srr(int dist,
       }
       
       
-      for(j = 0; j < k; j++) {
+      //for(j = 0; j < k; j++) {
         //printf("%f ", distance[j]);
-      }
+      //}
       //printf("\n"); 
       
-      
+      // Increment the position for the next
       pos++; 
       
-    }
+    } // For each ranking
     
     // ranking for this distance
     // plurality
@@ -382,32 +389,36 @@ int srr(int dist,
     }
     // borda
     else {
-      max = 0;
+      // For each cluster
       for(j = 0; j < k; j++) { 
         printf("%d ", ranking[j]);
+        // Find the position with the biggest value
         if(ranking[j] > maxp){
           maxp = ranking[j];
         }
       }
       printf("\n");
+      // Give points to each candidate according to their position
+      // These points are stored directly in the vector points, which
+      // updates the score of each candidate in each iteration
       for(j = 0; j < k; j++) { 
-        points[j] += maxp - ranking[j];
+        points[j] += (double) (maxp - ranking[j]);
       }
     }
     
     
-    // print points
+    // Print points
     for(j = 0; j < k; j++) { 
-      //printf("Points: %f ", points[j]);
+      printf("Points: %f ", points[j]);
     }
-    //printf("\n");
+    printf("\n");
     
-  }
+  } // end of "for each distance"
   
   maxp = 0;
-  the_cluster = 0;
+  the_cluster = 0; // Initial value of the cluster (empty)
   for(j = 0; j < k; j++) { 
-    if(points[j] > maxp){
+    if(points[j] > maxp) { // The cluster with more points is the winner
       maxp = points[j];
       the_cluster = j;
     }

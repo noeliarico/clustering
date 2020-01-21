@@ -5,8 +5,12 @@ ranking_to_latex <- function(ranking) {
   ranking <- paste0("$$", ranking, "$$")
   
   cat(ranking)
-  invisible(0)
+  invisible(ranking)
 }
 
 ranking_to_latex(rankingsOfErrors_borda)
-print(xtable(errors, digits = 3, caption = "Points of the dataset"), row_number = FALSE)
+print(xtable(errors, digits = 3, caption = "Values of each method for the different errors."), row_number = FALSE)
+
+datasets_to_latex <- function() {
+  
+}

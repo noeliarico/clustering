@@ -1,9 +1,12 @@
+# Import the necessary libraries
 library(clusterlab)
 library(tidyverse)
 
-# 1830 la peor es Euclídea!!!!
-#2456
-#1617
+# Some illustrative seeds after a manual exploration
+# 1830 With this seed the distance with the worst performance is Euclidean dsitance
+# 2456
+# 1617
+# Set the seed
 the_seed <- 2456
 # Create a dataset of 2 varibles with 5 clustes of three points each
 data <- clusterlab(centers = 5, # the number of clusters to simulate 
@@ -19,19 +22,17 @@ data <- clusterlab(centers = 5, # the number of clusters to simulate
                    seed = the_seed, showplots = FALSE)
 (points <- as_tibble(t(data$synthetic_data)) %>% rename(x = 1, y = 2))
 
-#normalize <- function(x){((x-min(x))/(max(x)-min(x)))} # this is already done in train_rkmeans
-#points <- as_tibble(apply(points, 2, normalize))
+# Add column with the real cluster
 points <- points %>% mutate(cluster = data$identity_matrix$cluster)
-#ggplot(points, aes(x, y)) + geom_point(aes(color = cluster), size = 6) + theme_light()
+# The data is not normalized because this is already done in train_rkmeans
 
-# Load the methods just in case...
+# Load the c methods that implements the distances and rkmeans
 dyn.load("02.method/distances/distances.so")
 dyn.load("02.method/rkmeans/rkmeans.so")
 
-#for(n in 1:5000) {
 # Clustering with rkmeans
 set.seed(the_seed)
-out_points <- train_rkmeans(points, 5, iter.max = 1)
+out_points <- train_rkmeans(points, 5, iter.max = 5)
 errors <- calculate_errors(out_points)
 errors <- sorted_errors_by_dataset(errors)
 rankingsOfErrors <- lapply(errors, ranking)
