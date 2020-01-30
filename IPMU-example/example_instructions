@@ -1,0 +1,7 @@
+- The file example.R contains an execution setting for the method rkmeans with
+  a small dataset.
+- Go to the terminal an execute from the folder of the script example.R the 
+  following command: R CMD BATCH example.R &
+- This command generates an output file example.Rout which contains all the
+  trace messages generated during the execution of example.R
+- 

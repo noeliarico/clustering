@@ -1,0 +1,243 @@
+$data_k2f2
+vsd ~ bordaCount > mat > jac ~ ney ~ cla ~ pea > can ~ cos > man > euc > che > msc 
+
+$data_k2f3
+mat ~ pea ~ bordaCount > euc ~ jac > vsd > can ~ msc > man > cla > che > ney > cos 
+
+$data_k2f4
+euc ~ vsd ~ bordaCount > jac > man > can > cos > ney > mat ~ pea > cla > msc ~ che 
+
+$data_k2f5
+cla ~ vsd > can > mat ~ pea ~ bordaCount > euc ~ che > man > ney > jac > cos ~ msc 
+
+$data_k2f6
+jac ~ mat ~ vsd ~ bordaCount > cos > man > can ~ cla > pea > euc ~ che > ney > msc 
+
+$data_k2f7
+mat ~ vsd ~ bordaCount > cos > jac > can > pea > euc > che > cla > man > ney > msc 
+
+$data_k2f8
+euc ~ jac ~ cos ~ bordaCount > mat ~ vsd > man > can > che > pea > ney > cla > msc 
+
+$data_k2f9
+man ~ euc ~ che ~ can ~ jac ~ mat ~ cla ~ vsd ~ bordaCount > cos > pea > ney > msc 
+
+$data_k2f10
+bordaCount > jac > cos > vsd > cla > euc > mat > can > pea > ney > che > man > msc 
+
+$data_k3f2
+bordaCount > mat > vsd > pea > euc > cla > jac > can > man > che > ney > msc > cos 
+
+$data_k3f3
+cla > pea > bordaCount > mat ~ vsd > jac > can > euc > che > man > msc > ney > cos 
+
+$data_k3f4
+bordaCount > vsd > jac > pea > cos > euc > mat > man > che > cla > can > ney > msc 
+
+$data_k3f5
+vsd ~ bordaCount > mat > cos > pea > cla > ney > euc > che > can > jac > man > msc 
+
+$data_k3f6
+pea > cla > vsd ~ bordaCount > can > cos > jac > man > mat > ney > euc > che > msc 
+
+$data_k3f7
+jac > mat ~ vsd ~ bordaCount > euc > cos > pea > ney > man > can > cla > che > msc 
+
+$data_k3f8
+cos > jac > mat ~ vsd > bordaCount > cla > euc > can > pea > ney > che > man > msc 
+
+$data_k3f9
+mat > jac > can ~ cla > pea > vsd ~ bordaCount > euc > cos > man > ney > che > msc 
+
+$data_k3f10
+vsd > mat > bordaCount > jac > can > pea > euc ~ cos > ney > man > cla > che > msc 
+
+$data_k4f2
+can ~ jac ~ cla ~ pea > msc > vsd ~ mat > bordaCount > man ~ euc ~ che ~ ney > cos 
+
+$data_k4f3
+bordaCount > vsd > mat > ney ~ can > jac > pea > man > euc > cla > che > cos > msc 
+
+$data_k4f4
+pea > bordaCount > cos > vsd > euc > jac > mat > can > cla > man > ney > che > msc 
+
+$data_k4f5
+bordaCount > pea > mat ~ vsd > jac > euc > che > man > cla > ney > can > cos > msc 
+
+$data_k4f6
+mat > bordaCount > vsd > pea > euc > jac > man > cos ~ cla > ney > can > che > msc 
+
+$data_k4f7
+vsd > mat > bordaCount > pea > can > cla > jac > euc > man > cos > che > ney > msc 
+
+$data_k4f8
+can > bordaCount > cla > mat > vsd > jac > euc > cos > pea > man > che > ney > msc 
+
+$data_k4f9
+cos > jac ~ bordaCount > vsd > euc > mat > pea > can > che > cla > man > ney > msc 
+
+$data_k4f10
+vsd ~ bordaCount > euc > man > mat > jac > ney > can > cos > che > pea > cla > msc 
+
+$data_k5f2
+bordaCount > vsd > pea > che > jac > euc > can > mat > man > cla > ney > msc > cos 
+
+$data_k5f3
+bordaCount > vsd > jac ~ can > mat > man > pea > euc > che > cla > ney > cos > msc 
+
+$data_k5f4
+bordaCount ~ mat > vsd > jac ~ cos > euc > pea > ney > can > che > cla > man > msc 
+
+$data_k5f5
+vsd ~ can > bordaCount > mat > pea > cos > man ~ cla > euc > ney > jac > che > msc 
+
+$data_k5f6
+vsd > bordaCount > mat > cos > jac ~ pea > can > euc > man > che > cla > ney > msc 
+
+$data_k5f7
+pea > bordaCount > vsd > jac > mat > euc > man > cos > che > ney > cla > can > msc 
+
+$data_k5f8
+vsd ~ bordaCount > mat > cla > jac > pea > euc > can > che > cos > man > ney > msc 
+
+$data_k5f9
+vsd ~ bordaCount > mat > pea > jac > cos > che > ney > can > man > cla > euc > msc 
+
+$data_k5f10
+can > jac > man > vsd > cos > mat > bordaCount > euc > cla > che > ney > pea > msc 
+
+$data_k6f2
+can > jac > pea > mat ~ cla > vsd > euc > bordaCount > che > man > msc > ney > cos 
+
+$data_k6f3
+mat > bordaCount > vsd > pea > euc > can > jac > man > cla > cos > che > ney > msc 
+
+$data_k6f4
+pea > vsd ~ mat > cla > bordaCount > jac > euc > cos > man > ney > can > che > msc 
+
+$data_k6f5
+bordaCount > vsd > pea > euc > mat > jac > cla > man > can > ney > cos > che > msc 
+
+$data_k6f6
+vsd > bordaCount > can > euc > mat > man > jac > pea > cos > ney > cla > che > msc 
+
+$data_k6f7
+vsd > man > ney > cla > bordaCount > mat > euc > cos > pea > jac > che > can > msc 
+
+$data_k6f8
+pea > bordaCount ~ vsd > mat > can > cla > cos > jac > ney > euc > man > che > msc 
+
+$data_k6f9
+mat > vsd > pea > can > bordaCount > jac > ney > cla > cos > man > euc > che > msc 
+
+$data_k6f10
+mat > vsd > pea > bordaCount > euc > can > man > jac > cos > ney > che > cla > msc 
+
+$data_k7f2
+jac > pea > bordaCount > cla > can > mat > vsd > euc > che > man > msc > ney > cos 
+
+$data_k7f3
+vsd > bordaCount > mat > ney > euc > cla > jac > pea > che > man > can > cos > msc 
+
+$data_k7f4
+pea > vsd > bordaCount ~ mat > cla > can > euc > jac > man > che > ney > cos > msc 
+
+$data_k7f5
+pea > vsd ~ mat > bordaCount > can > cos ~ cla > jac > euc > ney > man > che > msc 
+
+$data_k7f6
+pea > vsd > bordaCount > euc ~ jac > man > cla > mat > can > cos > ney > che > msc 
+
+$data_k7f7
+mat > bordaCount > vsd > euc > pea > man > jac > che > can ~ cos > cla > ney > msc 
+
+$data_k7f8
+pea > bordaCount > vsd > mat > euc > can > jac > cos ~ cla > man > ney > che > msc 
+
+$data_k7f9
+pea > mat > bordaCount > vsd > jac > euc > cos > can > man > cla > ney > che > msc 
+
+$data_k7f10
+mat > ney ~ vsd > bordaCount > cos > euc > can > man > jac > che > cla > pea > msc 
+
+$data_k8f2
+mat > bordaCount ~ pea > vsd > cla > euc > ney > can > jac > che > man > cos > msc 
+
+$data_k8f3
+pea > vsd ~ mat > bordaCount > jac > euc > cla > ney > man > cos > can > che > msc 
+
+$data_k8f4
+pea > cos > jac > bordaCount > vsd > mat > can > che > euc > cla > ney > man > msc 
+
+$data_k8f5
+pea > bordaCount > vsd > mat > che > jac > euc > can > man > cla > ney > cos > msc 
+
+$data_k8f6
+vsd > mat > euc > bordaCount > cla > pea > jac > man > can > cos > che > ney > msc 
+
+$data_k8f7
+pea > vsd > mat > bordaCount > euc ~ can > cla > cos > jac > man > che > ney > msc 
+
+$data_k8f8
+jac > euc > man > cos > ney ~ mat > vsd > bordaCount > pea > can > cla > che > msc 
+
+$data_k8f9
+mat > pea > vsd > can > ney > cla > bordaCount > euc > jac > che > man > cos > msc 
+
+$data_k8f10
+pea > can > bordaCount > vsd > jac > mat > euc > cla > man > cos > ney > che > msc 
+
+$data_k9f2
+vsd > bordaCount ~ euc > mat > man > pea > jac > cla ~ che > ney > can > msc > cos 
+
+$data_k9f3
+vsd > mat > bordaCount > pea > euc > cla > ney > jac > man > can > cos > che > msc 
+
+$data_k9f4
+vsd > pea > bordaCount > mat > jac > cla > cos > ney > can > euc > man > che > msc 
+
+$data_k9f5
+vsd > bordaCount > pea > mat > can > jac > che > man > euc > cla > ney > cos > msc 
+
+$data_k9f6
+bordaCount > mat > vsd > jac > pea > euc > can > ney > cla > man > che > cos > msc 
+
+$data_k9f7
+euc > pea > mat > cla > bordaCount > vsd ~ can > jac > che > man > ney > cos > msc 
+
+$data_k9f8
+vsd > bordaCount > pea > mat > euc > jac > man > cos > che > ney > cla > can ~ msc 
+
+$data_k9f9
+mat > bordaCount > pea > vsd > cos > can > cla > euc > ney > jac > man > che > msc 
+
+$data_k9f10
+pea > bordaCount > cos > jac > mat > euc > vsd > che > ney > man > can > cla > msc 
+
+$data_k10f2
+pea > bordaCount > can ~ jac ~ cla > mat > vsd ~ msc > man ~ euc > che > ney > cos 
+
+$data_k10f3
+pea > bordaCount ~ mat > vsd > can > euc > jac > cla > che > man > ney > cos > msc 
+
+$data_k10f4
+pea > bordaCount > jac > man > vsd > mat > euc > cos > cla > che > ney > can > msc 
+
+$data_k10f5
+vsd > ney > jac > mat > cla > can > bordaCount > cos > man > euc ~ pea > che > msc 
+
+$data_k10f6
+pea > bordaCount > mat > can > vsd > cla > euc ~ cos > man > che > jac > ney > msc 
+
+$data_k10f7
+pea > vsd > mat > euc > can > jac > ney ~ cla > bordaCount > che > cos > man > msc 
+
+$data_k10f8
+vsd > pea > ney > che > mat > cla > euc ~ bordaCount > jac > can > man > cos > msc 
+
+$data_k10f9
+pea > euc > mat > vsd > can > jac > cos ~ ney > man > che > bordaCount > cla > msc 
+
+$data_k10f10
+bordaCount ~ pea > vsd > euc > mat > cla > man > jac ~ can > cos > ney > che > msc 
+

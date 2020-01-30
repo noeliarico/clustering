@@ -1,0 +1,94 @@
+% latex table generated in R 3.6.1 by xtable 1.8-4 package
+% Wed Jan 22 08:31:48 2020
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}
+  \hline
+name & ranking \\ 
+  \hline
+  k2f2 & $vsd \sim \textbf{bordaCount} \succ mat \succ jac \sim ney \sim cla \sim pea \succ can \sim cos \succ man \succ euc \succ che \succ msc  $ \\ 
+  k2f3 & $mat \sim pea \sim \textbf{bordaCount} \succ euc \sim jac \succ vsd \succ can \sim msc \succ man \succ cla \succ che \succ ney \succ cos  $ \\ 
+  k2f4 & $euc \sim vsd \sim \textbf{bordaCount} \succ jac \succ man \succ can \succ cos \succ ney \succ mat \sim pea \succ cla \succ msc \sim che  $ \\ 
+  k2f5 & $cla \sim vsd \succ can \succ mat \sim pea \sim \textbf{bordaCount} \succ euc \sim che \succ man \succ ney \succ jac \succ cos \sim msc  $ \\ 
+  k2f6 & $jac \sim mat \sim vsd \sim \textbf{bordaCount} \succ cos \succ man \succ can \sim cla \succ pea \succ euc \sim che \succ ney \succ msc  $ \\ 
+  k2f7 & $mat \sim vsd \sim \textbf{bordaCount} \succ cos \succ jac \succ can \succ pea \succ euc \succ che \succ cla \succ man \succ ney \succ msc  $ \\ 
+  k2f8 & $euc \sim jac \sim cos \sim \textbf{bordaCount} \succ mat \sim vsd \succ man \succ can \succ che \succ pea \succ ney \succ cla \succ msc  $ \\ 
+  k2f9 & $man \sim euc \sim che \sim can \sim jac \sim mat \sim cla \sim vsd \sim \textbf{bordaCount} \succ cos \succ pea \succ ney \succ msc  $ \\ 
+  k2f10 & $\textbf{bordaCount} \succ jac \succ cos \succ vsd \succ cla \succ euc \succ mat \succ can \succ pea \succ ney \succ che \succ man \succ msc $ \\ 
+  k3f2 & $\textbf{bordaCount} \succ mat \succ vsd \succ pea \succ euc \succ cla \succ jac \succ can \succ man \succ che \succ ney \succ msc \succ cos$  \\ 
+  k3f3 & $cla \succ pea \succ \textbf{bordaCount} \succ mat \sim vsd \succ jac \succ can \succ euc \succ che \succ man \succ msc \succ ney \succ cos $ \\ 
+  k3f4 & $\textbf{bordaCount} \succ vsd \succ jac \succ pea \succ cos \succ euc \succ mat \succ man \succ che \succ cla \succ can \succ ney \succ msc$  \\ 
+  k3f5 & $vsd \sim \textbf{bordaCount} \succ mat \succ cos \succ pea \succ cla \succ ney \succ euc \succ che \succ can \succ jac \succ man \succ msc $ \\ 
+  k3f6 & $pea \succ cla \succ vsd \sim \textbf{bordaCount} \succ can \succ cos \succ jac \succ man \succ mat \succ ney \succ euc \succ che \succ msc $ \\ 
+  k3f7 & $jac \succ mat \sim vsd \sim \textbf{bordaCount} \succ euc \succ cos \succ pea \succ ney \succ man \succ can \succ cla \succ che \succ msc$  \\ 
+  k3f8 & $cos \succ jac \succ mat \sim vsd \succ \textbf{bordaCount} \succ cla \succ euc \succ can \succ pea \succ ney \succ che \succ man \succ msc $ \\ 
+  k3f9 & $mat \succ jac \succ can \sim cla \succ pea \succ vsd \sim \textbf{bordaCount} \succ euc \succ cos \succ man \succ ney \succ che \succ msc$  \\ 
+  k3f10 & $vsd \succ mat \succ \textbf{bordaCount} \succ jac \succ can \succ pea \succ euc \sim cos \succ ney \succ man \succ cla \succ che \succ msc $ \\ 
+  k4f2 & $can \sim jac \sim cla \sim pea \succ msc \succ vsd \sim mat \succ \textbf{bordaCount} \succ man \sim euc \sim che \sim ney \succ cos  $\\ 
+  k4f3 & $\textbf{bordaCount} \succ vsd \succ mat \succ ney \sim can \succ jac \succ pea \succ man \succ euc \succ cla \succ che \succ cos \succ msc  $\\ 
+  k4f4 & $pea \succ \textbf{bordaCount} \succ cos \succ vsd \succ euc \succ jac \succ mat \succ can \succ cla \succ man \succ ney \succ che \succ msc  $\\ 
+  k4f5 & $\textbf{bordaCount} \succ pea \succ mat \sim vsd \succ jac \succ euc \succ che \succ man \succ cla \succ ney \succ can \succ cos \succ msc  $\\ 
+  k4f6 & $mat \succ \textbf{bordaCount} \succ vsd \succ pea \succ euc \succ jac \succ man \succ cos \sim cla \succ ney \succ can \succ che \succ msc  $\\ 
+  k4f7 & $vsd \succ mat \succ \textbf{bordaCount} \succ pea \succ can \succ cla \succ jac \succ euc \succ man \succ cos \succ che \succ ney \succ msc  $\\ 
+  k4f8 & $can \succ \textbf{bordaCount} \succ cla \succ mat \succ vsd \succ jac \succ euc \succ cos \succ pea \succ man \succ che \succ ney \succ msc  $\\ 
+  k4f9 & $cos \succ jac \sim \textbf{bordaCount} \succ vsd \succ euc \succ mat \succ pea \succ can \succ che \succ cla \succ man \succ ney \succ msc  $\\ 
+  k4f10 & $vsd \sim \textbf{bordaCount} \succ euc \succ man \succ mat \succ jac \succ ney \succ can \succ cos \succ che \succ pea \succ cla \succ msc $  \\ 
+  k5f2 & $\textbf{bordaCount} \succ vsd \succ pea \succ che \succ jac \succ euc \succ can \succ mat \succ man \succ cla \succ ney \succ msc \succ cos$  \\ 
+  k5f3 & $\textbf{bordaCount} \succ vsd \succ jac \sim can \succ mat \succ man \succ pea \succ euc \succ che \succ cla \succ ney \succ cos \succ msc $ \\ 
+  k5f4 & $\textbf{bordaCount} \sim mat \succ vsd \succ jac \sim cos \succ euc \succ pea \succ ney \succ can \succ che \succ cla \succ man \succ msc$  \\ 
+  k5f5 & $vsd \sim can \succ \textbf{bordaCount} \succ mat \succ pea \succ cos \succ man \sim cla \succ euc \succ ney \succ jac \succ che \succ msc$  \\ 
+  k5f6 & $vsd \succ \textbf{bordaCount} \succ mat \succ cos \succ jac \sim pea \succ can \succ euc \succ man \succ che \succ cla \succ ney \succ msc $ \\ 
+  k5f7 & $pea \succ \textbf{bordaCount} \succ vsd \succ jac \succ mat \succ euc \succ man \succ cos \succ che \succ ney \succ cla \succ can \succ msc$  \\ 
+  k5f8 & $vsd \sim \textbf{bordaCount} \succ mat \succ cla \succ jac \succ pea \succ euc \succ can \succ che \succ cos \succ man \succ ney \succ msc $ \\ 
+  k5f9 & $vsd \sim \textbf{bordaCount} \succ mat \succ pea \succ jac \succ cos \succ che \succ ney \succ can \succ man \succ cla \succ euc \succ msc $ \\ 
+  k5f10 & $can \succ jac \succ man \succ vsd \succ cos \succ mat \succ \textbf{bordaCount} \succ euc \succ cla \succ che \succ ney \succ pea \succ msc $ \\ 
+  k6f2 & $can \succ jac \succ pea \succ mat \sim cla \succ vsd \succ euc \succ \textbf{bordaCount} \succ che \succ man \succ msc \succ ney \succ cos$  \\
+  k6f3 & $mat \succ \textbf{bordaCount} \succ vsd \succ pea \succ euc \succ can \succ jac \succ man \succ cla \succ cos \succ che \succ ney \succ msc$  \\ 
+  k6f4 & $pea \succ vsd \sim mat \succ cla \succ \textbf{bordaCount} \succ jac \succ euc \succ cos \succ man \succ ney \succ can \succ che \succ msc $ \\ 
+  k6f5 & $\textbf{bordaCount} \succ vsd \succ pea \succ euc \succ mat \succ jac \succ cla \succ man \succ can \succ ney \succ cos \succ che \succ msc$  \\ 
+  k6f6 & $vsd \succ \textbf{bordaCount} \succ can \succ euc \succ mat \succ man \succ jac \succ pea \succ cos \succ ney \succ cla \succ che \succ msc$  \\ 
+  k6f7 & $vsd \succ man \succ ney \succ cla \succ \textbf{bordaCount} \succ mat \succ euc \succ cos \succ pea \succ jac \succ che \succ can \succ msc$  \\ 
+  k6f8 & $pea \succ \textbf{bordaCount} \sim vsd \succ mat \succ can \succ cla \succ cos \succ jac \succ ney \succ euc \succ man \succ che \succ msc $ \\ 
+  k6f9 & $mat \succ vsd \succ pea \succ can \succ \textbf{bordaCount} \succ jac \succ ney \succ cla \succ cos \succ man \succ euc \succ che \succ msc$  \\ 
+  k6f10 & $mat \succ vsd \succ pea \succ \textbf{bordaCount} \succ euc \succ can \succ man \succ jac \succ cos \succ ney \succ che \succ cla \succ msc $ \\ 
+  k7f2 & $jac \succ pea \succ \textbf{bordaCount} \succ cla \succ can \succ mat \succ vsd \succ euc \succ che \succ man \succ msc \succ ney \succ cos  $\\ 
+  k7f3 & $vsd \succ \textbf{bordaCount} \succ mat \succ ney \succ euc \succ cla \succ jac \succ pea \succ che \succ man \succ can \succ cos \succ msc  $\\ 
+  k7f4 & $pea \succ vsd \succ \textbf{bordaCount} \sim mat \succ cla \succ can \succ euc \succ jac \succ man \succ che \succ ney \succ cos \succ msc  $\\ 
+  k7f5 & $pea \succ vsd \sim mat \succ \textbf{bordaCount} \succ can \succ cos \sim cla \succ jac \succ euc \succ ney \succ man \succ che \succ msc  $\\ 
+  k7f6 & $pea \succ vsd \succ \textbf{bordaCount} \succ euc \sim jac \succ man \succ cla \succ mat \succ can \succ cos \succ ney \succ che \succ msc  $\\ 
+  k7f7 & $mat \succ \textbf{bordaCount} \succ vsd \succ euc \succ pea \succ man \succ jac \succ che \succ can \sim cos \succ cla \succ ney \succ msc  $\\ 
+  k7f8 & $pea \succ \textbf{bordaCount} \succ vsd \succ mat \succ euc \succ can \succ jac \succ cos \sim cla \succ man \succ ney \succ che \succ msc  $\\ 
+  k7f9 & $pea \succ mat \succ \textbf{bordaCount} \succ vsd \succ jac \succ euc \succ cos \succ can \succ man \succ cla \succ ney \succ che \succ msc  $\\ 
+  k7f10 & $mat \succ ney \sim vsd \succ \textbf{bordaCount} \succ cos \succ euc \succ can \succ man \succ jac \succ che \succ cla \succ pea \succ msc $  \\ 
+  k8f2 & $mat \succ \textbf{bordaCount} \sim pea \succ vsd \succ cla \succ euc \succ ney \succ can \succ jac \succ che \succ man \succ cos \succ msc$  \\
+  k8f3 & $pea \succ vsd \sim mat \succ \textbf{bordaCount} \succ jac \succ euc \succ cla \succ ney \succ man \succ cos \succ can \succ che \succ msc $ \\ 
+  k8f4 & $pea \succ cos \succ jac \succ \textbf{bordaCount} \succ vsd \succ mat \succ can \succ che \succ euc \succ cla \succ ney \succ man \succ msc$  \\ 
+  k8f5 & $pea \succ \textbf{bordaCount} \succ vsd \succ mat \succ che \succ jac \succ euc \succ can \succ man \succ cla \succ ney \succ cos \succ msc$  \\ 
+  k8f6 & $vsd \succ mat \succ euc \succ \textbf{bordaCount} \succ cla \succ pea \succ jac \succ man \succ can \succ cos \succ che \succ ney \succ msc$  \\ 
+  k8f7 & $pea \succ vsd \succ mat \succ \textbf{bordaCount} \succ euc \sim can \succ cla \succ cos \succ jac \succ man \succ che \succ ney \succ msc $ \\ 
+  k8f8 & $jac \succ euc \succ man \succ cos \succ ney \sim mat \succ vsd \succ \textbf{bordaCount} \succ pea \succ can \succ cla \succ che \succ msc $ \\ 
+  k8f9 & $mat \succ pea \succ vsd \succ can \succ ney \succ cla \succ \textbf{bordaCount} \succ euc \succ jac \succ che \succ man \succ cos \succ msc$  \\ 
+  k8f10 & $pea \succ can \succ \textbf{bordaCount} \succ vsd \succ jac \succ mat \succ euc \succ cla \succ man \succ cos \succ ney \succ che \succ msc $ \\ 
+  k9f2 & $vsd \succ \textbf{bordaCount} \sim euc \succ mat \succ man \succ pea \succ jac \succ cla \sim che \succ ney \succ can \succ msc \succ cos$  \\ 
+  k9f3 & $vsd \succ mat \succ \textbf{bordaCount} \succ pea \succ euc \succ cla \succ ney \succ jac \succ man \succ can \succ cos \succ che \succ msc$  \\ 
+  k9f4 & $vsd \succ pea \succ \textbf{bordaCount} \succ mat \succ jac \succ cla \succ cos \succ ney \succ can \succ euc \succ man \succ che \succ msc$  \\ 
+  k9f5 & $vsd \succ \textbf{bordaCount} \succ pea \succ mat \succ can \succ jac \succ che \succ man \succ euc \succ cla \succ ney \succ cos \succ msc$  \\ 
+  k9f6 & $\textbf{bordaCount} \succ mat \succ vsd \succ jac \succ pea \succ euc \succ can \succ ney \succ cla \succ man \succ che \succ cos \succ msc$  \\ 
+  k9f7 & $euc \succ pea \succ mat \succ cla \succ \textbf{bordaCount} \succ vsd \sim can \succ jac \succ che \succ man \succ ney \succ cos \succ msc $ \\ 
+  k9f8 & $vsd \succ \textbf{bordaCount} \succ pea \succ mat \succ euc \succ jac \succ man \succ cos \succ che \succ ney \succ cla \succ can \sim msc $ \\ 
+  k9f9 & $mat \succ \textbf{bordaCount} \succ pea \succ vsd \succ cos \succ can \succ cla \succ euc \succ ney \succ jac \succ man \succ che \succ msc$  \\ 
+  k9f10 & $pea \succ \textbf{bordaCount} \succ cos \succ jac \succ mat \succ euc \succ vsd \succ che \succ ney \succ man \succ can \succ cla \succ msc $ \\ 
+  k10f2 & $pea \succ \textbf{bordaCount} \succ can \sim jac \sim cla \succ mat \succ vsd \sim msc \succ man \sim euc \succ che \succ ney \succ cos $ \\ 
+  k10f3 & $pea \succ \textbf{bordaCount} \sim mat \succ vsd \succ can \succ euc \succ jac \succ cla \succ che \succ man \succ ney \succ cos \succ msc$  \\ 
+  k10f4 & $pea \succ \textbf{bordaCount} \succ jac \succ man \succ vsd \succ mat \succ euc \succ cos \succ cla \succ che \succ ney \succ can \succ msc $ \\ 
+  k10f5 & $vsd \succ ney \succ jac \succ mat \succ cla \succ can \succ \textbf{bordaCount} \succ cos \succ man \succ euc \sim pea \succ che \succ msc$  \\ 
+  k10f6 & $pea \succ \textbf{bordaCount} \succ mat \succ can \succ vsd \succ cla \succ euc \sim cos \succ man \succ che \succ jac \succ ney \succ msc$  \\ 
+  k10f7 & $pea \succ vsd \succ mat \succ euc \succ can \succ jac \succ ney \sim cla \succ \textbf{bordaCount} \succ che \succ cos \succ man \succ msc$  \\ 
+  k10f8 & $vsd \succ pea \succ ney \succ che \succ mat \succ cla \succ euc \sim \textbf{bordaCount} \succ jac \succ can \succ man \succ cos \succ msc$  \\ 
+  k10f9 & $pea \succ euc \succ mat \succ vsd \succ can \succ jac \succ cos \sim ney \succ man \succ che \succ \textbf{bordaCount} \succ cla \succ msc$  \\ 
+  k10f10 & $\textbf{bordaCount} \sim pea \succ vsd \succ euc \succ mat \succ cla \succ man \succ jac \sim can \succ cos \succ ney \succ che \succ msc $  \\ 
+   
+   \hline
+\end{tabular}
+\caption{Results.} 
+\end{table}

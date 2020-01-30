@@ -24,7 +24,7 @@
 #include "/Library/Frameworks/R.framework/Resources/include/Rmath.h"
 #include "/Library/Frameworks/R.framework/Resources/include/Rdefines.h"
 #include "/Library/Frameworks/R.framework/Resources/include/Rinternals.h"
-#include "/Users/noelia/Desktop/Github/clustering/02.method/distances/distances.c"
+#include "/Users/noeliarico/Desktop/Github/clustering/02.method/distances/distances.c"
 
 void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
              int *pmaxiter, int *nc, double *wss, int *pndist, int *pdist,
@@ -41,6 +41,7 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
   for(i = 0; i < n; i++) {
     cl[i] = -1;
   }
+  
   
   /* For a given random set of centers, */
   for(iter = 0; iter < maxiter; iter++) {

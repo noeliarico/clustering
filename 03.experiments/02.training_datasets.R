@@ -5,7 +5,7 @@
 # results_a2 <- train_rkmeans(a2, 35)
 # results_a3 <- train_rkmeans(a3, 50)
 # 
-# results_s1 <- train_rkmeans(s1, 15)
+# results_s1 <- train_rkmeans(s1, 15)ans
 # results_s2 <- train_rkmeans(s2, 15)
 # results_s3 <- train_rkmeans(s3, 10)
 # results_s4 <- train_rkmeans(s4, 10)

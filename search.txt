@@ -1,2294 +1,2211 @@
+
 Seed 1000 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 1001 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
 Seed 1002 -- Ties
-jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1003 -- Ties
-manhattan euclidean gower bordaCount 
+jac mat cla pea vsd bordaCount 
 Seed 1004 -- Ties
-canberra clark 
+can cla 
 Seed 1006 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che mat ney vsd 
 Seed 1008 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1009 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che vsd 
 Seed 1010 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1011 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1013 -- Ties
-VSD3 bordaCount 
+man euc che mat ney vsd 
+Seed 1012 -- Ties
+mat man jac 
 Seed 1014 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che 
 Seed 1015 -- Ties
-jaccard VSD3 
+jac vsd 
 Seed 1016 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
 Seed 1017 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
-Seed 1019 -- Ties
-chebyshev trngDiscr bordaCount 
+man euc che jac vsd bordaCount 
+Seed 1018 -- Ties
+can bordaCount 
 Seed 1020 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1021 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac 
 Seed 1022 -- Ties
-canberra cosine SqrdChrd trngDiscr VSD3 
+can cos mat vsd bordaCount 
 Seed 1023 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can mat cla ney vsd bordaCount 
 Seed 1024 -- Ties
-manhattan gower VSD3 bordaCount 
-Seed 1025 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man pea vsd bordaCount 
 Seed 1026 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1028 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1029 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 1030 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac mat ney pea vsd msc bordaCount 
 Seed 1031 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+can mat cla vsd bordaCount 
 Seed 1032 -- Ties
-euclidean chebyshev jaccard 
+mat cla vsd bordaCount 
 Seed 1033 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1037 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 
+man mat vsd 
 Seed 1038 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
+can mat cla bordaCount 
+Seed 1039 -- Ties
+man euc che jac mat pea vsd bordaCount 
 Seed 1040 -- Ties
-euclidean chebyshev 
-Seed 1041 -- Ties
-matusita maxSymmSq 
-Seed 1042 -- Ties
-manhattan gower 
+euc che 
 Seed 1043 -- Ties
-manhattan euclidean gower jaccard VSD3 bordaCount 
-Seed 1044 -- Ties
-euclidean SqrdChrd trngDiscr VSD3 
+man euc jac vsd 
 Seed 1045 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat vsd bordaCount 
 Seed 1046 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
+Seed 1047 -- Ties
+cla pea 
 Seed 1050 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1051 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 1052 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney vsd bordaCount 
 Seed 1053 -- Ties
-chebyshev jaccard 
+che jac 
 Seed 1054 -- Ties
-canberra jaccard clark 
-Seed 1055 -- Ties
-manhattan euclidean chebyshev gower 
+can jac cla bordaCount 
 Seed 1056 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1057 -- Ties
-manhattan euclidean gower jaccard 
+mat vsd bordaCount 
 Seed 1058 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 1059 -- Ties
-canberra SqrdChrd trngDiscr VSD3 
-Seed 1060 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+can mat ney pea vsd 
 Seed 1061 -- Ties
-VSD3 bordaCount 
+pea vsd bordaCount 
 Seed 1062 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla ney pea vsd bordaCount 
 Seed 1063 -- Ties
-manhattan gower jaccard trngDiscr VSD3 bordaCount 
+man jac cos vsd bordaCount 
+Seed 1064 -- Ties
+can cla 
 Seed 1066 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 1068 -- Ties
-manhattan euclidean gower VSD3 bordaCount 
+man euc ney vsd 
 Seed 1069 -- Ties
-canberra clark 
+can cla 
 Seed 1072 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla pea vsd bordaCount 
 Seed 1075 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1076 -- Ties
-SqrdChrd VSD3 
-Seed  1077  -- The best!!
-bordaCount 
+mat pea vsd 
+Seed 1077 -- Ties
+man euc 
 Seed 1078 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1079 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat vsd 
 Seed 1080 -- Ties
-chebyshev SqrdChrd matusita trngDiscr VSD3 bordaCount 
+che mat ney pea vsd bordaCount 
 Seed 1081 -- Ties
-canberra clark 
+can jac cla bordaCount 
 Seed 1082 -- Ties
-canberra clark 
+man euc che jac mat vsd bordaCount 
 Seed 1083 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1084 -- Ties
-canberra SqrdChrd trngDiscr 
+can mat pea 
+Seed 1085 -- Ties
+jac bordaCount 
+Seed 1086 -- Ties
+cos ney vsd bordaCount 
 Seed 1088 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1089 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 1090 -- Ties
-euclidean chebyshev jaccard trngDiscr VSD3 bordaCount 
+euc che jac ney vsd bordaCount 
 Seed 1091 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1092 -- Ties
-SqrdChrd trngDiscr 
+man euc che mat pea vsd bordaCount 
 Seed 1093 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1094 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che can mat cla ney pea vsd msc bordaCount 
+Seed 1095 -- Ties
+cos ney 
 Seed 1096 -- Ties
-canberra matusita maxSymmSq 
+can pea msc 
 Seed 1097 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla pea vsd bordaCount 
 Seed 1098 -- Ties
-manhattan gower jaccard 
+man jac ney 
 Seed 1099 -- Ties
-manhattan euclidean gower jaccard cosine maxSymmSq 
-Seed 1100 -- Ties
-manhattan euclidean chebyshev gower VSD3 
+man euc jac cos ney 
 Seed 1101 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount canberra 
-Seed 1103 -- Ties
-euclidean bordaCount 
+ney pea 
 Seed 1104 -- Ties
-canberra jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+can jac mat cla pea vsd bordaCount 
 Seed 1105 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 1106 -- Ties
-manhattan euclidean gower VSD3 
+man euc vsd 
 Seed 1107 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1108 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat ney pea vsd bordaCount 
 Seed 1109 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1112 -- Ties
-canberra clark 
+man euc can jac mat ney pea vsd bordaCount 
+Seed 1111 -- Ties
+jac pea 
 Seed 1113 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney pea vsd bordaCount 
 Seed 1114 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1115 -- Ties
-chebyshev jaccard SqrdChrd trngDiscr VSD3 
+che jac mat vsd 
 Seed 1116 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac ney bordaCount 
 Seed 1117 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat pea vsd bordaCount 
 Seed 1118 -- Ties
-chebyshev jaccard SqrdChrd 
+che jac mat bordaCount 
 Seed 1120 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd msc bordaCount 
 Seed 1121 -- Ties
-chebyshev SqrdChrd matusita trngDiscr VSD3 bordaCount 
+che mat pea vsd bordaCount 
 Seed 1122 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 1123 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat ney vsd msc bordaCount 
 Seed 1124 -- Ties
-SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1126 -- Ties
-SqrdChrd trngDiscr bordaCount 
+jac mat cla vsd bordaCount 
 Seed  1127  -- The best!!
 bordaCount 
 Seed 1128 -- Ties
-euclidean chebyshev jaccard 
+euc che jac 
 Seed 1129 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1133 -- Ties
-manhattan gower 
+mat pea vsd bordaCount 
+Seed 1130 -- Ties
+man euc mat ney vsd bordaCount 
+Seed 1132 -- Ties
+jac pea bordaCount 
 Seed 1134 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine clark trngDiscr VSD3 bordaCount 
+man euc che can jac cos cla ney pea vsd bordaCount 
 Seed 1135 -- Ties
-manhattan canberra gower 
+man can 
 Seed 1136 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1137 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1140 -- Ties
-SqrdChrd trngDiscr 
-Seed 1141 -- Ties
-manhattan gower 
-Seed 1142 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1143 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos ney vsd msc bordaCount 
 Seed 1144 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1145 -- Ties
-manhattan gower 
-Seed 1146 -- Ties
-manhattan euclidean gower jaccard bordaCount 
+che mat pea vsd 
+Seed  1146  -- The best!!
+bordaCount 
 Seed 1148 -- Ties
-canberra clark 
+can jac cla 
 Seed 1149 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat ney bordaCount 
 Seed 1151 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1152 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1153 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd bordaCount 
 Seed 1154 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1156 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
+Seed 1157 -- Ties
+jac cos 
 Seed 1158 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
 Seed 1159 -- Ties
-euclidean chebyshev bordaCount 
+euc che bordaCount 
 Seed 1160 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd 
+Seed 1162 -- Ties
+man euc che jac mat ney vsd msc bordaCount 
 Seed 1163 -- Ties
-VSD3 bordaCount 
+mat pea 
+Seed 1165 -- Ties
+man euc che mat vsd bordaCount 
 Seed 1166 -- Ties
-canberra clark 
+can cla 
 Seed 1167 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1168 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney pea vsd bordaCount 
 Seed 1171 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1172 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can mat cla ney pea vsd bordaCount 
 Seed 1173 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che pea 
 Seed 1174 -- Ties
-canberra clark 
+can cla pea 
 Seed 1175 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 1176 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can mat cla ney pea vsd bordaCount 
 Seed 1177 -- Ties
-manhattan gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man mat vsd msc bordaCount 
 Seed 1178 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat pea vsd bordaCount 
 Seed 1179 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che ney vsd bordaCount 
 Seed 1180 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1181 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla vsd bordaCount 
 Seed 1182 -- Ties
-canberra clark 
+can cla 
 Seed 1183 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 1184 -- Ties
-canberra jaccard clark 
+can jac cla pea 
 Seed 1186 -- Ties
-SqrdChrd trngDiscr 
+mat ney 
 Seed 1187 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1188 -- Ties
-manhattan gower matusita 
+mat ney 
 Seed 1189 -- Ties
-manhattan euclidean chebyshev gower maxSymmSq 
+man euc che ney 
 Seed 1190 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 
+euc che mat pea vsd 
 Seed 1191 -- Ties
-canberra clark 
+can cla pea 
 Seed 1192 -- Ties
-matusita maxSymmSq chebyshev jaccard 
-Seed 1193 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+che jac 
 Seed 1194 -- Ties
-manhattan euclidean gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+can cla pea 
 Seed 1195 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che vsd 
 Seed 1196 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1197 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1198 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat ney vsd 
 Seed 1200 -- Ties
-chebyshev jaccard SqrdChrd clark trngDiscr VSD3 
+che jac mat cla pea vsd bordaCount 
 Seed 1201 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 1202 -- Ties
-euclidean chebyshev jaccard 
-Seed 1203 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac pea 
 Seed 1204 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac 
 Seed 1205 -- Ties
-manhattan euclidean canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac cos mat cla ney pea vsd bordaCount 
+Seed 1207 -- Ties
+man euc che jac 
 Seed 1208 -- Ties
-canberra SqrdChrd trngDiscr VSD3 bordaCount 
+can mat pea vsd 
 Seed 1209 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1210 -- Ties
-manhattan gower cosine SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1212 -- Ties
-trngDiscr VSD3 bordaCount 
-Seed 1214 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man cos mat pea vsd bordaCount 
+Seed 1213 -- Ties
+cla pea 
 Seed 1215 -- Ties
-manhattan gower 
+can cos cla 
 Seed 1216 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla pea vsd bordaCount 
 Seed 1217 -- Ties
-manhattan euclidean chebyshev gower jaccard matusita bordaCount 
+mat vsd bordaCount 
 Seed 1218 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1219 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney vsd msc bordaCount 
 Seed 1220 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney vsd msc bordaCount 
 Seed 1221 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
 Seed 1223 -- Ties
-chebyshev VSD3 
+che ney vsd 
 Seed 1224 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla pea vsd bordaCount 
 Seed 1225 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd bordaCount 
 Seed 1226 -- Ties
-manhattan canberra gower matusita VSD3 maxSymmSq bordaCount 
+man can pea vsd msc bordaCount 
 Seed 1227 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat pea vsd bordaCount 
 Seed 1229 -- Ties
-SqrdChrd matusita trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 1230 -- Ties
-euclidean jaccard 
+che pea 
 Seed 1231 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1232 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1234 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1235 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1236 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che jac mat ney pea vsd bordaCount 
+Seed 1238 -- Ties
+man euc can jac mat pea vsd bordaCount 
 Seed 1239 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 
+man euc che jac ney pea vsd bordaCount 
 Seed 1240 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1241 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat ney vsd bordaCount 
 Seed 1245 -- Ties
-manhattan euclidean gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc mat cla ney vsd bordaCount 
 Seed 1246 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1248 -- Ties
-canberra cosine 
+can cos 
 Seed 1249 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1250 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1251 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount canberra 
+man euc che mat ney pea vsd bordaCount 
 Seed 1252 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat vsd bordaCount 
 Seed 1253 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla ney pea vsd bordaCount 
 Seed 1254 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
 Seed 1255 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+euc jac pea 
 Seed 1256 -- Ties
-manhattan euclidean chebyshev gower VSD3 
-Seed 1257 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che vsd 
+Seed  1257  -- The best!!
+bordaCount 
 Seed 1258 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1259 -- Ties
-chebyshev VSD3 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1260 -- Ties
-canberra SqrdChrd clark 
+man euc che jac pea 
 Seed 1261 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 1263 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 
-Seed 1265 -- Ties
-manhattan gower bordaCount 
-Seed 1266 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 
+euc che jac mat pea vsd 
 Seed 1267 -- Ties
-euclidean jaccard 
+euc jac 
 Seed 1270 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 1271 -- Ties
+cla ney 
 Seed 1272 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd bordaCount 
 Seed 1273 -- Ties
-manhattan chebyshev gower 
-Seed 1275 -- Ties
-matusita maxSymmSq 
+man che 
 Seed 1276 -- Ties
-SqrdChrd matusita trngDiscr VSD3 
-Seed 1277 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat pea vsd 
 Seed 1278 -- Ties
-manhattan gower matusita maxSymmSq 
-Seed 1280 -- Ties
-jaccard SqrdChrd trngDiscr bordaCount 
-Seed 1281 -- Ties
-SqrdChrd trngDiscr VSD3 
+man pea 
+Seed 1279 -- Ties
+can jac 
 Seed 1282 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1283 -- Ties
-euclidean jaccard 
+euc che jac mat pea vsd bordaCount 
 Seed 1284 -- Ties
-canberra jaccard clark bordaCount 
+can jac cla pea bordaCount 
 Seed 1285 -- Ties
-canberra matusita clark 
-Seed 1286 -- Ties
-euclidean SqrdChrd trngDiscr VSD3 bordaCount 
+can cla 
 Seed 1287 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1288 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney pea 
 Seed 1289 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 
+euc che mat ney vsd 
 Seed 1290 -- Ties
-canberra clark 
+can cla msc 
 Seed 1292 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 1294 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac pea 
 Seed 1296 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd 
 Seed 1297 -- Ties
-canberra SqrdChrd clark 
+can mat cla 
 Seed 1298 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1299 -- Ties
-manhattan canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man can cos mat cla pea vsd bordaCount 
 Seed 1300 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac ney vsd bordaCount 
 Seed 1301 -- Ties
-chebyshev jaccard trngDiscr VSD3 bordaCount 
+ney bordaCount 
+Seed 1302 -- Ties
+ney pea 
 Seed 1303 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
 Seed 1305 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
 Seed 1306 -- Ties
-canberra VSD3 
+man euc che 
 Seed 1307 -- Ties
-euclidean chebyshev SqrdChrd matusita trngDiscr VSD3 bordaCount 
-Seed 1311 -- Ties
-jaccard bordaCount 
+euc che mat vsd bordaCount 
 Seed 1312 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1314 -- Ties
-jaccard clark 
+ney bordaCount 
 Seed 1317 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney pea vsd bordaCount 
 Seed 1319 -- Ties
-manhattan euclidean chebyshev gower 
-Seed 1320 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che pea 
+Seed 1321 -- Ties
+can jac cla bordaCount 
 Seed 1322 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 1323 -- Ties
-canberra clark bordaCount 
-Seed 1324 -- Ties
-euclidean jaccard 
+can cla pea bordaCount 
+Seed  1325  -- The best!!
+bordaCount 
 Seed 1326 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 
+jac mat pea vsd 
 Seed 1328 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 1329 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
+Seed 1330 -- Ties
+cos mat ney vsd bordaCount 
 Seed 1331 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1332 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1334 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
+can mat cla bordaCount 
+Seed 1335 -- Ties
+cos man can mat pea vsd bordaCount 
+Seed 1336 -- Ties
+jac bordaCount 
+Seed 1337 -- Ties
+can pea 
 Seed 1338 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat pea vsd bordaCount 
 Seed 1339 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 1340 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount matusita maxSymmSq 
-Seed 1341 -- Ties
-matusita maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1342 -- Ties
-canberra clark 
+can jac cla bordaCount 
 Seed 1343 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed  1344  -- The best!!
-bordaCount 
+man euc jac mat ney pea vsd bordaCount 
 Seed 1345 -- Ties
-SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+mat cla vsd msc bordaCount 
 Seed 1346 -- Ties
-manhattan euclidean gower 
+man euc ney pea 
 Seed 1347 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+ney vsd 
 Seed 1348 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1349 -- Ties
-canberra SqrdChrd matusita clark 
+cla pea 
 Seed 1351 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1352 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1353 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc can jac mat cla ney pea vsd msc bordaCount 
 Seed 1354 -- Ties
-canberra SqrdChrd clark 
+can mat cla 
 Seed 1355 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+can jac mat cla vsd bordaCount 
 Seed 1356 -- Ties
-manhattan gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man jac mat ney pea vsd bordaCount can cla 
 Seed 1357 -- Ties
-manhattan euclidean gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc mat ney pea vsd 
 Seed 1358 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat pea vsd bordaCount 
 Seed 1359 -- Ties
-canberra clark 
+can cla 
 Seed 1360 -- Ties
-matusita maxSymmSq 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1362 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 1363 -- Ties
-SqrdChrd trngDiscr VSD3 
-Seed 1364 -- Ties
-chebyshev matusita bordaCount jaccard 
+man euc 
 Seed 1365 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 
+che mat vsd bordaCount 
 Seed 1367 -- Ties
-euclidean SqrdChrd clark trngDiscr VSD3 maxSymmSq bordaCount 
+euc mat cla vsd bordaCount 
 Seed 1368 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
+can mat cla pea bordaCount 
+Seed 1370 -- Ties
+jac ney vsd bordaCount 
 Seed 1371 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat vsd 
 Seed 1373 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
-Seed 1375 -- Ties
-trngDiscr VSD3 
+man euc che can jac mat cla vsd bordaCount 
 Seed 1376 -- Ties
-chebyshev SqrdChrd matusita trngDiscr VSD3 bordaCount 
+che mat pea vsd bordaCount 
 Seed 1378 -- Ties
-chebyshev jaccard 
-Seed 1379 -- Ties
-chebyshev bordaCount 
-Seed 1383 -- Ties
-manhattan gower maxSymmSq 
+che jac pea 
 Seed 1384 -- Ties
-jaccard bordaCount 
-Seed 1385 -- Ties
-SqrdChrd trngDiscr 
+jac pea bordaCount 
 Seed 1386 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd bordaCount 
 Seed 1387 -- Ties
-canberra clark maxSymmSq 
-Seed 1388 -- Ties
-trngDiscr VSD3 
+can jac cla ney msc 
 Seed 1389 -- Ties
-manhattan gower cosine 
-Seed 1391 -- Ties
-SqrdChrd trngDiscr bordaCount 
+can cla pea 
 Seed 1392 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1394 -- Ties
-jaccard VSD3 bordaCount 
+jac pea vsd bordaCount 
 Seed 1396 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac ney 
 Seed 1397 -- Ties
-trngDiscr VSD3 
+vsd bordaCount 
+Seed 1399 -- Ties
+man euc che pea vsd 
 Seed 1400 -- Ties
-canberra clark 
+can jac cla bordaCount 
 Seed 1402 -- Ties
-manhattan euclidean gower 
+man euc 
 Seed 1403 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney pea vsd bordaCount 
 Seed 1404 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1405 -- Ties
-euclidean SqrdChrd trngDiscr VSD3 bordaCount 
+can pea 
+Seed 1407 -- Ties
+man euc jac 
 Seed 1408 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 1411 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 
+jac mat vsd 
 Seed 1412 -- Ties
-canberra jaccard clark 
+can jac cla 
 Seed 1413 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
 Seed 1414 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd 
 Seed 1415 -- Ties
-manhattan gower jaccard bordaCount 
+man jac 
 Seed 1416 -- Ties
-canberra jaccard 
+can jac bordaCount 
+Seed 1417 -- Ties
+euc che jac ney pea 
 Seed 1418 -- Ties
-manhattan euclidean gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc jac mat cla ney pea vsd bordaCount 
 Seed 1419 -- Ties
-manhattan euclidean chebyshev gower VSD3 
+man euc che vsd 
 Seed 1421 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac pea vsd 
 Seed 1422 -- Ties
-SqrdChrd trngDiscr 
+che vsd bordaCount 
 Seed 1423 -- Ties
-SqrdChrd clark 
+mat cla 
 Seed 1424 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1425 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 1426 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1427 -- Ties
-canberra jaccard clark 
+can jac cla pea 
 Seed 1428 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 1429 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
 Seed 1431 -- Ties
-chebyshev matusita 
+man euc can jac mat cla vsd bordaCount 
 Seed 1432 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1433 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat pea vsd bordaCount 
 Seed 1434 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1435 -- Ties
-trngDiscr VSD3 
+vsd bordaCount 
+Seed 1436 -- Ties
+pea bordaCount 
 Seed 1437 -- Ties
-matusita maxSymmSq 
+man euc mat ney vsd 
 Seed 1438 -- Ties
-manhattan euclidean canberra gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc can jac cos mat ney pea vsd bordaCount 
 Seed 1440 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
+Seed 1441 -- Ties
+man euc che jac mat ney pea vsd bordaCount 
+Seed 1442 -- Ties
+man euc che mat pea vsd bordaCount 
 Seed 1443 -- Ties
-manhattan canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man can jac mat cla ney pea vsd bordaCount 
 Seed 1444 -- Ties
-SqrdChrd trngDiscr 
+bordaCount pea 
 Seed 1445 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1447 -- Ties
-manhattan gower VSD3 
+man vsd 
+Seed 1448 -- Ties
+mat bordaCount 
+Seed 1449 -- Ties
+mat vsd bordaCount 
 Seed 1450 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1452 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 1453 -- Ties
+man euc che can jac cla ney pea vsd bordaCount 
 Seed 1454 -- Ties
-manhattan euclidean gower jaccard bordaCount 
+man euc jac pea 
 Seed 1455 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1457 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac vsd bordaCount 
+Seed 1458 -- Ties
+cla pea bordaCount 
 Seed 1459 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
 Seed 1460 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac ney vsd 
 Seed 1461 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1462 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1463 -- Ties
-manhattan gower jaccard trngDiscr VSD3 bordaCount 
+euc che jac mat ney vsd bordaCount 
 Seed 1464 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1465 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1468 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat ney pea vsd bordaCount 
 Seed 1470 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1471 -- Ties
-euclidean chebyshev SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+euc che mat cla ney vsd msc bordaCount 
 Seed 1472 -- Ties
-canberra SqrdChrd clark 
+can mat cla 
 Seed 1473 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat pea vsd bordaCount 
 Seed 1474 -- Ties
-chebyshev VSD3 
+che vsd bordaCount 
 Seed 1476 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos ney pea vsd bordaCount 
+Seed 1477 -- Ties
+can ney 
 Seed 1478 -- Ties
-manhattan euclidean chebyshev gower jaccard matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos ney pea vsd msc bordaCount 
+Seed 1479 -- Ties
+man pea vsd bordaCount 
 Seed 1481 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat ney pea vsd bordaCount 
 Seed 1482 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che mat ney vsd 
 Seed 1483 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 1484 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 1486 -- Ties
-euclidean chebyshev jaccard 
+euc che jac ney pea 
 Seed 1487 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd 
 Seed 1488 -- Ties
-canberra clark maxSymmSq 
+can jac cla ney msc 
 Seed 1489 -- Ties
-canberra jaccard 
-Seed 1490 -- Ties
-SqrdChrd trngDiscr 
+can jac 
 Seed 1491 -- Ties
-canberra clark 
-Seed 1492 -- Ties
-canberra clark trngDiscr VSD3 bordaCount 
-Seed 1495 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1497 -- Ties
-trngDiscr bordaCount 
-Seed 1498 -- Ties
-cosine VSD3 
-Seed 1499 -- Ties
-manhattan euclidean canberra gower SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
-Seed 1500 -- Ties
-jaccard bordaCount 
-Seed 1502 -- Ties
-canberra matusita maxSymmSq 
-Seed 1503 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1504 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1506 -- Ties
-manhattan canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1507 -- Ties
-SqrdChrd clark 
-Seed 1508 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1509 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1510 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1511 -- Ties
-manhattan euclidean chebyshev gower 
-Seed 1513 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1515 -- Ties
-canberra clark 
-Seed 1516 -- Ties
-manhattan gower jaccard VSD3 bordaCount 
-Seed 1517 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1520 -- Ties
-manhattan euclidean chebyshev canberra gower clark VSD3 bordaCount 
-Seed 1521 -- Ties
-cosine matusita maxSymmSq 
-Seed 1522 -- Ties
-manhattan euclidean gower 
-Seed 1523 -- Ties
-manhattan euclidean chebyshev gower VSD3 
-Seed 1525 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1526 -- Ties
-manhattan chebyshev gower matusita 
-Seed 1527 -- Ties
-manhattan euclidean canberra gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1528 -- Ties
-manhattan gower 
-Seed 1530 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1531 -- Ties
-canberra maxSymmSq 
-Seed 1534 -- Ties
-manhattan euclidean gower VSD3 
-Seed 1535 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 1536 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
-Seed 1537 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1538 -- Ties
-manhattan euclidean chebyshev gower VSD3 bordaCount 
-Seed 1539 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
-Seed 1540 -- Ties
-euclidean chebyshev jaccard 
-Seed 1541 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1542 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1543 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1545 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1546 -- Ties
-manhattan euclidean gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
-Seed  1547  -- The best!!
+can jac cla ney 
+Seed 1493 -- Ties
+cos ney 
+Seed  1497  -- The best!!
 bordaCount 
+Seed 1498 -- Ties
+cos ney vsd 
+Seed 1499 -- Ties
+man euc can jac mat cla vsd bordaCount 
+Seed 1500 -- Ties
+jac bordaCount 
+Seed 1502 -- Ties
+can pea 
+Seed 1503 -- Ties
+man euc che can jac mat pea vsd bordaCount 
+Seed 1506 -- Ties
+man can jac mat cla pea vsd msc bordaCount 
+Seed 1508 -- Ties
+man euc jac mat pea vsd bordaCount 
+Seed 1509 -- Ties
+can mat cla ney vsd bordaCount 
+Seed 1510 -- Ties
+mat ney vsd bordaCount 
+Seed 1511 -- Ties
+man euc che 
+Seed  1512  -- The best!!
+bordaCount 
+Seed 1513 -- Ties
+man euc che can jac mat cla ney pea vsd bordaCount 
+Seed 1515 -- Ties
+can cla 
+Seed 1516 -- Ties
+man jac pea vsd bordaCount 
+Seed 1517 -- Ties
+man euc che can jac mat cla ney pea vsd bordaCount 
+Seed 1520 -- Ties
+man euc che can cla pea vsd bordaCount 
+Seed 1522 -- Ties
+man euc ney pea 
+Seed 1523 -- Ties
+jac pea 
+Seed 1525 -- Ties
+mat vsd 
+Seed 1526 -- Ties
+can jac cla 
+Seed 1527 -- Ties
+man euc can mat vsd bordaCount 
+Seed 1528 -- Ties
+man ney 
+Seed 1530 -- Ties
+man euc che can jac cos mat cla ney pea vsd bordaCount 
+Seed 1532 -- Ties
+can ney pea 
+Seed 1533 -- Ties
+cla ney bordaCount 
+Seed 1534 -- Ties
+man euc ney vsd bordaCount 
+Seed 1535 -- Ties
+man euc che can jac mat cla ney pea vsd msc bordaCount 
+Seed 1536 -- Ties
+man euc che can jac mat cla ney pea vsd msc bordaCount 
+Seed 1537 -- Ties
+man euc che can jac mat cla ney pea vsd bordaCount 
+Seed 1538 -- Ties
+man euc che ney vsd 
+Seed 1539 -- Ties
+man euc che jac ney pea vsd bordaCount 
+Seed 1541 -- Ties
+man euc che can jac mat cla ney vsd bordaCount 
+Seed 1542 -- Ties
+man euc che can jac mat cla ney pea vsd bordaCount 
+Seed 1543 -- Ties
+man euc mat vsd bordaCount 
+Seed 1545 -- Ties
+euc che jac mat ney vsd bordaCount 
+Seed 1546 -- Ties
+man euc jac cos mat ney pea vsd bordaCount 
 Seed 1548 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat pea vsd bordaCount 
 Seed 1549 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat pea vsd bordaCount 
 Seed 1550 -- Ties
-jaccard SqrdChrd 
-Seed 1551 -- Ties
-SqrdChrd matusita bordaCount 
+jac mat 
 Seed 1552 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat ney pea vsd bordaCount 
 Seed 1553 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1554 -- Ties
-manhattan euclidean chebyshev gower 
-Seed 1555 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che 
 Seed 1556 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat ney pea vsd bordaCount 
 Seed 1558 -- Ties
-SqrdChrd trngDiscr bordaCount 
-Seed 1559 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea bordaCount 
 Seed 1561 -- Ties
-chebyshev bordaCount 
+che bordaCount 
 Seed 1562 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1563 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1564 -- Ties
-SqrdChrd matusita trngDiscr bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1565 -- Ties
-jaccard trngDiscr VSD3 
+jac pea vsd 
 Seed 1567 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac cos pea 
 Seed 1568 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1570 -- Ties
-manhattan gower 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1571 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1572 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 1574 -- Ties
+man can jac bordaCount 
 Seed 1575 -- Ties
-manhattan euclidean gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1576 -- Ties
-manhattan euclidean gower jaccard 
+man euc jac cos mat pea vsd bordaCount 
 Seed 1577 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1578 -- Ties
-SqrdChrd trngDiscr 
+che mat ney pea vsd bordaCount 
 Seed 1579 -- Ties
-manhattan gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man jac mat pea vsd bordaCount 
 Seed 1580 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1581 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney vsd bordaCount 
 Seed 1582 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
 Seed 1583 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1584 -- Ties
-SqrdChrd trngDiscr 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1585 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1586 -- Ties
-manhattan euclidean chebyshev gower 
+euc che mat vsd 
 Seed 1587 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla ney pea vsd msc bordaCount 
 Seed 1588 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat ney vsd bordaCount 
 Seed 1589 -- Ties
-manhattan gower jaccard bordaCount 
+man jac bordaCount 
 Seed 1590 -- Ties
-SqrdChrd clark trngDiscr VSD3 bordaCount 
+jac mat cla vsd bordaCount 
 Seed 1591 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 1592 -- Ties
-trngDiscr VSD3 
+vsd bordaCount 
 Seed 1593 -- Ties
-manhattan euclidean gower 
+man euc 
 Seed 1594 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1595 -- Ties
-euclidean chebyshev trngDiscr VSD3 bordaCount 
+euc che vsd bordaCount 
 Seed 1596 -- Ties
-manhattan euclidean chebyshev gower 
-Seed 1599 -- Ties
-manhattan gower 
+man euc che 
+Seed 1598 -- Ties
+vsd bordaCount 
 Seed 1600 -- Ties
-canberra clark 
-Seed 1601 -- Ties
-manhattan euclidean chebyshev gower 
+can cla 
 Seed 1602 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1604 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac bordaCount 
 Seed 1605 -- Ties
-chebyshev jaccard 
-Seed 1606 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+che jac pea 
 Seed 1607 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat ney pea vsd msc bordaCount cla 
 Seed 1608 -- Ties
-jaccard SqrdChrd trngDiscr bordaCount 
+jac mat bordaCount 
 Seed 1609 -- Ties
-SqrdChrd trngDiscr 
+jac pea 
 Seed 1611 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac ney pea 
 Seed 1613 -- Ties
-chebyshev SqrdChrd clark trngDiscr VSD3 bordaCount 
+che jac mat cla vsd bordaCount 
 Seed 1615 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 
+man euc che ney pea vsd 
+Seed 1616 -- Ties
+jac pea 
 Seed  1617  -- The best!!
 bordaCount 
 Seed 1618 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1619 -- Ties
-manhattan gower jaccard SqrdChrd bordaCount 
+mat pea vsd bordaCount 
 Seed 1620 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney vsd bordaCount 
 Seed 1621 -- Ties
-manhattan euclidean gower trngDiscr VSD3 bordaCount 
+man euc vsd 
 Seed 1622 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr bordaCount 
+euc che jac mat bordaCount 
 Seed 1623 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+mat bordaCount 
 Seed 1624 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1625 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 1626 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac pea 
 Seed 1627 -- Ties
-manhattan euclidean gower 
+man euc 
 Seed 1628 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+man euc mat pea vsd bordaCount 
 Seed 1629 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1630 -- Ties
-manhattan euclidean chebyshev gower 
+can jac cla 
 Seed 1631 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat ney pea vsd bordaCount 
 Seed 1632 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 1633 -- Ties
+che ney 
+Seed 1634 -- Ties
+jac pea bordaCount 
 Seed 1638 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
+Seed 1639 -- Ties
+ney vsd 
 Seed 1640 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat bordaCount 
 Seed 1641 -- Ties
-canberra clark 
+can cla 
 Seed 1643 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
+Seed 1644 -- Ties
+jac pea 
 Seed 1645 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
 Seed 1646 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney vsd bordaCount 
 Seed 1647 -- Ties
-canberra jaccard clark 
+can jac cla bordaCount 
 Seed 1648 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1649 -- Ties
-canberra clark maxSymmSq 
+can jac cla ney msc 
 Seed 1650 -- Ties
-euclidean chebyshev jaccard bordaCount 
-Seed 1651 -- Ties
-canberra clark 
+euc che jac 
 Seed 1652 -- Ties
-manhattan euclidean canberra gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc can jac cos mat pea vsd bordaCount 
 Seed 1653 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
 Seed 1654 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat vsd bordaCount 
 Seed 1655 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat pea vsd bordaCount 
 Seed 1656 -- Ties
-manhattan euclidean chebyshev gower VSD3 bordaCount 
+man euc che ney vsd bordaCount 
+Seed  1657  -- The best!!
+bordaCount 
 Seed 1658 -- Ties
-cosine bordaCount 
+cos pea bordaCount 
 Seed 1659 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat ney vsd bordaCount 
+Seed 1660 -- Ties
+can pea 
 Seed 1663 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1664 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1665 -- Ties
-manhattan euclidean gower 
+man euc che jac mat ney vsd bordaCount 
 Seed 1666 -- Ties
-manhattan euclidean gower jaccard trngDiscr VSD3 bordaCount 
+man euc jac vsd bordaCount 
 Seed 1667 -- Ties
-SqrdChrd trngDiscr 
+mat bordaCount 
 Seed 1670 -- Ties
-chebyshev trngDiscr VSD3 
+che vsd 
 Seed 1671 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat vsd bordaCount 
 Seed 1672 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac bordaCount 
+Seed 1673 -- Ties
+cla pea bordaCount 
 Seed 1675 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1676 -- Ties
-canberra clark 
+man euc che mat ney vsd bordaCount 
 Seed 1677 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney 
 Seed 1678 -- Ties
-chebyshev jaccard SqrdChrd clark 
+che jac mat cla 
 Seed 1679 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
+Seed 1680 -- Ties
+che pea 
 Seed 1681 -- Ties
-SqrdChrd clark 
-Seed 1682 -- Ties
-manhattan gower 
+man euc che jac 
 Seed 1683 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat ney pea vsd bordaCount 
 Seed 1684 -- Ties
-canberra clark 
-Seed 1685 -- Ties
-euclidean chebyshev canberra jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+can cla 
 Seed 1687 -- Ties
-canberra clark 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1688 -- Ties
-euclidean chebyshev bordaCount 
-Seed 1689 -- Ties
-manhattan gower 
+euc che 
 Seed 1690 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1691 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
+Seed 1692 -- Ties
+can jac cla 
 Seed 1693 -- Ties
-manhattan euclidean chebyshev gower VSD3 bordaCount 
+man euc che vsd 
 Seed 1694 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1695 -- Ties
-canberra clark 
+man euc che jac mat vsd bordaCount 
 Seed 1696 -- Ties
-canberra clark 
+can cla 
 Seed 1698 -- Ties
-manhattan gower jaccard bordaCount 
+man jac pea bordaCount 
 Seed 1699 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 
+man euc che mat pea vsd 
 Seed 1700 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1701 -- Ties
-matusita bordaCount 
+ney msc bordaCount 
 Seed 1702 -- Ties
-canberra clark maxSymmSq 
+can jac cla ney msc 
 Seed 1703 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1704 -- Ties
-manhattan euclidean gower jaccard trngDiscr VSD3 bordaCount 
-Seed 1705 -- Ties
-SqrdChrd trngDiscr bordaCount 
+man euc jac ney pea vsd bordaCount 
+Seed 1706 -- Ties
+can mat 
 Seed 1707 -- Ties
-manhattan gower trngDiscr VSD3 bordaCount 
+man pea vsd bordaCount 
 Seed 1708 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd bordaCount 
+Seed 1709 -- Ties
+euc che jac cos mat ney vsd bordaCount 
 Seed 1710 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat ney vsd bordaCount 
 Seed 1711 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 
+man euc che vsd 
 Seed 1712 -- Ties
-manhattan euclidean gower jaccard trngDiscr VSD3 bordaCount 
-Seed 1713 -- Ties
-SqrdChrd matusita trngDiscr 
-Seed 1714 -- Ties
-trngDiscr VSD3 
+man euc jac pea vsd bordaCount 
+Seed 1715 -- Ties
+cla pea 
 Seed 1717 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney pea vsd 
 Seed 1718 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 1719 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1720 -- Ties
-SqrdChrd trngDiscr VSD3 
+cos mat ney pea vsd bordaCount 
+Seed 1721 -- Ties
+ney vsd 
 Seed 1722 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1723 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac mat ney pea vsd bordaCount 
 Seed 1724 -- Ties
-manhattan euclidean gower 
+man euc 
 Seed 1726 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1728 -- Ties
-canberra SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount pea 
+Seed 1727 -- Ties
+cos pea 
 Seed 1729 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1730 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat vsd 
 Seed 1731 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 
-Seed 1732 -- Ties
-chebyshev manhattan euclidean gower jaccard trngDiscr VSD3 bordaCount 
+man euc jac mat ney vsd 
 Seed 1735 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 1736 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney vsd 
 Seed 1737 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd 
 Seed 1739 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1740 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1741 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 
+man euc che ney vsd 
 Seed 1742 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 
+man mat vsd 
+Seed 1743 -- Ties
+jac pea 
 Seed 1744 -- Ties
-cosine maxSymmSq 
+cos ney pea 
+Seed 1745 -- Ties
+man euc che mat pea vsd bordaCount 
 Seed 1746 -- Ties
-chebyshev jaccard 
+che jac 
 Seed 1747 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 1748 -- Ties
-canberra clark 
+can jac cla 
 Seed 1749 -- Ties
-SqrdChrd bordaCount 
+mat pea bordaCount 
 Seed 1750 -- Ties
-euclidean chebyshev jaccard VSD3 
-Seed 1751 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+euc che jac vsd bordaCount 
 Seed 1752 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 1753 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1754 -- Ties
-manhattan gower 
+man ney 
 Seed 1755 -- Ties
-manhattan euclidean gower 
+man euc ney 
 Seed 1756 -- Ties
-canberra clark 
-Seed 1757 -- Ties
-manhattan gower 
+can cla pea 
 Seed 1758 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 
+man euc che mat pea vsd 
 Seed 1759 -- Ties
-manhattan euclidean gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
-Seed 1761 -- Ties
-manhattan gower 
+man euc mat pea vsd bordaCount 
 Seed 1762 -- Ties
-jaccard matusita maxSymmSq 
-Seed 1763 -- Ties
-SqrdChrd trngDiscr 
-Seed 1764 -- Ties
-canberra clark 
+jac msc 
 Seed 1766 -- Ties
-SqrdChrd trngDiscr bordaCount 
+cos pea 
 Seed 1767 -- Ties
-canberra jaccard 
+can jac bordaCount 
 Seed 1768 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 1769 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 
-Seed 1772 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
-Seed 1773 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 
+man euc che mat ney pea vsd 
+Seed 1771 -- Ties
+cla pea 
 Seed 1774 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac ney bordaCount 
 Seed 1775 -- Ties
-manhattan euclidean chebyshev gower VSD3 
+man euc che ney vsd 
 Seed 1776 -- Ties
-trngDiscr VSD3 bordaCount 
+ney vsd 
+Seed 1777 -- Ties
+che man euc jac mat pea vsd bordaCount 
 Seed 1778 -- Ties
-manhattan euclidean gower 
+man euc pea 
 Seed 1779 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1780 -- Ties
-canberra clark 
+man euc che jac mat vsd bordaCount 
 Seed 1781 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc can jac mat ney vsd bordaCount 
 Seed 1783 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1784 -- Ties
-matusita maxSymmSq 
-Seed 1785 -- Ties
-manhattan gower 
+man euc che mat ney vsd 
 Seed 1786 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat ney vsd bordaCount 
 Seed 1787 -- Ties
-chebyshev jaccard cosine 
+che jac cos 
 Seed 1790 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac ney vsd 
 Seed 1793 -- Ties
-canberra jaccard 
+can jac pea 
 Seed 1794 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1795 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat vsd bordaCount 
 Seed 1796 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd 
 Seed 1797 -- Ties
-euclidean jaccard trngDiscr VSD3 bordaCount 
+euc jac vsd bordaCount 
 Seed 1798 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1799 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1800 -- Ties
-euclidean chebyshev jaccard 
+man euc che can jac mat cla pea vsd bordaCount 
 Seed 1801 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che mat ney pea vsd bordaCount 
 Seed 1802 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1803 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
 Seed 1804 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat vsd 
 Seed 1805 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 1806 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 1807 -- Ties
-cosine SqrdChrd trngDiscr VSD3 bordaCount 
+cos mat ney vsd bordaCount 
 Seed 1808 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1809 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat bordaCount 
 Seed 1810 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che ney vsd bordaCount 
 Seed 1811 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd msc bordaCount 
 Seed 1812 -- Ties
-canberra maxSymmSq 
-Seed 1813 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+can ney 
 Seed 1814 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney pea 
 Seed 1815 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1816 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1817 -- Ties
-chebyshev jaccard bordaCount 
-Seed 1818 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 
+che jac 
 Seed 1819 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat pea 
+Seed 1820 -- Ties
+can jac cla msc bordaCount 
 Seed 1822 -- Ties
-jaccard clark 
+jac cla pea 
 Seed 1823 -- Ties
-manhattan euclidean gower bordaCount 
-Seed 1824 -- Ties
-manhattan gower 
+mat ney vsd 
 Seed 1825 -- Ties
-euclidean chebyshev canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+euc che can mat cla vsd bordaCount 
 Seed 1826 -- Ties
-euclidean chebyshev jaccard bordaCount 
-Seed 1827 -- Ties
-SqrdChrd trngDiscr 
+euc che jac bordaCount 
 Seed 1828 -- Ties
-canberra clark 
+can cla pea bordaCount 
 Seed 1829 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
-Seed  1830  -- The best!!
-bordaCount 
+man euc che jac ney bordaCount 
 Seed 1831 -- Ties
-VSD3 bordaCount 
+pea vsd bordaCount 
 Seed 1833 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1838 -- Ties
-SqrdChrd matusita trngDiscr bordaCount 
-Seed 1839 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine 
+man euc che can jac mat ney pea vsd bordaCount 
+Seed 1834 -- Ties
+jac pea 
+Seed 1836 -- Ties
+man euc mat pea vsd bordaCount 
 Seed 1841 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+pea man euc che mat vsd bordaCount 
 Seed 1842 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla vsd bordaCount 
+Seed 1843 -- Ties
+man euc che mat pea vsd bordaCount 
 Seed 1844 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 
-Seed 1845 -- Ties
-manhattan gower 
+man euc che jac mat pea vsd bordaCount 
 Seed 1846 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney vsd msc bordaCount 
 Seed 1847 -- Ties
-manhattan euclidean gower bordaCount 
+man euc ney 
 Seed 1848 -- Ties
-SqrdChrd trngDiscr 
+man euc che jac pea vsd bordaCount 
 Seed 1850 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1851 -- Ties
-manhattan gower jaccard trngDiscr VSD3 bordaCount 
+man jac pea vsd bordaCount 
 Seed 1852 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 1854 -- Ties
-euclidean SqrdChrd trngDiscr VSD3 bordaCount 
+can jac 
 Seed 1855 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1857 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
+can jac mat cla bordaCount 
 Seed 1859 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 1860 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1861 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac pea bordaCount 
+Seed 1862 -- Ties
+man euc che mat ney vsd 
+Seed 1863 -- Ties
+cla pea 
 Seed 1864 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1865 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat pea vsd bordaCount 
 Seed 1866 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 
+can mat cla pea vsd bordaCount 
 Seed 1867 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
-Seed 1868 -- Ties
-euclidean chebyshev VSD3 bordaCount 
+man euc che jac ney vsd bordaCount 
 Seed 1869 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1871 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat ney vsd bordaCount 
 Seed 1872 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 1873 -- Ties
-euclidean chebyshev 
+euc che 
+Seed 1874 -- Ties
+can pea 
 Seed 1875 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1876 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat vsd bordaCount 
 Seed 1877 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 1879 -- Ties
-canberra clark 
+can cla ney bordaCount 
 Seed 1880 -- Ties
-canberra jaccard clark 
+man euc che mat pea vsd bordaCount can jac cla 
 Seed 1882 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla vsd bordaCount 
 Seed 1883 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
-Seed 1886 -- Ties
-canberra clark 
+man euc che ney vsd 
+Seed 1884 -- Ties
+che pea 
 Seed 1888 -- Ties
-manhattan euclidean gower VSD3 bordaCount 
+man euc vsd 
 Seed 1889 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla pea vsd bordaCount 
 Seed 1890 -- Ties
-manhattan euclidean gower jaccard cosine matusita bordaCount 
+man euc jac cos bordaCount 
 Seed 1894 -- Ties
-euclidean jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc jac mat vsd bordaCount 
 Seed 1895 -- Ties
-canberra clark 
+can jac cla 
 Seed 1898 -- Ties
-manhattan euclidean gower VSD3 
-Seed 1899 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc vsd 
+Seed 1900 -- Ties
+jac pea 
 Seed 1902 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1903 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1905 -- Ties
-canberra SqrdChrd trngDiscr bordaCount 
+man mat pea vsd bordaCount 
+Seed 1904 -- Ties
+mat pea 
 Seed 1906 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 1907 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
+Seed 1908 -- Ties
+jac pea 
+Seed 1909 -- Ties
+mat vsd 
 Seed 1910 -- Ties
-manhattan gower matusita 
+euc ney pea vsd bordaCount 
 Seed 1911 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
+Seed 1915 -- Ties
+ney pea 
 Seed 1916 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat pea vsd bordaCount 
 Seed 1917 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 1919 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney bordaCount 
 Seed 1920 -- Ties
-manhattan canberra gower clark bordaCount 
+man can cla pea 
 Seed 1921 -- Ties
-manhattan gower jaccard 
+can cos mat ney pea vsd bordaCount 
 Seed 1922 -- Ties
-chebyshev canberra jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1923 -- Ties
-jaccard bordaCount 
+che can jac mat cla vsd bordaCount 
 Seed 1924 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine 
+man euc che jac cos ney 
 Seed 1925 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 1926 -- Ties
-SqrdChrd trngDiscr VSD3 
-Seed  1927  -- The best!!
-bordaCount 
+mat vsd 
 Seed 1930 -- Ties
-canberra jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+can jac mat cla vsd bordaCount 
 Seed 1931 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney pea vsd bordaCount 
 Seed 1932 -- Ties
-SqrdChrd trngDiscr VSD3 
-Seed 1933 -- Ties
-canberra clark 
-Seed 1934 -- Ties
-manhattan gower 
+mat ney pea vsd bordaCount 
+Seed 1935 -- Ties
+can jac 
 Seed 1937 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1938 -- Ties
-jaccard VSD3 bordaCount 
+jac vsd bordaCount 
 Seed 1939 -- Ties
-trngDiscr VSD3 
+man euc che jac bordaCount 
 Seed 1940 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat ney pea vsd bordaCount 
 Seed 1941 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney pea vsd bordaCount 
 Seed 1942 -- Ties
-chebyshev trngDiscr VSD3 
+che vsd 
 Seed 1945 -- Ties
-chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed  1947  -- The best!!
-bordaCount 
+che jac mat pea vsd bordaCount 
+Seed 1946 -- Ties
+cla bordaCount 
+Seed 1947 -- Ties
+euc che 
 Seed 1948 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 1949 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd 
 Seed 1950 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 1951 -- Ties
-manhattan euclidean chebyshev gower 
-Seed 1952 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che jac mat vsd 
 Seed 1953 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 1954 -- Ties
-canberra clark 
+can cla pea 
 Seed 1955 -- Ties
-canberra clark 
-Seed 1956 -- Ties
-manhattan gower 
+can jac cla msc 
 Seed 1957 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat pea vsd bordaCount 
 Seed 1958 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
-Seed 1959 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che ney vsd bordaCount 
 Seed 1962 -- Ties
-manhattan canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 1963 -- Ties
-manhattan euclidean gower bordaCount 
+euc che ney man can jac mat cla pea vsd bordaCount 
 Seed 1964 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 1965 -- Ties
-manhattan euclidean gower jaccard VSD3 bordaCount 
+man euc jac ney pea vsd bordaCount 
 Seed 1966 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1967 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac 
 Seed 1968 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 1969 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1970 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos ney pea vsd msc bordaCount 
 Seed 1971 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd 
 Seed 1974 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 1975 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd bordaCount 
 Seed 1977 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 1980 -- Ties
-manhattan euclidean gower jaccard cosine 
+can mat vsd bordaCount 
+Seed 1981 -- Ties
+jac mat cla bordaCount 
 Seed 1982 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 1984 -- Ties
+can jac cla 
+Seed 1989 -- Ties
+cos pea 
 Seed 1992 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 1993 -- Ties
-chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+che jac mat pea vsd bordaCount 
 Seed 1994 -- Ties
-euclidean chebyshev trngDiscr VSD3 bordaCount 
+euc che vsd bordaCount 
 Seed 1995 -- Ties
-canberra clark 
+can cla 
 Seed 1997 -- Ties
-trngDiscr VSD3 bordaCount 
+man euc ney 
 Seed 1998 -- Ties
-manhattan euclidean gower jaccard SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc jac cos mat ney pea vsd bordaCount 
 Seed 1999 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd msc bordaCount 
 Seed 2000 -- Ties
-canberra SqrdChrd clark 
+can jac mat cla bordaCount 
 Seed 2001 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 2002 -- Ties
-SqrdChrd trngDiscr bordaCount 
-Seed 2003 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+can mat cla pea vsd bordaCount 
 Seed 2004 -- Ties
-manhattan gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed  2005  -- The best!!
-bordaCount 
+man jac mat pea vsd bordaCount 
+Seed 2005 -- Ties
+pea bordaCount 
 Seed 2006 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 maxSymmSq 
+man euc mat ney pea vsd 
 Seed 2009 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2010 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd 
 Seed 2011 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2012 -- Ties
-manhattan gower 
+man euc che jac mat pea vsd bordaCount 
 Seed 2013 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat vsd bordaCount jac 
 Seed 2014 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2015 -- Ties
-euclidean SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney pea vsd bordaCount 
 Seed 2016 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 2017 -- Ties
-manhattan gower jaccard 
-Seed 2018 -- Ties
-canberra matusita 
-Seed 2020 -- Ties
-manhattan gower 
+mat vsd 
+Seed 2019 -- Ties
+man euc che can mat ney pea vsd bordaCount cla msc 
 Seed 2021 -- Ties
-SqrdChrd trngDiscr 
+mat pea 
 Seed 2022 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2023 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2024 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 2026 -- Ties
-manhattan gower 
+man ney 
 Seed 2027 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can mat ney pea vsd 
 Seed 2028 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 2029 -- Ties
-manhattan euclidean gower trngDiscr VSD3 bordaCount 
+man euc vsd bordaCount 
 Seed  2030  -- The best!!
 bordaCount 
 Seed 2031 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat vsd 
 Seed 2032 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
-Seed 2033 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 2034 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 
+euc che mat vsd 
 Seed 2035 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 2036 -- Ties
-canberra clark 
+can cla pea 
 Seed 2037 -- Ties
-canberra clark 
+mat vsd bordaCount 
 Seed 2038 -- Ties
-manhattan euclidean gower VSD3 bordaCount 
-Seed 2039 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 
+man euc pea vsd bordaCount 
 Seed 2040 -- Ties
-euclidean chebyshev canberra jaccard cosine SqrdChrd clark trngDiscr VSD3 bordaCount 
+euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 2041 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
+Seed 2042 -- Ties
+jac pea 
 Seed 2043 -- Ties
-manhattan gower VSD3 
+man vsd 
 Seed 2044 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd 
 Seed 2046 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat vsd bordaCount 
 Seed 2047 -- Ties
-canberra clark 
+can jac cla bordaCount 
 Seed 2048 -- Ties
-jaccard bordaCount 
+jac bordaCount 
 Seed 2049 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney vsd bordaCount 
 Seed 2050 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2051 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2052 -- Ties
-manhattan euclidean canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla vsd bordaCount 
 Seed 2053 -- Ties
-canberra clark 
+man euc mat vsd bordaCount 
 Seed 2054 -- Ties
-manhattan euclidean gower 
+man euc ney 
 Seed 2055 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
 Seed 2056 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat vsd 
 Seed 2057 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat vsd 
 Seed 2058 -- Ties
-canberra clark maxSymmSq 
+can jac cla ney msc 
 Seed 2059 -- Ties
-manhattan euclidean chebyshev gower jaccard matusita trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 2060 -- Ties
-manhattan euclidean gower VSD3 
+man euc ney vsd bordaCount 
 Seed 2061 -- Ties
-trngDiscr VSD3 bordaCount 
+pea vsd bordaCount 
 Seed 2062 -- Ties
-jaccard trngDiscr VSD3 
+jac ney vsd 
 Seed 2063 -- Ties
-manhattan euclidean gower jaccard 
+man euc jac pea 
 Seed 2064 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac cos mat ney pea vsd bordaCount 
 Seed 2065 -- Ties
-canberra clark 
-Seed 2066 -- Ties
-manhattan gower 
+can jac cla 
 Seed 2068 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 2069 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat vsd 
 Seed 2070 -- Ties
-manhattan canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man can jac mat cla ney pea vsd msc bordaCount 
 Seed 2071 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2072 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che pea 
 Seed 2073 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat ney vsd bordaCount 
 Seed 2074 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat vsd bordaCount 
 Seed 2076 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat ney pea vsd bordaCount 
 Seed 2077 -- Ties
-canberra clark 
+can jac cla 
 Seed 2078 -- Ties
-euclidean chebyshev canberra jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che can jac mat ney vsd bordaCount 
 Seed 2080 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla ney pea vsd bordaCount 
 Seed 2081 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla vsd bordaCount 
+Seed 2082 -- Ties
+man euc che jac ney vsd bordaCount can 
 Seed 2083 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2084 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
+Seed 2085 -- Ties
+man mat vsd bordaCount 
 Seed 2086 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 2087 -- Ties
-canberra clark 
+can cla 
 Seed 2089 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat ney vsd bordaCount 
 Seed 2090 -- Ties
-canberra clark 
+can cla pea 
 Seed 2091 -- Ties
-canberra clark 
+can cla pea 
 Seed 2092 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat ney vsd bordaCount 
 Seed 2093 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2094 -- Ties
-manhattan gower trngDiscr VSD3 
-Seed 2095 -- Ties
-manhattan gower VSD3 
+man ney vsd 
 Seed 2096 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
-Seed 2099 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac ney bordaCount 
 Seed 2100 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 2101 -- Ties
-canberra clark 
+man euc che can mat cla ney vsd bordaCount 
 Seed 2102 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac pea vsd bordaCount 
 Seed 2104 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2105 -- Ties
-manhattan euclidean chebyshev gower matusita bordaCount 
+man euc che 
 Seed 2106 -- Ties
-canberra clark bordaCount 
+can cla ney bordaCount 
 Seed 2107 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 
+man euc mat ney pea vsd 
 Seed 2108 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2109 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 2110 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat vsd bordaCount 
+Seed 2111 -- Ties
+mat pea 
 Seed 2112 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 2113 -- Ties
-manhattan canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man can mat cla pea vsd 
+Seed 2114 -- Ties
+man euc jac che can cos mat cla ney pea vsd bordaCount 
 Seed 2115 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 2116 -- Ties
-canberra clark 
-Seed 2117 -- Ties
-manhattan euclidean gower jaccard 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 2118 -- Ties
-matusita maxSymmSq 
+man cos pea 
 Seed 2119 -- Ties
-cosine VSD3 
+cos ney vsd bordaCount 
 Seed 2120 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che vsd bordaCount 
 Seed 2121 -- Ties
-canberra clark 
-Seed 2122 -- Ties
-manhattan euclidean chebyshev canberra gower clark trngDiscr VSD3 bordaCount 
+can cla 
+Seed 2123 -- Ties
+can jac cla 
 Seed 2124 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 2125 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 2126 -- Ties
-SqrdChrd trngDiscr VSD3 
+cos mat pea vsd 
 Seed 2127 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd bordaCount 
 Seed 2128 -- Ties
-matusita bordaCount 
+can jac cla msc bordaCount 
+Seed 2130 -- Ties
+man euc che jac ney pea vsd bordaCount 
 Seed 2131 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 
+man euc che jac mat ney vsd 
 Seed 2132 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat pea vsd bordaCount 
 Seed 2133 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2134 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2136 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2137 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd 
 Seed 2138 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 
+jac mat vsd bordaCount 
 Seed 2139 -- Ties
-canberra clark 
-Seed 2140 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+can jac cla 
 Seed 2141 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che ney vsd 
 Seed 2142 -- Ties
-manhattan euclidean gower 
+man euc ney 
 Seed 2143 -- Ties
-canberra clark 
+can jac cla ney 
 Seed  2144  -- The best!!
 bordaCount 
 Seed 2145 -- Ties
-canberra clark 
+can cla 
 Seed 2146 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 2147 -- Ties
-canberra clark 
+can cla pea 
 Seed 2148 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2149 -- Ties
-SqrdChrd trngDiscr 
+jac cos mat pea vsd bordaCount 
 Seed 2150 -- Ties
-euclidean chebyshev VSD3 bordaCount 
+euc che vsd 
 Seed 2151 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 2152 -- Ties
-canberra jaccard clark 
+man euc che can jac mat cla ney vsd bordaCount 
 Seed 2153 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac mat ney pea vsd bordaCount 
 Seed 2154 -- Ties
-manhattan euclidean gower 
+man euc pea 
 Seed 2155 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
+Seed 2156 -- Ties
+can bordaCount 
 Seed 2157 -- Ties
-manhattan euclidean chebyshev gower VSD3 bordaCount 
+man euc che vsd 
 Seed 2159 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2160 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac ney vsd bordaCount 
+Seed 2161 -- Ties
+ney vsd bordaCount 
 Seed 2162 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 2163 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2164 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat pea vsd bordaCount 
 Seed 2165 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2168 -- Ties
-manhattan euclidean gower jaccard trngDiscr VSD3 bordaCount 
-Seed 2169 -- Ties
-manhattan gower 
-Seed 2170 -- Ties
-canberra SqrdChrd trngDiscr VSD3 bordaCount clark 
+man euc che jac mat pea vsd bordaCount 
+Seed 2166 -- Ties
+jac pea 
 Seed 2171 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine trngDiscr VSD3 bordaCount 
-Seed 2172 -- Ties
-manhattan gower 
+can mat 
 Seed 2174 -- Ties
-manhattan gower jaccard 
-Seed 2175 -- Ties
-SqrdChrd trngDiscr 
-Seed 2177 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+pea vsd bordaCount 
+Seed 2176 -- Ties
+cos pea 
 Seed 2178 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney pea vsd bordaCount 
 Seed 2179 -- Ties
-canberra clark 
+can jac cla 
 Seed 2180 -- Ties
-chebyshev jaccard bordaCount 
-Seed 2181 -- Ties
-manhattan gower 
+che jac 
+Seed 2182 -- Ties
+jac pea 
 Seed 2183 -- Ties
-manhattan euclidean gower jaccard VSD3 
+man euc jac vsd 
 Seed 2184 -- Ties
-canberra clark 
+man euc che pea vsd 
 Seed 2185 -- Ties
-SqrdChrd trngDiscr bordaCount 
+mat bordaCount 
 Seed 2186 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 2187 -- Ties
-chebyshev jaccard canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+can mat cla ney vsd bordaCount 
 Seed 2188 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 2189 -- Ties
-manhattan gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man jac mat ney pea vsd bordaCount 
 Seed 2190 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 2191 -- Ties
-clark maxSymmSq 
+cla msc 
 Seed 2192 -- Ties
-manhattan euclidean chebyshev gower bordaCount 
+man euc che bordaCount 
 Seed 2193 -- Ties
-jaccard trngDiscr VSD3 bordaCount 
+euc che ney pea 
 Seed 2194 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
-Seed 2195 -- Ties
-canberra clark 
+can mat cla pea bordaCount 
 Seed 2196 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2197 -- Ties
-manhattan euclidean gower 
-Seed  2198  -- The best!!
-bordaCount 
+man euc ney 
+Seed 2198 -- Ties
+cos mat ney vsd 
 Seed 2199 -- Ties
-manhattan chebyshev gower SqrdChrd matusita trngDiscr VSD3 
+man che mat pea vsd 
 Seed 2200 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 2201 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+pea bordaCount 
 Seed 2203 -- Ties
-matusita maxSymmSq 
+man euc che jac mat vsd bordaCount can cla ney 
 Seed 2204 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat pea vsd bordaCount 
 Seed 2205 -- Ties
-canberra jaccard clark 
+can jac cla 
 Seed 2206 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 
+man euc che ney pea vsd 
+Seed 2207 -- Ties
+man euc che jac ney pea vsd bordaCount 
 Seed 2208 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2209 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac mat vsd bordaCount 
 Seed 2210 -- Ties
-manhattan gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man mat vsd msc bordaCount pea 
 Seed 2211 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney 
 Seed 2212 -- Ties
-manhattan gower cosine bordaCount 
+man cos 
 Seed 2213 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc mat ney vsd bordaCount 
 Seed 2214 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd 
 Seed 2216 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2217 -- Ties
-manhattan euclidean gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
-Seed  2218  -- The best!!
-bordaCount 
+can cla msc bordaCount 
 Seed 2219 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 2220 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac vsd 
 Seed 2221 -- Ties
-manhattan euclidean chebyshev gower trngDiscr VSD3 bordaCount 
+man euc che vsd 
 Seed 2222 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd msc bordaCount 
 Seed 2223 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can mat ney pea vsd bordaCount 
 Seed 2224 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2225 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can mat cla ney vsd bordaCount 
 Seed 2226 -- Ties
-manhattan euclidean chebyshev gower maxSymmSq 
+man euc che ney 
 Seed 2227 -- Ties
-manhattan canberra gower SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+man can jac mat cla vsd msc bordaCount 
 Seed 2228 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 
+man euc che jac pea vsd 
 Seed 2231 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+can mat cla vsd bordaCount 
 Seed 2232 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd 
+Seed 2233 -- Ties
+jac ney 
 Seed 2234 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2235 -- Ties
-canberra SqrdChrd clark bordaCount 
+can jac mat cla bordaCount 
 Seed 2237 -- Ties
-euclidean VSD3 bordaCount 
+euc vsd 
 Seed 2238 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 2239 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che mat ney vsd bordaCount 
 Seed  2240  -- The best!!
 bordaCount 
 Seed 2241 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2242 -- Ties
-manhattan canberra gower 
+mat vsd bordaCount 
 Seed 2243 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can mat cla ney pea vsd bordaCount 
 Seed 2245 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2246 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+euc che jac mat pea vsd bordaCount 
 Seed 2247 -- Ties
-SqrdChrd trngDiscr VSD3 maxSymmSq bordaCount 
+mat ney vsd bordaCount 
 Seed 2248 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 2249 -- Ties
-canberra clark 
+can cla 
 Seed 2250 -- Ties
-SqrdChrd trngDiscr 
+can jac cla bordaCount 
 Seed 2251 -- Ties
-canberra SqrdChrd matusita clark 
+can jac mat cla bordaCount 
 Seed 2252 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+euc che mat vsd bordaCount 
 Seed 2253 -- Ties
-canberra jaccard SqrdChrd clark trngDiscr bordaCount 
+can jac mat cla pea bordaCount 
 Seed 2255 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
+Seed 2257 -- Ties
+man euc che mat vsd bordaCount 
 Seed 2258 -- Ties
-manhattan gower VSD3 
+man ney vsd bordaCount 
 Seed 2259 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac 
 Seed 2260 -- Ties
-manhattan gower 
+euc che jac ney pea bordaCount 
 Seed 2261 -- Ties
-jaccard SqrdChrd 
+jac mat bordaCount 
+Seed 2262 -- Ties
+jac pea 
 Seed 2263 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 2264 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che jac mat cla ney vsd bordaCount 
 Seed 2267 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 
+jac bordaCount 
 Seed 2268 -- Ties
-euclidean chebyshev VSD3 bordaCount 
+euc che vsd bordaCount 
+Seed 2269 -- Ties
+mat vsd 
+Seed 2270 -- Ties
+che mat 
 Seed 2271 -- Ties
-jaccard clark 
+jac cla msc 
 Seed 2272 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che ney 
 Seed 2273 -- Ties
-euclidean chebyshev 
+euc che 
 Seed 2274 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2275 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 2277 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+can pea 
 Seed 2279 -- Ties
-canberra SqrdChrd clark trngDiscr 
+can mat cla pea 
 Seed 2280 -- Ties
-canberra clark 
+can cla 
 Seed 2282 -- Ties
-manhattan euclidean gower 
+man euc 
 Seed 2283 -- Ties
-jaccard bordaCount 
+jac bordaCount 
 Seed 2284 -- Ties
-canberra clark 
+can jac cla 
 Seed 2285 -- Ties
-euclidean chebyshev SqrdChrd trngDiscr VSD3 
+euc che mat pea vsd bordaCount 
 Seed 2286 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac 
 Seed 2287 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2289 -- Ties
-SqrdChrd trngDiscr 
+man euc che jac mat ney vsd bordaCount 
+Seed 2288 -- Ties
+jac cla ney 
+Seed  2289  -- The best!!
+bordaCount 
 Seed 2290 -- Ties
-cosine SqrdChrd trngDiscr VSD3 bordaCount 
+cos mat vsd bordaCount 
 Seed 2291 -- Ties
-canberra jaccard clark 
+can jac cla bordaCount 
 Seed 2292 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd bordaCount 
 Seed 2293 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 2294 -- Ties
-canberra clark maxSymmSq 
+man euc mat pea vsd bordaCount 
+Seed 2295 -- Ties
+man euc che can mat cla ney vsd bordaCount 
 Seed 2296 -- Ties
-SqrdChrd matusita trngDiscr bordaCount 
+mat bordaCount 
 Seed 2297 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat pea vsd bordaCount 
 Seed 2298 -- Ties
-canberra clark 
+can cla pea 
 Seed 2300 -- Ties
-chebyshev canberra jaccard clark 
-Seed 2301 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+che can jac cla ney pea bordaCount 
 Seed 2303 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
+Seed 2304 -- Ties
+can cla 
 Seed 2305 -- Ties
-manhattan gower VSD3 bordaCount 
+man vsd bordaCount 
+Seed 2306 -- Ties
+che ney 
 Seed 2308 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man can cla ney 
 Seed 2309 -- Ties
-euclidean chebyshev 
-Seed 2311 -- Ties
-matusita maxSymmSq 
+euc che pea 
 Seed  2313  -- The best!!
 bordaCount 
 Seed 2314 -- Ties
-euclidean jaccard 
+euc jac 
 Seed 2315 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 2316 -- Ties
-manhattan euclidean canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can mat cla ney pea vsd bordaCount 
 Seed 2317 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che 
 Seed 2318 -- Ties
-manhattan euclidean gower 
+man euc ney 
 Seed 2320 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac mat pea vsd bordaCount 
 Seed 2321 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd bordaCount 
 Seed 2322 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 2323 -- Ties
-canberra clark 
-Seed 2324 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+can cla 
 Seed 2325 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac cos mat cla ney pea vsd msc bordaCount 
 Seed 2326 -- Ties
-manhattan euclidean gower 
+che jac vsd 
 Seed 2327 -- Ties
-chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+che jac mat pea vsd bordaCount 
 Seed 2328 -- Ties
-euclidean chebyshev jaccard 
-Seed 2329 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+euc che jac ney 
+Seed 2330 -- Ties
+man euc che jac ney vsd 
 Seed 2331 -- Ties
-manhattan euclidean chebyshev gower jaccard 
-Seed 2333 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac ney 
+Seed 2332 -- Ties
+cla pea 
 Seed 2334 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat ney vsd bordaCount 
 Seed 2335 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 2336 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney pea vsd msc bordaCount 
 Seed 2337 -- Ties
-canberra clark 
+can jac cla bordaCount 
 Seed 2338 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat vsd bordaCount 
 Seed 2339 -- Ties
-canberra jaccard clark 
+can jac cla 
 Seed 2341 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac bordaCount 
 Seed 2342 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2343 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac pea vsd bordaCount 
 Seed 2344 -- Ties
-manhattan gower 
+jac cos 
+Seed 2346 -- Ties
+jac ney 
 Seed 2347 -- Ties
-SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
-Seed 2348 -- Ties
-SqrdChrd trngDiscr 
+mat vsd msc bordaCount 
 Seed 2349 -- Ties
-canberra clark 
+man euc che 
 Seed 2350 -- Ties
-manhattan euclidean gower trngDiscr VSD3 bordaCount 
+man euc vsd 
 Seed 2351 -- Ties
-canberra clark bordaCount 
+can cla ney pea bordaCount 
 Seed 2352 -- Ties
-canberra clark 
+can cla pea 
 Seed 2353 -- Ties
-manhattan gower VSD3 bordaCount 
+man ney vsd bordaCount 
 Seed 2354 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat pea vsd bordaCount 
 Seed 2355 -- Ties
-euclidean chebyshev 
+euc che ney 
 Seed 2356 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac ney pea vsd bordaCount 
 Seed 2358 -- Ties
-manhattan euclidean chebyshev gower bordaCount 
+can cos mat cla ney pea vsd 
 Seed 2359 -- Ties
-trngDiscr VSD3 bordaCount 
-Seed  2360  -- The best!!
-bordaCount 
+pea vsd bordaCount 
+Seed 2360 -- Ties
+pea bordaCount 
+Seed 2361 -- Ties
+can jac cla 
 Seed 2362 -- Ties
-euclidean chebyshev trngDiscr VSD3 bordaCount 
-Seed 2363 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 
-Seed 2364 -- Ties
-manhattan euclidean chebyshev gower jaccard maxSymmSq bordaCount 
-Seed 2366 -- Ties
-manhattan gower 
+euc che pea vsd bordaCount 
+Seed 2365 -- Ties
+jac pea 
 Seed 2367 -- Ties
-euclidean chebyshev jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+cla pea 
 Seed 2368 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 2370 -- Ties
-manhattan gower SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man cos mat ney pea vsd msc bordaCount 
 Seed 2371 -- Ties
-chebyshev jaccard SqrdChrd 
-Seed 2372 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc pea vsd bordaCount 
 Seed 2373 -- Ties
-euclidean chebyshev 
+euc che 
+Seed 2374 -- Ties
+jac pea 
 Seed 2375 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2376 -- Ties
-euclidean chebyshev jaccard cosine 
+euc che jac cos ney pea 
 Seed 2377 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 2379 -- Ties
-canberra clark 
+can jac cla 
 Seed 2380 -- Ties
-canberra clark 
+can cla 
 Seed 2381 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 2382 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac mat pea vsd bordaCount 
 Seed 2383 -- Ties
-matusita maxSymmSq 
+man euc che can jac cos mat cla ney vsd bordaCount 
 Seed 2384 -- Ties
-manhattan gower 
+man ney 
 Seed 2385 -- Ties
-canberra clark 
+man euc che jac cos mat ney vsd msc bordaCount can cla pea 
 Seed 2386 -- Ties
-manhattan gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man jac mat pea vsd bordaCount 
 Seed 2387 -- Ties
-euclidean chebyshev jaccard 
+euc che jac 
 Seed 2389 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2391 -- Ties
-manhattan euclidean gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
+Seed 2390 -- Ties
+man euc ney pea vsd 
 Seed 2392 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+euc ney 
 Seed 2393 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 
+che mat vsd 
 Seed 2394 -- Ties
-canberra clark maxSymmSq 
+can jac cla ney msc 
 Seed 2395 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+mat ney vsd bordaCount 
 Seed 2396 -- Ties
-manhattan euclidean gower jaccard bordaCount 
+man euc jac 
 Seed 2399 -- Ties
-manhattan euclidean canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla vsd bordaCount 
 Seed 2400 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2401 -- Ties
-manhattan euclidean gower 
-Seed 2402 -- Ties
-SqrdChrd trngDiscr VSD3 
+man euc 
+Seed  2402  -- The best!!
+bordaCount 
 Seed 2404 -- Ties
-cosine SqrdChrd trngDiscr VSD3 bordaCount 
+cos mat ney vsd 
 Seed 2405 -- Ties
-manhattan euclidean canberra gower SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla vsd bordaCount 
 Seed 2406 -- Ties
-manhattan canberra gower clark 
+man can cla 
+Seed 2409 -- Ties
+can jac 
 Seed 2410 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat pea vsd 
 Seed 2412 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2414 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
-Seed 2415 -- Ties
-manhattan gower bordaCount 
+man euc che jac vsd bordaCount 
 Seed 2416 -- Ties
-canberra cosine SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+can cos mat cla ney pea vsd msc bordaCount 
 Seed 2417 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 
+man mat vsd bordaCount 
 Seed 2419 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che can jac mat ney pea vsd bordaCount 
 Seed 2420 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+can cla 
 Seed 2421 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd matusita clark trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che can jac mat cla ney pea vsd msc bordaCount 
 Seed 2422 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
+Seed 2423 -- Ties
+jac bordaCount 
 Seed 2424 -- Ties
-euclidean chebyshev 
+can jac mat cla vsd bordaCount 
 Seed 2425 -- Ties
-jaccard SqrdChrd 
+jac mat ney 
 Seed 2426 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+jac mat pea vsd bordaCount 
 Seed 2428 -- Ties
-manhattan euclidean gower SqrdChrd trngDiscr VSD3 
+man euc mat pea vsd 
+Seed 2430 -- Ties
+can jac 
 Seed 2431 -- Ties
-manhattan canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man can jac mat cla vsd bordaCount 
 Seed 2432 -- Ties
-canberra SqrdChrd clark trngDiscr bordaCount 
+can mat cla pea bordaCount 
 Seed 2433 -- Ties
-manhattan euclidean gower 
+man euc ney 
 Seed 2434 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney pea vsd bordaCount 
 Seed 2435 -- Ties
-manhattan euclidean gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac cos mat ney pea vsd bordaCount 
+Seed 2436 -- Ties
+man can jac mat ney pea vsd bordaCount 
 Seed 2437 -- Ties
-canberra SqrdChrd 
+can mat 
 Seed 2438 -- Ties
-manhattan euclidean gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc jac mat ney pea vsd bordaCount 
+Seed 2439 -- Ties
+jac pea 
 Seed 2440 -- Ties
-manhattan euclidean chebyshev gower SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2441 -- Ties
-manhattan euclidean chebyshev gower jaccard VSD3 bordaCount 
+man euc che mat pea vsd bordaCount 
 Seed 2442 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+cos mat pea vsd bordaCount 
 Seed 2443 -- Ties
-chebyshev jaccard 
+che jac 
+Seed 2444 -- Ties
+can ney 
 Seed 2445 -- Ties
-canberra jaccard clark 
+man euc che mat ney vsd bordaCount 
 Seed 2446 -- Ties
-chebyshev SqrdChrd trngDiscr VSD3 bordaCount 
+che mat vsd bordaCount 
+Seed 2447 -- Ties
+che ney 
 Seed 2448 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 bordaCount 
+man mat pea vsd bordaCount 
 Seed 2449 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+man euc che jac cos mat ney vsd msc bordaCount 
 Seed 2450 -- Ties
-euclidean chebyshev 
+euc che man jac mat ney vsd bordaCount 
 Seed 2452 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd msc bordaCount 
 Seed 2453 -- Ties
-chebyshev trngDiscr VSD3 
+che vsd 
 Seed 2454 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2455 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard cosine SqrdChrd matusita trngDiscr VSD3 maxSymmSq bordaCount 
+cla pea 
 Seed  2456  -- The best!!
 bordaCount 
 Seed 2457 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2458 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+man euc che jac ney bordaCount 
 Seed 2459 -- Ties
-SqrdChrd trngDiscr VSD3 bordaCount 
+che ney pea 
 Seed  2460  -- The best!!
 bordaCount 
 Seed 2461 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat vsd bordaCount 
 Seed 2462 -- Ties
-SqrdChrd trngDiscr VSD3 
+mat ney pea vsd bordaCount 
 Seed 2463 -- Ties
-cosine matusita maxSymmSq 
+cos msc 
 Seed 2464 -- Ties
-matusita maxSymmSq 
+cos mat ney pea vsd bordaCount 
 Seed 2465 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2466 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat pea vsd bordaCount 
 Seed 2467 -- Ties
-euclidean chebyshev canberra clark 
+can cla 
 Seed 2468 -- Ties
-manhattan gower SqrdChrd trngDiscr VSD3 
+man mat ney vsd bordaCount 
 Seed 2469 -- Ties
-manhattan euclidean canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
+man euc can jac mat cla vsd bordaCount 
 Seed 2470 -- Ties
-manhattan euclidean chebyshev gower jaccard cosine SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac cos mat ney pea vsd bordaCount 
 Seed 2471 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
-Seed 2472 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 bordaCount 
+man euc che jac vsd 
 Seed 2473 -- Ties
-jaccard SqrdChrd trngDiscr VSD3 bordaCount 
-Seed 2474 -- Ties
-jaccard SqrdChrd 
+jac mat vsd bordaCount 
 Seed 2475 -- Ties
-manhattan euclidean chebyshev canberra gower jaccard SqrdChrd clark trngDiscr VSD3 bordaCount 
-Seed 2476 -- Ties
-manhattan gower 
-Seed 2477 -- Ties
-manhattan gower 
+man euc che can jac cos mat cla ney pea vsd bordaCount 
 Seed 2478 -- Ties
-manhattan euclidean gower jaccard SqrdChrd matusita trngDiscr VSD3 bordaCount 
+man euc jac mat vsd bordaCount 
 Seed 2479 -- Ties
-chebyshev SqrdChrd trngDiscr 
-Seed 2480 -- Ties
-manhattan euclidean chebyshev gower jaccard bordaCount 
+che mat pea 
+Seed  2480  -- The best!!
+bordaCount 
 Seed 2481 -- Ties
-VSD3 bordaCount 
+pea vsd bordaCount 
 Seed 2482 -- Ties
-manhattan euclidean chebyshev gower 
+man euc che pea 
 Seed 2483 -- Ties
-canberra clark 
+can jac cla msc 
 Seed 2484 -- Ties
-manhattan euclidean chebyshev gower jaccard trngDiscr VSD3 
+man euc che jac ney pea vsd bordaCount 
 Seed 2485 -- Ties
-canberra SqrdChrd clark trngDiscr VSD3 bordaCount 
+can jac mat cla vsd bordaCount 
 Seed 2486 -- Ties
-canberra clark 
+can cla 
 Seed 2488 -- Ties
-manhattan euclidean chebyshev gower jaccard 
+man euc che jac 
 Seed 2489 -- Ties
-SqrdChrd trngDiscr VSD3 
-Seed 2490 -- Ties
-jaccard trngDiscr VSD3 bordaCount 
+mat vsd 
+Seed 2491 -- Ties
+can pea 
 Seed 2492 -- Ties
-manhattan euclidean chebyshev gower jaccard SqrdChrd trngDiscr VSD3 bordaCount 
+man euc che jac mat ney vsd bordaCount 
 Seed 2494 -- Ties
-canberra clark 
+can jac cla ney 
 Seed 2496 -- Ties
-jaccard clark 
+jac cla ney 
 Seed 2497 -- Ties
-manhattan euclidean chebyshev gower VSD3 bordaCount 
+man euc che vsd bordaCount 
 Seed 2498 -- Ties
-manhattan euclidean chebyshev canberra gower SqrdChrd matusita clark trngDiscr VSD3 bordaCount 
+man euc che can jac mat cla vsd bordaCount 
+Seed 1000 -- Ties
+mat pea vsd bordaCount 
+Seed 1001 -- Ties
+mat vsd 
+Seed 1002 -- Ties
+jac mat cla pea vsd bordaCount 
+Seed 1004 -- Ties
+can cla 
+Seed 1006 -- Ties
+man euc che mat ney vsd 
+Seed 1008 -- Ties
+man euc che jac mat pea vsd bordaCount 
+Seed 1009 -- Ties
+man euc che vsd 
+Seed 1010 -- Ties
+man euc che jac cos mat ney pea vsd bordaCount 

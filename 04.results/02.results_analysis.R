@@ -15,6 +15,31 @@ rankingsOfErrors_borda <- lapply(rankingsOfErrors, borda_count)
 
 # Visualize the results for each ranking
 
+
+# Matrix
+mcomp <- tibble(m1 = c(distances[selected_distances], "bordaCount"), m2 = c(distances[selected_distances], "bordaCount")) %>% 
+  complete(m1, m2) %>% filter(m1 != m2) %>% mutate(better = 0)
+
+comparar_par <- function(m1, m2, ranking) {
+  return(as.numeric(ranking[m1] < ranking[m2]))
+}
+
+for(r in 1:length(rankingsOfErrors_borda)) {
+  for(i in 1:nrow(mcomp)) {
+    row <- mcomp %>% slice(i)
+    the_m1 <- row %>% pull(m1)
+    the_m2 <- row %>% pull(m2)
+    mcomp <- mcomp %>% mutate(better = ifelse(m1 == the_m1 & m2 == the_m2, better+comparar_par(the_m1,the_m2,rankingsOfErrors_borda[[r]]), better))
+  }
+}
+
+tol <- mcomp %>% pivot_wider(names_from = m2, values_from = better) %>% replace(is.na(.), 0)
+
+for(i in 1:nrow(tol)) {
+  for(j in 1:ncol(tol)) {
+    print(as.numeric(tol[i, j])+as.numeric(tol[j, i]))
+  }
+}
 #' Steps:
 #' 1. For each datasets, the clustering process is made with t different 
 #'    distance measures. For each of those clusters achieved, the error is 

@@ -286,8 +286,8 @@ int srr(int dist,
   int ranking[k];
   double points[k];
   
-  for(i = 0; i < k; i++) {
-    points[i] = 0.0;
+  for(j = 0; j < k; j++) {
+    points[j] = 0.0;
   }
   
   for(d = 0; d < ndist; d++) { // for each distance
