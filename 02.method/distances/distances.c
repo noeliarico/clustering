@@ -6,7 +6,7 @@ double distance_measure(int distance, // index of distance to compute
                       double* x, // data
                       int ncol, // total number of variables of the dataset
                       int nrow, // total number of objects of the dataset
-                      int i, // calculating the distance from i to cluster j
+                      int i, // calculating the distance from i to j
                       int j, // index of the cluster
                       int k, // total number of clusters
                       double* cen) {// array of centers 

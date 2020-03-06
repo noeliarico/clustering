@@ -1,0 +1,83 @@
+---
+title: "How does it work?"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r}
+library(tidyverse)
+library(clusterlab)
+
+normalize <- function(x){((x-min(x))/(max(x)-min(x)))}
+```
+
+
+We are goint yo use the following dataset:
+
+```{r echo=FALSE}
+toy_data <- clusterlab(centers = 3,
+                        r = 2,
+                        numbervec = c(5, 5, 5),
+                        sdvec = sample(1:3, 3),
+                        alphas = sample(1:3, 3),
+                        features = 2,
+                        seed = 2020)
+toy_data <- as_tibble(t(toy_data$synthetic_data)) %>% 
+  mutate(cluster = as.factor(toy_data$identity_matrix$cluster)) %>% 
+  mutate_if(is.numeric, normalize)
+
+t(toy_data)
+```
+
+```{r echo=FALSE}
+ggplot(toy_data, aes(V1, V2, color = cluster)) +
+  geom_point()
+```
+
+## Assignation
+
+
+
+## Update
+
+After the assignation step a dataset with all the data + an additional column
+`cluster` containing the cluster to which the object has been assigned is 
+available.
+
+Now it is time to update the cluster. 
+
+1. For each distance function $d_\ell$, a matrix $M_{d_\ell}$ containing the distance between
+each pair of objects $o_i$ and $o_j$ $d_\ell(o_i,o_j)$ is stored
+2. For each cluster $j$, the matrices $M$ are filtered to keep only the points
+that belong to the cluster $j$
+3. For each point, the distance to all other points is added, obtaining a single number
+for each pair of object and distance function
+4. The vector containing all the points of the dataset and their respective pair values
+are ranked from closest to fruthest
+5. Borda account is applied to all the rankings obtained 
+6. The borda winner is the one chosen as centroid
+
+The points after the assignation step are:
+
+```{r echo=FALSE}
+
+```
+
+**_Step 1:_**
+
+```{r}
+
+```
+
+**_Step 2:_**
+
+**_Step 3:_**
+
+**_Step 4:_**
+
+**_Step 5:_**
+
+**_Step 6:_**
+
+

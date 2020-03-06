@@ -1,22 +1,3 @@
-/*
- *  R : A Computer Language for Statistical Data Analysis
- *  Copyright (C) 2004   The R Core Team.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, a copy is available at
- *  https://www.R-project.org/Licenses/
- */
-
 //#include "modreg.h" /* for declarations for registration */
 #include <stdio.h>
 #include <math.h>
@@ -31,9 +12,15 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
              int *selected_distances)
 {
   
-  int n = *pn, k = *pk, p = *pp, maxiter = *pmaxiter;
-  int ndist = *pndist, dist = *pdist;
-  int iter, i, j, c, d, it, inew = 0;
+  int n = *pn, // n - number of objects
+      k = *pk, // k - number of clusters
+      p = *pp, // p - number of variables
+      // If the algotihm did not stop in the iteration maxiter the loop breaks
+      maxiter = *pmaxiter;
+  int ndist = *pndist, // Number of different distance functions considered
+      dist = *pdist; // The distance function considered
+  int iter, i, j, c, d, it, // Variables for iterate the loops
+      inew = 0; // For storing the new cluster of an object
   double best, dd;
   Rboolean updated; // 0 if false 1 if true
   
@@ -41,7 +28,6 @@ void rkmeans(double *x, int *pn, int *pp, double *cen, int *pk, int *cl,
   for(i = 0; i < n; i++) {
     cl[i] = -1;
   }
-  
   
   /* For a given random set of centers, */
   for(iter = 0; iter < maxiter; iter++) {
