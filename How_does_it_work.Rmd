@@ -12,8 +12,7 @@ library(clusterlab)
 normalize <- function(x){((x-min(x))/(max(x)-min(x)))}
 ```
 
-
-We are goint yo use the following dataset:
+We are goinf yo use the following dataset:
 
 ```{r echo=FALSE}
 toy_data <- clusterlab(centers = 3,
@@ -36,7 +35,6 @@ ggplot(toy_data, aes(V1, V2, color = cluster)) +
 ```
 
 ## Assignation
-
 
 
 ## Update
